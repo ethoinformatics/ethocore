@@ -4,6 +4,7 @@ This project uses an R script to convert the latest EthoCore table of terms into
 
 For the R script, the working directory on line 5 would need to be updated. Also, a tab-separated version of the first sheet of the latest EthoCore Google Drive document should be saved to the working directory as "ethocore.txt".
 
-The resulting markdown file can be easily converted to html using [pandoc](http://johnmacfarlane.net/pandoc/)
+The [resulting markdown file](https://github.com/ethoinformatics/ethocore/blob/master/ethocore.md) can be easily converted to html using [pandoc](http://johnmacfarlane.net/pandoc/)
 
 `pandoc ethocore.md -o ethocore.html`
+
