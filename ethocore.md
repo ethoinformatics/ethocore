@@ -1,65 +1,69 @@
-# Record-level Terms
+# Etho Core terms
+
+## Record-level Terms
 
 [basisOfRecord](#basisOfRecord) | [collectionCode](#collectionCode) | [collectionID](#collectionID) | [dataGeneralizations](#dataGeneralizations) | [datasetID](#datasetID) | [datasetName](#datasetName) | [dcterms:accessRights](#dcterms:accessRights) | [dcterms:bibliographicCitation](#dcterms:bibliographicCitation) | [dcterms:language](#dcterms:language) | [dcterms:license](#dcterms:license) | [dcterms:modified](#dcterms:modified) | [dcterms:references](#dcterms:references) | [dcterms:rightsHolder](#dcterms:rightsHolder) | [dcterms:type](#dcterms:type) | [dynamicProperties](#dynamicProperties) | [informationWithheld](#informationWithheld) | [institutionCode](#institutionCode) | [institutionID](#institutionID) | [ownerInstitutionCode](#ownerInstitutionCode)
 
-# [Activity](#Activity)
+## [Activity](#Activity)
 
 [activityBy](#activityBy) | [activityID](#activityID) | [activityRemarks](#activityRemarks) | [activitySubject](#activitySubject) | [activityType](#activityType)
 
-# [AnimalGroup](#AnimalGroup)
+## [AnimalGroup](#AnimalGroup)
 
 [animalGroupID](#animalGroupID) | [animalGroupName](#animalGroupName) | [animalGroupType](#animalGroupType) | [dateOfDissolution](#dateOfDissolution) | [dateOfFormation](#dateOfFormation)
 
-# [Event](#Event)
+## [Event](#Event)
 
 [eventDate](#eventDate) | [eventID](#eventID) | [eventRemarks](#eventRemarks) | [eventTime](#eventTime) | [samplingEffort](#samplingEffort) | [samplingProtocol](#samplingProtocol)
 
-# [Identification](#Identification)
+## [Identification](#Identification)
 
 [dateIdentified](#dateIdentified) | [identificationID](#identificationID) | [identificationQualifier](#identificationQualifier) | [identificationReferences](#identificationReferences) | [identificationRemarks](#identificationRemarks) | [identificationVerificationStatus](#identificationVerificationStatus) | [identifiedBy](#identifiedBy) | [typeStatus](#typeStatus)
 
-# [IndividualAnimal](#IndividualAnimal)
+## [IndividualAnimal](#IndividualAnimal)
 
 [estimatedDOB](#estimatedDOB) | [individualCode](#individualCode) | [individualDOB](#individualDOB) | [individualID](#individualID) | [individualName](#individualName) | [individualRemarks](#individualRemarks) | [individualSex](#individualSex)
 
-# [LifeHistory](#LifeHistory)
+## [LifeHistory](#LifeHistory)
 
 [lifeHistoryEvent](#lifeHistoryEvent) | [lifeHistoryEventDate](#lifeHistoryEventDate) | [lifeHistoryEventID](#lifeHistoryEventID) | [lifeHistoryIndividualID](#lifeHistoryIndividualID) | [lifeHistoryRemarks](#lifeHistoryRemarks)
 
-# [Location](#Location)
+## [Location](#Location)
 
-[continent](#continent) | [coordinatePrecision](#coordinatePrecision) | [coordinateUncertaintyInMeters](#coordinateUncertaintyInMeters) | [country](#country) | [countryCode](#countryCode) | [county](#county) | [decimalLatitude](#decimalLatitude) | [decimalLongitude](#decimalLongitude) | [footprintSpatialFit](#footprintSpatialFit) | [footprintSRS](#footprintSRS) | [footprintWKT](#footprintWKT) | [geodeticDatum](#geodeticDatum) | [georeferencedBy](#georeferencedBy) | [georeferencedDate](#georeferencedDate) | [georeferenceProtocol](#georeferenceProtocol) | [georeferenceRemarks](#georeferenceRemarks) | [georeferenceSources](#georeferenceSources) | [georeferenceVerificationStatus](#georeferenceVerificationStatus) | [higherGeography](#higherGeography) | [higherGeographyID](#higherGeographyID) | [island](#island) | [islandGroup](#islandGroup) | [locality](#locality) | [locationAccordingTo](#locationAccordingTo) | [locationID](#locationID) | [locationName](#locationName) | [locationRemarks](#locationRemarks) | [maximumElevationInMeters](#maximumElevationInMeters) | [minimumElevationInMeters](#minimumElevationInMeters) | [municipality](#municipality) | [nmeaSentence](#nmeaSentence) | [pointRadiusSpatialFit](#pointRadiusSpatialFit) | [stateProvince](#stateProvince) | [utmX](#utmX) | [utmY](#utmY) | [utmZone](#utmZone) | [verbatimCoordinates](#verbatimCoordinates) | [verbatimCoordinateSystem](#verbatimCoordinateSystem) | [verbatimDepth](#verbatimDepth) | [verbatimElevation](#verbatimElevation) | [verbatimLatitude](#verbatimLatitude) | [verbatimLocality](#verbatimLocality) | [verbatimLongitude](#verbatimLongitude) | [verbatimSRS](#verbatimSRS)
+[continent](#continent) | [coordinatePrecision](#coordinatePrecision) | [coordinateUncertaintyInMeters](#coordinateUncertaintyInMeters) | [country](#country) | [countryCode](#countryCode) | [county](#county) | [decimalLatitude](#decimalLatitude) | [decimalLongitude](#decimalLongitude) | [footprintSRS](#footprintSRS) | [footprintSpatialFit](#footprintSpatialFit) | [footprintWKT](#footprintWKT) | [geodeticDatum](#geodeticDatum) | [georeferenceProtocol](#georeferenceProtocol) | [georeferenceRemarks](#georeferenceRemarks) | [georeferenceSources](#georeferenceSources) | [georeferenceVerificationStatus](#georeferenceVerificationStatus) | [georeferencedBy](#georeferencedBy) | [georeferencedDate](#georeferencedDate) | [higherGeography](#higherGeography) | [higherGeographyID](#higherGeographyID) | [island](#island) | [islandGroup](#islandGroup) | [locality](#locality) | [locationAccordingTo](#locationAccordingTo) | [locationID](#locationID) | [locationName](#locationName) | [locationRemarks](#locationRemarks) | [maximumElevationInMeters](#maximumElevationInMeters) | [minimumElevationInMeters](#minimumElevationInMeters) | [municipality](#municipality) | [nmeaSentence](#nmeaSentence) | [pointRadiusSpatialFit](#pointRadiusSpatialFit) | [stateProvince](#stateProvince) | [utmX](#utmX) | [utmY](#utmY) | [utmZone](#utmZone) | [verbatimCoordinateSystem](#verbatimCoordinateSystem) | [verbatimCoordinates](#verbatimCoordinates) | [verbatimDepth](#verbatimDepth) | [verbatimElevation](#verbatimElevation) | [verbatimLatitude](#verbatimLatitude) | [verbatimLocality](#verbatimLocality) | [verbatimLongitude](#verbatimLongitude) | [verbatimSRS](#verbatimSRS)
 
-# [MaterialSample](#MaterialSample)
+## [MaterialSample](#MaterialSample)
 
 [materialSampleID](#materialSampleID) | [materialSampleRemarks](#materialSampleRemarks) | [materialSampleSubject](#materialSampleSubject) | [materialSampleType](#materialSampleType) | [relatedMedia](#relatedMedia)
 
-# [MeasurementOrFact](#MeasurementOrFact)
-
-[measurementAccuracy](#measurementAccuracy) | [measurementDeterminedBy](#measurementDeterminedBy) | [measurementDeterminedDate](#measurementDeterminedDate) | [measurementID](#measurementID) | [measurementInstrument](#measurementInstrument) | [measurementMethod](#measurementMethod) | [measurementRemarks](#measurementRemarks) | [measurementSubject](#measurementSubject) | [measurementType](#measurementType) | [measurementUnit](#measurementUnit) | [measurementValue](#measurementValue)
-
-# [Observation](#Observation)
+## [Observation](#Observation)
 
 [behavior](#behavior) | [distance](#distance) | [lifeStage](#lifeStage) | [neighbor](#neighbor) | [observationID](#observationID) | [observationRemarks](#observationRemarks) | [observationSubject](#observationSubject) | [observationType](#observationType) | [observedBy](#observedBy) | [partner](#partner) | [reproductiveCondition](#reproductiveCondition) | [sex](#sex) | [spatialConfiguration](#spatialConfiguration)
 
-# [Observer](#Observer)
+## [Observer](#Observer)
 
 [observerHistory](#observerHistory) | [observerID](#observerID) | [observerName](#observerName)
 
-# [ResourcePatch](#ResourcePatch)
+## [ResourcePatch](#ResourcePatch)
 
 [dateMarked](#dateMarked) | [dateOfExpiration](#dateOfExpiration) | [markedBy](#markedBy) | [resourcePatchID](#resourcePatchID) | [resourcePatchType](#resourcePatchType) | [resourcePatchUse](#resourcePatchUse) | [timeMarked](#timeMarked)
 
-# [ResourceRelationship](#ResourceRelationship)
+## [Taxon](#Taxon)
+
+[acceptedNameUsage](#acceptedNameUsage) | [acceptedNameUsageID](#acceptedNameUsageID) | [class](#class) | [family](#family) | [genus](#genus) | [higherClassification](#higherClassification) | [infraspecificEpithet](#infraspecificEpithet) | [kingdom](#kingdom) | [nameAccordingTo](#nameAccordingTo) | [nameAccordingToID](#nameAccordingToID) | [namePublishedIn](#namePublishedIn) | [namePublishedInID](#namePublishedInID) | [namePublishedInYear](#namePublishedInYear) | [nomenclaturalCode](#nomenclaturalCode) | [nomenclaturalStatus](#nomenclaturalStatus) | [order](#order) | [originalNameUsage](#originalNameUsage) | [originalNameUsageID](#originalNameUsageID) | [parentNameUsage](#parentNameUsage) | [parentNameUsageID](#parentNameUsageID) | [phylum](#phylum) | [scientificName](#scientificName) | [scientificNameAuthorship](#scientificNameAuthorship) | [scientificNameID](#scientificNameID) | [specificEpithet](#specificEpithet) | [subgenus](#subgenus) | [taxonConceptID](#taxonConceptID) | [taxonID](#taxonID) | [taxonRank](#taxonRank) | [taxonRemarks](#taxonRemarks) | [taxonomicStatus](#taxonomicStatus) | [verbatimTaxonRank](#verbatimTaxonRank) | [vernacularName](#vernacularName)
+
+# Auxiliary terms
+
+## [MeasurementOrFact](#MeasurementOrFact)
+
+[measurementAccuracy](#measurementAccuracy) | [measurementDeterminedBy](#measurementDeterminedBy) | [measurementDeterminedDate](#measurementDeterminedDate) | [measurementID](#measurementID) | [measurementInstrument](#measurementInstrument) | [measurementMethod](#measurementMethod) | [measurementRemarks](#measurementRemarks) | [measurementSubject](#measurementSubject) | [measurementType](#measurementType) | [measurementUnit](#measurementUnit) | [measurementValue](#measurementValue)
+
+## [ResourceRelationship](#ResourceRelationship)
 
 [relatedResourceID](#relatedResourceID) | [relationshipAccordingTo](#relationshipAccordingTo) | [relationshipEstablishedDate](#relationshipEstablishedDate) | [relationshipOfResource](#relationshipOfResource) | [relationshipRemarks](#relationshipRemarks) | [resourceID](#resourceID) | [resourceRelationshipID](#resourceRelationshipID)
 
-# [Taxon](#Taxon)
-
-[acceptedNameUsage](#acceptedNameUsage) | [acceptedNameUsageID](#acceptedNameUsageID) | [class](#class) | [family](#family) | [genus](#genus) | [higherClassification](#higherClassification) | [infraspecificEpithet](#infraspecificEpithet) | [kingdom](#kingdom) | [nameAccordingTo](#nameAccordingTo) | [nameAccordingToID](#nameAccordingToID) | [namePublishedIn](#namePublishedIn) | [namePublishedInID](#namePublishedInID) | [namePublishedInYear](#namePublishedInYear) | [nomenclaturalCode](#nomenclaturalCode) | [nomenclaturalStatus](#nomenclaturalStatus) | [order](#order) | [originalNameUsage](#originalNameUsage) | [originalNameUsageID](#originalNameUsageID) | [parentNameUsage](#parentNameUsage) | [parentNameUsageID](#parentNameUsageID) | [phylum](#phylum) | [scientificName](#scientificName) | [scientificNameAuthorship](#scientificNameAuthorship) | [scientificNameID](#scientificNameID) | [specificEpithet](#specificEpithet) | [subgenus](#subgenus) | [taxonConceptID](#taxonConceptID) | [taxonID](#taxonID) | [taxonomicStatus](#taxonomicStatus) | [taxonRank](#taxonRank) | [taxonRemarks](#taxonRemarks) | [verbatimTaxonRank](#verbatimTaxonRank) | [vernacularName](#vernacularName)
-
-<table>
-<tr><th colspan="2"><a name="Activity">Term Name: Activity</a></th></tr>
+<table class="TermsDictionary">
+	<tr><th colspan="2"><a name="Activity">Term Name: Activity</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Activity</td></tr>
 	<tr><td>Class:</td><td></td></tr>
 	<tr><td>Project:</td><td>Ethogrammar</td></tr>
@@ -591,13 +595,6 @@
 	<tr><td>Definition:</td><td>The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.</td></tr>
 	<tr><td>Comment:</td><td>Example: "-121.1761111"</td></tr>
 	<tr><td>Details:</td><td>decimalLongitude (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="footprintSpatialFit">Term Name: footprintSpatialFit</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/footprintSpatialFit</td></tr>
-	<tr><td>Class:</td><td>Location</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The ratio of the area of the footprint (footprintWKT) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given footprint does not completely contain the original representation. The footprintSpatialFit is undefined (and should be left blank) if the original representation is a point and the given georeference is not that same point. If both the original and the given georeference are the same point, the footprintSpatialFit is 1.</td></tr>
-	<tr><td>Comment:</td><td>Detailed explanations with graphical examples can be found in the "Guide to Best Practices for Georeferencing", Chapman and Wieczorek, eds. 2006 (http://www.gbif.org/prog/digit/Georeferencing).</td></tr>
-	<tr><td>Details:</td><td>footprintSpatialFit (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="footprintSRS">Term Name: footprintSRS</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/footprintSRS</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
@@ -605,6 +602,13 @@
 	<tr><td>Definition:</td><td>A Well-Known Text (WKT) representation of the Spatial Reference System (SRS) for the footprintWKT of the Location. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, even if it is the same as for the footprintWKT - use the geodeticDatum instead.</td></tr>
 	<tr><td>Comment:</td><td>Example: The WKT for the standard WGS84 SRS (EPSG:4326) is "GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433]]" without the enclosing quotes.</td></tr>
 	<tr><td>Details:</td><td>footprintSRS (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="footprintSpatialFit">Term Name: footprintSpatialFit</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/footprintSpatialFit</td></tr>
+	<tr><td>Class:</td><td>Location</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The ratio of the area of the footprint (footprintWKT) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given footprint does not completely contain the original representation. The footprintSpatialFit is undefined (and should be left blank) if the original representation is a point and the given georeference is not that same point. If both the original and the given georeference are the same point, the footprintSpatialFit is 1.</td></tr>
+	<tr><td>Comment:</td><td>Detailed explanations with graphical examples can be found in the "Guide to Best Practices for Georeferencing", Chapman and Wieczorek, eds. 2006 (http://www.gbif.org/prog/digit/Georeferencing).</td></tr>
+	<tr><td>Details:</td><td>footprintSpatialFit (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="footprintWKT">Term Name: footprintWKT</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/footprintWKT</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
@@ -619,20 +623,6 @@
 	<tr><td>Definition:</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based. Recommended best practice is use the EPSG code as a controlled vocabulary to provide an SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value "unknown".</td></tr>
 	<tr><td>Comment:</td><td>Examples: "EPSG:4326", "WGS84", "NAD27", "Campo Inchauspe", "European 1950", "Clarke 1866"</td></tr>
 	<tr><td>Details:</td><td>geodeticDatum (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="georeferencedBy">Term Name: georeferencedBy</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/georeferencedBy</td></tr>
-	<tr><td>Class:</td><td>Location</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) for the Location.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "Kristina Yamamoto (MVZ); Janet Fang (MVZ)", "Brad Millen (ROM)"</td></tr>
-	<tr><td>Details:</td><td>georeferencedBy (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="georeferencedDate">Term Name: georeferencedDate</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/georeferencedDate</td></tr>
-	<tr><td>Class:</td><td>Location</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The date on which the Location was georeferenced. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
-	<tr><td>Comment:</td><td>Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</td></tr>
-	<tr><td>Details:</td><td>georeferencedDate (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="georeferenceProtocol">Term Name: georeferenceProtocol</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/georeferenceProtocol</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
@@ -661,6 +651,20 @@
 	<tr><td>Definition:</td><td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description. Recommended best practice is to use a controlled vocabulary.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "requires verification", "verified by collector", "verified by curator".</td></tr>
 	<tr><td>Details:</td><td>georeferenceVerificationStatus (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="georeferencedBy">Term Name: georeferencedBy</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/georeferencedBy</td></tr>
+	<tr><td>Class:</td><td>Location</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the georeference (spatial representation) for the Location.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "Kristina Yamamoto (MVZ); Janet Fang (MVZ)", "Brad Millen (ROM)"</td></tr>
+	<tr><td>Details:</td><td>georeferencedBy (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="georeferencedDate">Term Name: georeferencedDate</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/georeferencedDate</td></tr>
+	<tr><td>Class:</td><td>Location</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The date on which the Location was georeferenced. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
+	<tr><td>Comment:</td><td>Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</td></tr>
+	<tr><td>Details:</td><td>georeferencedDate (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="higherGeography">Term Name: higherGeography</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/higherGeography</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
@@ -787,13 +791,6 @@
 	<tr><td>Definition:</td><td>The UTM zone upon which the geographic coordinates given in utmX and utmY are based. Recommended best practice is to specify the hemisphere by appending "North" for the northern hemisphere or "South" for the southern hemisphere, or to specify the latitude band.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td>utmZone (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="verbatimCoordinates">Term Name: verbatimCoordinates</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/verbatimCoordinates</td></tr>
-	<tr><td>Class:</td><td>Location</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The verbatim original spatial coordinates of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "41 05 54S 121 05 34W", "17T 630000 4833400"</td></tr>
-	<tr><td>Details:</td><td>verbatimCoordinates (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="verbatimCoordinateSystem">Term Name: verbatimCoordinateSystem</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/verbatimCoordinateSystem</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
@@ -801,6 +798,13 @@
 	<tr><td>Definition:</td><td>The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location. Recommended best practice is to use a controlled vocabulary.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "decimal degrees", "degrees decimal minutes", "degrees minutes seconds", "UTM"</td></tr>
 	<tr><td>Details:</td><td>verbatimCoordinateSystem (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="verbatimCoordinates">Term Name: verbatimCoordinates</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/verbatimCoordinates</td></tr>
+	<tr><td>Class:</td><td>Location</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The verbatim original spatial coordinates of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "41 05 54S 121 05 34W", "17T 630000 4833400"</td></tr>
+	<tr><td>Details:</td><td>verbatimCoordinates (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="verbatimDepth">Term Name: verbatimDepth</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/verbatimDepth</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
@@ -878,83 +882,6 @@
 	<tr><td>Definition:</td><td>A listing of media filenames and types that are associated with the MaterialSample.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td>relatedMedia (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="measurementAccuracy">Term Name: measurementAccuracy</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementAccuracy</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The description of the potential error associated with the measurementValue.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "0.01", "normal distribution with variation of 2 m"</td></tr>
-	<tr><td>Details:</td><td>measurementAccuracy (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="measurementDeterminedBy">Term Name: measurementDeterminedBy</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementDeterminedBy</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "Javier de la Torre", "Julie Woodruff; Eileen Lacey"</td></tr>
-	<tr><td>Details:</td><td>measurementDeterminedBy (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="measurementDeterminedDate">Term Name: measurementDeterminedDate</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementDeterminedDate</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The date on which the MeasurementOrFact was made. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
-	<tr><td>Comment:</td><td>Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</td></tr>
-	<tr><td>Details:</td><td>measurementDeterminedDate (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="measurementID">Term Name: measurementID</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementID</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>measurementID (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="measurementInstrument">Term Name: measurementInstrument</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementInstrument</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>The instrument used to perform a measurement. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "measuring tape", "digital thermometer", "1000 ml graduated cylinder", "spectrophotometer"</td></tr>
-	<tr><td>Details:</td><td>measurementInstrument (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="measurementMethod">Term Name: measurementMethod</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementMethod</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "minimum convex polygon around burrow entrances" for a home range area, "barometric altimeter" for an elevation</td></tr>
-	<tr><td>Details:</td><td>measurementMethod (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="measurementRemarks">Term Name: measurementRemarks</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementRemarks</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>Comments or notes accompanying the measurement, fact, characterstic, or assertion.</td></tr>
-	<tr><td>Comment:</td><td>Example: "tip of tail missing"</td></tr>
-	<tr><td>Details:</td><td>measurementRemarks (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="measurementSubject">Term Name: measurementSubject</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementSubject</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>A reference to the identifier for the MaterialSample, IndividualAnimal, or ResourcePatch that is the subject of the measurement, fact, characterstic, or assertion.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>measurementSubject (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="measurementType">Term Name: measurementType</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementType</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "tail length", "temperature", "trap line length", "survey area", "trap type"</td></tr>
-	<tr><td>Details:</td><td>measurementType (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="measurementUnit">Term Name: measurementUnit</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementUnit</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The units associated with the measurementValue. Recommended best practice is to use the International System of Units (SI).</td></tr>
-	<tr><td>Comment:</td><td>Examples: "mm", "C", "km", "ha"</td></tr>
-	<tr><td>Details:</td><td>measurementUnit (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="measurementValue">Term Name: measurementValue</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementValue</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The value of the measurement, fact, characteristic, or assertion.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "45", "20", "1", "14.5", "UV-light"</td></tr>
-	<tr><td>Details:</td><td>measurementValue (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="behavior">Term Name: behavior</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/behavior</td></tr>
 	<tr><td>Class:</td><td>Observation</td></tr>
@@ -1116,55 +1043,6 @@
 	<tr><td>Definition:</td><td>The time during which a ResearchPatch was marked. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td>timeMarked (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="relatedResourceID">Term Name: relatedResourceID</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/relatedResourceID</td></tr>
-	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>An identifier for a related resource (the object, rather than the subject of the relationship).</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>relatedResourceID (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="relationshipAccordingTo">Term Name: relationshipAccordingTo</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/relationshipAccordingTo</td></tr>
-	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The source (person, organization, publication, reference) establishing the relationship between the two resources.</td></tr>
-	<tr><td>Comment:</td><td>Example: "Julie Woodruff"</td></tr>
-	<tr><td>Details:</td><td>relationshipAccordingTo (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="relationshipEstablishedDate">Term Name: relationshipEstablishedDate</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/relationshipEstablishedDate</td></tr>
-	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The date-time on which the relationship between the two resources was established. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
-	<tr><td>Comment:</td><td>Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</td></tr>
-	<tr><td>Details:</td><td>relationshipEstablishedDate (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="relationshipOfResource">Term Name: relationshipOfResource</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/relationshipOfResource</td></tr>
-	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The relationship of the resource identified by relatedResourceID to the subject (optionally identified by the resourceID). Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "duplicate of", "mother of", "endoparasite of", "host to", "sibling of", "valid synonym of", "located within"</td></tr>
-	<tr><td>Details:</td><td>relationshipOfResource (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="relationshipRemarks">Term Name: relationshipRemarks</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/relationshipRemarks</td></tr>
-	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>Comments or notes about the relationship between the two resources.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "mother and offspring collected from the same nest", "pollinator captured in the act"</td></tr>
-	<tr><td>Details:</td><td>relationshipRemarks (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="resourceID">Term Name: resourceID</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourceID</td></tr>
-	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>An identifier for the resource that is the subject of the relationship.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>resourceID (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="resourceRelationshipID">Term Name: resourceRelationshipID</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourceRelationshipID</td></tr>
-	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>An identifier for an instance of relationship between one resource (the subject) and another (relatedResource, the object).</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>resourceRelationshipID (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="acceptedNameUsage">Term Name: acceptedNameUsage</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/acceptedNameUsage</td></tr>
 	<tr><td>Class:</td><td>Taxon</td></tr>
@@ -1361,13 +1239,6 @@
 	<tr><td>Definition:</td><td>An identifier for the set of taxon information (data associated with the Taxon class). May be a global unique identifier or an identifier specific to the data set.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "8fa58e08-08de-4ac1-b69c-1235340b7001", "32567", "http://species.gbif.org/abies_alba_1753", "urn:lsid:gbif.org:usages:32567"</td></tr>
 	<tr><td>Details:</td><td>taxonID (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="taxonomicStatus">Term Name: taxonomicStatus</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/taxonomicStatus</td></tr>
-	<tr><td>Class:</td><td>Taxon</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the experts opinion. It must be linked to a specific taxonomic reference that defines the concept. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "invalid", "misapplied", "homotypic synonym", "accepted"</td></tr>
-	<tr><td>Details:</td><td>taxonomicStatus (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="taxonRank">Term Name: taxonRank</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/taxonRank</td></tr>
 	<tr><td>Class:</td><td>Taxon</td></tr>
@@ -1382,6 +1253,13 @@
 	<tr><td>Definition:</td><td>Comments or notes about the taxon or name.</td></tr>
 	<tr><td>Comment:</td><td>Example: "this name is a misspelling in common use"</td></tr>
 	<tr><td>Details:</td><td>taxonRemarks (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="taxonomicStatus">Term Name: taxonomicStatus</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/taxonomicStatus</td></tr>
+	<tr><td>Class:</td><td>Taxon</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The status of the use of the scientificName as a label for a taxon. Requires taxonomic opinion to define the scope of a taxon. Rules of priority then are used to define the taxonomic status of the nomenclature contained in that scope, combined with the experts opinion. It must be linked to a specific taxonomic reference that defines the concept. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "invalid", "misapplied", "homotypic synonym", "accepted"</td></tr>
+	<tr><td>Details:</td><td>taxonomicStatus (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="verbatimTaxonRank">Term Name: verbatimTaxonRank</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/verbatimTaxonRank</td></tr>
 	<tr><td>Class:</td><td>Taxon</td></tr>
@@ -1396,4 +1274,130 @@
 	<tr><td>Definition:</td><td>A common or vernacular name.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "Andean Condor", "Condor Andino", "American Eagle", "Gänsegeier"</td></tr>
 	<tr><td>Details:</td><td>vernacularName (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="measurementAccuracy">Term Name: measurementAccuracy</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementAccuracy</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The description of the potential error associated with the measurementValue.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "0.01", "normal distribution with variation of 2 m"</td></tr>
+	<tr><td>Details:</td><td>measurementAccuracy (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="measurementDeterminedBy">Term Name: measurementDeterminedBy</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementDeterminedBy</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "Javier de la Torre", "Julie Woodruff; Eileen Lacey"</td></tr>
+	<tr><td>Details:</td><td>measurementDeterminedBy (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="measurementDeterminedDate">Term Name: measurementDeterminedDate</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementDeterminedDate</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The date on which the MeasurementOrFact was made. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
+	<tr><td>Comment:</td><td>Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</td></tr>
+	<tr><td>Details:</td><td>measurementDeterminedDate (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="measurementID">Term Name: measurementID</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementID</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td>measurementID (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="measurementInstrument">Term Name: measurementInstrument</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementInstrument</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Project:</td><td>Ethogrammar</td></tr>
+	<tr><td>Definition:</td><td>The instrument used to perform a measurement. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "measuring tape", "digital thermometer", "1000 ml graduated cylinder", "spectrophotometer"</td></tr>
+	<tr><td>Details:</td><td>measurementInstrument (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="measurementMethod">Term Name: measurementMethod</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementMethod</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "minimum convex polygon around burrow entrances" for a home range area, "barometric altimeter" for an elevation</td></tr>
+	<tr><td>Details:</td><td>measurementMethod (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="measurementRemarks">Term Name: measurementRemarks</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementRemarks</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>Comments or notes accompanying the measurement, fact, characterstic, or assertion.</td></tr>
+	<tr><td>Comment:</td><td>Example: "tip of tail missing"</td></tr>
+	<tr><td>Details:</td><td>measurementRemarks (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="measurementSubject">Term Name: measurementSubject</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementSubject</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Project:</td><td>Ethogrammar</td></tr>
+	<tr><td>Definition:</td><td>A reference to the identifier for the MaterialSample, IndividualAnimal, or ResourcePatch that is the subject of the measurement, fact, characterstic, or assertion.</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td>measurementSubject (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="measurementType">Term Name: measurementType</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementType</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "tail length", "temperature", "trap line length", "survey area", "trap type"</td></tr>
+	<tr><td>Details:</td><td>measurementType (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="measurementUnit">Term Name: measurementUnit</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementUnit</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The units associated with the measurementValue. Recommended best practice is to use the International System of Units (SI).</td></tr>
+	<tr><td>Comment:</td><td>Examples: "mm", "C", "km", "ha"</td></tr>
+	<tr><td>Details:</td><td>measurementUnit (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="measurementValue">Term Name: measurementValue</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementValue</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The value of the measurement, fact, characteristic, or assertion.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "45", "20", "1", "14.5", "UV-light"</td></tr>
+	<tr><td>Details:</td><td>measurementValue (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="relatedResourceID">Term Name: relatedResourceID</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/relatedResourceID</td></tr>
+	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>An identifier for a related resource (the object, rather than the subject of the relationship).</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td>relatedResourceID (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="relationshipAccordingTo">Term Name: relationshipAccordingTo</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/relationshipAccordingTo</td></tr>
+	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The source (person, organization, publication, reference) establishing the relationship between the two resources.</td></tr>
+	<tr><td>Comment:</td><td>Example: "Julie Woodruff"</td></tr>
+	<tr><td>Details:</td><td>relationshipAccordingTo (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="relationshipEstablishedDate">Term Name: relationshipEstablishedDate</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/relationshipEstablishedDate</td></tr>
+	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The date-time on which the relationship between the two resources was established. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
+	<tr><td>Comment:</td><td>Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</td></tr>
+	<tr><td>Details:</td><td>relationshipEstablishedDate (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="relationshipOfResource">Term Name: relationshipOfResource</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/relationshipOfResource</td></tr>
+	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>The relationship of the resource identified by relatedResourceID to the subject (optionally identified by the resourceID). Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "duplicate of", "mother of", "endoparasite of", "host to", "sibling of", "valid synonym of", "located within"</td></tr>
+	<tr><td>Details:</td><td>relationshipOfResource (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="relationshipRemarks">Term Name: relationshipRemarks</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/relationshipRemarks</td></tr>
+	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>Comments or notes about the relationship between the two resources.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "mother and offspring collected from the same nest", "pollinator captured in the act"</td></tr>
+	<tr><td>Details:</td><td>relationshipRemarks (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="resourceID">Term Name: resourceID</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourceID</td></tr>
+	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>An identifier for the resource that is the subject of the relationship.</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td>resourceID (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="resourceRelationshipID">Term Name: resourceRelationshipID</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourceRelationshipID</td></tr>
+	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>An identifier for an instance of relationship between one resource (the subject) and another (relatedResource, the object).</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td>resourceRelationshipID (placeholder: link to come)</td></tr>
 </table>
