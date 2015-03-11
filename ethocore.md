@@ -62,6 +62,7 @@
 
 [relatedResourceID](#relatedResourceID) | [relationshipAccordingTo](#relationshipAccordingTo) | [relationshipEstablishedDate](#relationshipEstablishedDate) | [relationshipOfResource](#relationshipOfResource) | [relationshipRemarks](#relationshipRemarks) | [resourceID](#resourceID) | [resourceRelationshipID](#resourceRelationshipID)
 
+<style>.TermsDictionary th { text-align:left; }</style>
 <table class="TermsDictionary">
 	<tr><th colspan="2"><a name="Activity">Term Name: Activity</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Activity</td></tr>
