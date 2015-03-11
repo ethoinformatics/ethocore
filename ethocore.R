@@ -46,7 +46,7 @@ ethocore <- ethocore[order(ethocore$CLASS %in% auxiliary,ethocore$CLASS,ethocore
 ethocore$CLASS <- gsub('A11','all',ethocore$CLASS)			# replace a11 with all
 
 fields <- c('Identifier','Class','Project','Definition','Comment','Details')
-columns <- c('TERM','CLASS','NAMESPACE','DEFINITION','DESCRIPTION','TERM')
+columns <- c('URI','CLASS','NAMESPACE','DEFINITION','DESCRIPTION','TERM')
 
 ## xtable method (the tables are ugly)
 # library(xtable)
@@ -61,9 +61,8 @@ write.col <- function(x,header=FALSE) {
 
 write(paste0('<table class="TermsDictionary">\n\t',paste(write.row(do.call(c,as.list(apply(ethocore,1,function(x) {
 	documentation <- x[columns]
-	documentation[1] <- paste0('http://ethoinformatics.org/ethocore/',documentation[1])
 	documentation[6] <- paste(documentation[6],'(placeholder: link to come)')
 	documentation[is.na(documentation)] <- ''
-	c(write.col(x[columns][1],header=TRUE),apply(cbind(write.col(paste0(fields,':')),write.col(documentation)),1,paste0,collapse=''))
+	c(write.col(x['TERM'],header=TRUE),apply(cbind(write.col(paste0(fields,':')),write.col(documentation)),1,paste0,collapse=''))
 })))),collapse='\n\t'),'\n</table>'),file=write.filename,append=TRUE)
 

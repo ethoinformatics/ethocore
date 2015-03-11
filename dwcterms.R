@@ -10,7 +10,7 @@
 #
 # * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-library(XML)
+library(XML,quietly=TRUE)
 
 setwd('~/Desktop/')
 
@@ -23,6 +23,8 @@ which.terms <- which.terms[2:length(which.terms)]
 
 dwcterms <- data.frame(
 	name = gsub('.*?/([A-z]*)$','\\1',as.character(do.call(c,lapply(xmlChildren(rdfterms)[which.terms],function(x) xmlAttrs(x)[['about']])))),
+	uri = as.character(do.call(c,lapply(xmlChildren(rdfterms),function(x) xmlGetAttr(x,'rdf:about'))[which.terms])),
+	version = as.character(do.call(c,lapply(lapply(xmlChildren(rdfterms),function(x) xmlChildren(x)$hasVersion)[which.terms],function(y) xmlGetAttr(y,'rdf:resource')))),
 	label = as.character(do.call(c,lapply(lapply(xmlChildren(rdfterms),function(x) xmlChildren(x)$label)[which.terms],function(y) as(xmlChildren(y)$text,'character')))),
 	definition = as.character(do.call(c,lapply(lapply(xmlChildren(rdfterms),function(x) xmlChildren(x)$comment)[which.terms],function(y) as(xmlChildren(y)$text,'character')))),
 	description = as.character(do.call(c,lapply(lapply(xmlChildren(rdfterms),function(x) xmlChildren(x)$description)[which.terms],function(y) if (is.null(y)) '' else as(xmlChildren(y)$text,'character')))),
