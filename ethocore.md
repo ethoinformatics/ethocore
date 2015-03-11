@@ -84,13 +84,6 @@
 	<tr><td>Definition:</td><td>An action that occurs at some location during some time.</td></tr>
 	<tr><td>Comment:</td><td>Examples: A specimen collection process. A machine observation.</td></tr>
 	<tr><td>Details:</td><td>Event (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="IndirectSign">Term Name: IndirectSign</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/IndirectSign</td></tr>
-	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>An indirect indicator of the occurence and/or behavior of an animal, group of animals, or species.</td></tr>
-	<tr><td>Comment:</td><td>Examples: A footprint. A chewed fruit.</td></tr>
-	<tr><td>Details:</td><td>IndirectSign (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="IndividualAnimal">Term Name: IndividualAnimal</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/IndividualAnimal</td></tr>
 	<tr><td>Class:</td><td></td></tr>
