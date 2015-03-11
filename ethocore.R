@@ -59,8 +59,6 @@ write.col <- function(x,header=FALSE) {
 	if (header) paste0('<th colspan="2"><a name="',x,'">Term Name: ',x,'</a></th>') else paste0('<td>',x,'</td>')
 }
 
-write('<style>.TermsDictionary th { text-align:left; }</style>',file=write.filename,append=TRUE)
-
 write(paste0('<table class="TermsDictionary">\n\t',paste(write.row(do.call(c,as.list(apply(ethocore,1,function(x) {
 	documentation <- x[columns]
 	documentation[1] <- paste0('http://ethoinformatics.org/ethocore/',documentation[1])
