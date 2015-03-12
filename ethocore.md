@@ -46,7 +46,7 @@
 
 ## [Observer](#Observer)
 
-[observerHistory](#observerHistory) | [observerID](#observerID) | [observerName](#observerName)
+[observerHistory](#observerHistory) | [observerID](#observerID) | [observerName](#observerName) | [observerRemarks](#observerRemarks)
 
 ## [ResourcePatch](#ResourcePatch)
 
@@ -1078,6 +1078,13 @@
 	<tr><td>Definition:</td><td>The name of the researcher. Recommended best practice is to list the surname, given name, then middle name(s), in order and separated by commas.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "Leakey, Louis, S., B.", "White, Walter"</td></tr>
 	<tr><td>Details:</td><td>observerName (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="observerRemarks">Term Name: observerRemarks</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observerRemarks</td></tr>
+	<tr><td>Class:</td><td>Observer</td></tr>
+	<tr><td>Project:</td><td>Ethogrammar</td></tr>
+	<tr><td>Definition:</td><td>Comments or notes about the observer.</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td>observerRemarks (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="dateMarked">Term Name: dateMarked</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/dateMarked</td></tr>
 	<tr><td>Class:</td><td>ResourcePatch</td></tr>
