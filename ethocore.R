@@ -11,7 +11,7 @@ ethocore <- read.delim('ethocore.txt',quote="",stringsAsFactors=FALSE,na.strings
 ethocore <- ethocore[ethocore$DECISION %in% c('recommended','proposed','disputed'),]
 ethocore <- ethocore[order(ethocore$TERM),]
 
-auxiliary <- c('MeasurementOrFact','ResourceRelationship')
+auxiliary <- c('ResourceRelationship')
 
 classes <- unique(ethocore$CLASS)
 classes <- sort(classes[!classes %in% c('CLASS','RecordLevel',auxiliary)])
