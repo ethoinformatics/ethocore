@@ -9,12 +9,13 @@ write.filename <- 'ethocore.md'
 ethocore <- read.delim('ethocore.txt',quote="",stringsAsFactors=FALSE,na.strings=c('','N/A'))
 
 ethocore <- ethocore[ethocore$DECISION %in% c('recommended','proposed','disputed'),]
-ethocore <- ethocore[order(ethocore$TERM),]
+ethocore <- ethocore[order(ethocore$SORT),]
+rownames(ethocore) <- NULL
 
 auxiliary <- c('ResourceRelationship')
 
 classes <- unique(ethocore$CLASS)
-classes <- sort(classes[!classes %in% c('CLASS','RecordLevel',auxiliary)])
+classes <- classes[!classes %in% c('CLASS','RecordLevel',auxiliary)]
 
 linkify <- function(x) paste0('[',x,'](#',x,')')
 
@@ -41,9 +42,11 @@ write(paste(do.call(c,lapply(auxiliary,function(i) {
 })),collapse='\n'),file=write.filename,append=TRUE)
 
 ethocore$CLASS <- gsub('CLASS','',ethocore$CLASS)
-ethocore$CLASS <- gsub('RecordLevel','A11',ethocore$CLASS)	# a11 to ensure first in alphabetical order
-ethocore <- ethocore[order(ethocore$CLASS %in% auxiliary,ethocore$CLASS,ethocore$TERM),]
-ethocore$CLASS <- gsub('A11','all',ethocore$CLASS)			# replace a11 with all
+ethocore$CLASS <- gsub('RecordLevel','all',ethocore$CLASS)
+
+# ethocore$CLASS <- gsub('RecordLevel','A11',ethocore$CLASS)	# a11 to ensure first in alphabetical order
+# ethocore <- ethocore[order(ethocore$CLASS %in% auxiliary,ethocore$CLASS,ethocore$TERM),]
+# ethocore$CLASS <- gsub('A11','all',ethocore$CLASS)			# replace a11 with all
 
 fields <- c('Identifier','Class','Project','Definition','Comment','Details')
 columns <- c('URI','CLASS','NAMESPACE','DEFINITION','DESCRIPTION','TERM')
