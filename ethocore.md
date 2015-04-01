@@ -12,13 +12,9 @@
 
 [measurementID](#measurementID) | [measurementType](#measurementType) | [measurementSubject](#measurementSubject) | [measurementValue](#measurementValue) | [measurementAccuracy](#measurementAccuracy) | [measurementUnit](#measurementUnit) | [measurementDeterminedBy](#measurementDeterminedBy) | [measurementMethod](#measurementMethod) | [measurementInstrument](#measurementInstrument) | [measurementRemarks](#measurementRemarks)
 
-## [IndividualAnimal](#IndividualAnimal)
+## [Animal](#Animal)
 
-[individualID](#individualID) | [individualName](#individualName) | [individualCode](#individualCode) | [individualSex](#individualSex) | [individualDOB](#individualDOB) | [estimatedDOB](#estimatedDOB) | [individualRemarks](#individualRemarks)
-
-## [AnimalGroup](#AnimalGroup)
-
-[animalGroupID](#animalGroupID) | [animalGroupName](#animalGroupName) | [animalGroupType](#animalGroupType) | [dateOfDissolution](#dateOfDissolution) | [dateOfFormation](#dateOfFormation) | [animalGroupRemarks](#animalGroupRemarks)
+[animalID](#animalID) | [animalName](#animalName) | [animalCode](#animalCode) | [animalScope](#animalScope) | [animalSex](#animalSex) | [animalRemarks](#animalRemarks)
 
 ## [ResourcePatch](#ResourcePatch)
 
@@ -26,7 +22,7 @@
 
 ## [Observer](#Observer)
 
-[observerID](#observerID) | [observerName](#observerName) | [observerHistory](#observerHistory) | [observerRemarks](#observerRemarks)
+[observerID](#observerID) | [observerName](#observerName) | [observerScope](#observerScope) | [observerRemarks](#observerRemarks)
 
 ## [MaterialSample](#MaterialSample)
 
@@ -42,7 +38,7 @@
 
 ## [Location](#Location)
 
-[locationID](#locationID) | [locationName](#locationName) | [higherGeographyID](#higherGeographyID) | [higherGeography](#higherGeography) | [continent](#continent) | [islandGroup](#islandGroup) | [island](#island) | [country](#country) | [countryCode](#countryCode) | [stateProvince](#stateProvince) | [county](#county) | [municipality](#municipality) | [locality](#locality) | [verbatimLocality](#verbatimLocality) | [minimumElevationInMeters](#minimumElevationInMeters) | [maximumElevationInMeters](#maximumElevationInMeters) | [verbatimElevation](#verbatimElevation) | [verbatimDepth](#verbatimDepth) | [locationAccordingTo](#locationAccordingTo) | [locationRemarks](#locationRemarks) | [decimalLatitude](#decimalLatitude) | [decimalLongitude](#decimalLongitude) | [geodeticDatum](#geodeticDatum) | [utmX](#utmX) | [utmY](#utmY) | [utmZone](#utmZone) | [coordinateUncertaintyInMeters](#coordinateUncertaintyInMeters) | [coordinatePrecision](#coordinatePrecision) | [pointRadiusSpatialFit](#pointRadiusSpatialFit) | [verbatimCoordinates](#verbatimCoordinates) | [verbatimLatitude](#verbatimLatitude) | [verbatimLongitude](#verbatimLongitude) | [verbatimCoordinateSystem](#verbatimCoordinateSystem) | [verbatimSRS](#verbatimSRS) | [footprintWKT](#footprintWKT) | [footprintSRS](#footprintSRS) | [footprintSpatialFit](#footprintSpatialFit) | [nmeaSentence](#nmeaSentence) | [georeferencedBy](#georeferencedBy) | [georeferencedDate](#georeferencedDate) | [georeferenceProtocol](#georeferenceProtocol) | [georeferenceSources](#georeferenceSources) | [georeferenceVerificationStatus](#georeferenceVerificationStatus) | [georeferenceRemarks](#georeferenceRemarks)
+[locationID](#locationID) | [locationName](#locationName) | [higherGeographyID](#higherGeographyID) | [higherGeography](#higherGeography) | [continent](#continent) | [islandGroup](#islandGroup) | [island](#island) | [country](#country) | [countryCode](#countryCode) | [stateProvince](#stateProvince) | [county](#county) | [municipality](#municipality) | [locality](#locality) | [verbatimLocality](#verbatimLocality) | [minimumElevationInMeters](#minimumElevationInMeters) | [maximumElevationInMeters](#maximumElevationInMeters) | [verbatimElevation](#verbatimElevation) | [verbatimDepth](#verbatimDepth) | [locationAccordingTo](#locationAccordingTo) | [locationRemarks](#locationRemarks) | [decimalLatitude](#decimalLatitude) | [decimalLongitude](#decimalLongitude) | [geodeticDatum](#geodeticDatum) | [utmX](#utmX) | [utmY](#utmY) | [utmZone](#utmZone) | [coordinateUncertaintyInMeters](#coordinateUncertaintyInMeters) | [coordinatePrecision](#coordinatePrecision) | [pointRadiusSpatialFit](#pointRadiusSpatialFit) | [verbatimCoordinates](#verbatimCoordinates) | [verbatimLatitude](#verbatimLatitude) | [verbatimLongitude](#verbatimLongitude) | [verbatimCoordinateSystem](#verbatimCoordinateSystem) | [verbatimSRS](#verbatimSRS) | [footprint](#footprint) | [footprintSRS](#footprintSRS) | [footprintSpatialFit](#footprintSpatialFit) | [nmeaSentence](#nmeaSentence) | [georeferencedBy](#georeferencedBy) | [georeferencedDate](#georeferencedDate) | [georeferenceProtocol](#georeferenceProtocol) | [georeferenceSources](#georeferenceSources) | [georeferenceVerificationStatus](#georeferenceVerificationStatus) | [georeferenceRemarks](#georeferenceRemarks)
 
 ## [Identification](#Identification)
 
@@ -54,7 +50,7 @@
 
 ## [LifeHistory](#LifeHistory)
 
-[lifeHistoryEventID](#lifeHistoryEventID) | [lifeHistoryEventDate](#lifeHistoryEventDate) | [lifeHistoryIndividualID](#lifeHistoryIndividualID) | [lifeHistoryEvent](#lifeHistoryEvent) | [lifeHistoryRemarks](#lifeHistoryRemarks)
+[lifeHistoryEventID](#lifeHistoryEventID) | [lifeHistoryEventDate](#lifeHistoryEventDate) | [lifeHistoryAnimal](#lifeHistoryAnimal) | [lifeHistoryEvent](#lifeHistoryEvent) | [lifeHistoryRemarks](#lifeHistoryRemarks)
 
 # Auxiliary terms
 
@@ -77,20 +73,13 @@
 	<tr><td>Definition:</td><td>A measurement of or fact about a subject.</td></tr>
 	<tr><td>Comment:</td><td>In Darwin Core, the measurement or fact is of or about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource). In EthoCore, the subject need not be an rdfs:Resource. Examples: The weight of an organism in grams. The number of placental scars. A daily rain gauge reading in millimeters.</td></tr>
 	<tr><td>Details:</td><td>MeasurementOrFact (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="IndividualAnimal">Term Name: IndividualAnimal</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/IndividualAnimal</td></tr>
+	<tr><th colspan="2"><a name="Animal">Term Name: Animal</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Animal</td></tr>
 	<tr><td>Class:</td><td></td></tr>
 	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>A particular animal.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>IndividualAnimal (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="AnimalGroup">Term Name: AnimalGroup</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/AnimalGroup</td></tr>
-	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>A defined grouping of animals. For behavioral studies, the most common use may be for social groups, but animal groups can exist at any biological level above that of the individual. Animal groups are often but not always members of a single taxonomic unit.</td></tr>
-	<tr><td>Comment:</td><td>Examples: A single troop of baboons. A mixed species zoo exhibit. A breeding population of rhinoceroses.</td></tr>
-	<tr><td>Details:</td><td>AnimalGroup (placeholder: link to come)</td></tr>
+	<tr><td>Definition:</td><td>A particular animal or a defined grouping of animals.</td></tr>
+	<tr><td>Comment:</td><td>Examples: A single loris. A troop of baboons. A mixed species zoo exhibit. A breeding population of rhinoceroses.</td></tr>
+	<tr><td>Details:</td><td>Animal (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="ResourcePatch">Term Name: ResourcePatch</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/ResourcePatch</td></tr>
 	<tr><td>Class:</td><td></td></tr>
@@ -112,27 +101,6 @@
 	<tr><td>Definition:</td><td>A physical results of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.</td></tr>
 	<tr><td>Comment:</td><td>Examples: A whole organism preserved in a collection. A part of an organism isolated for some purpose. A soil sample. A marine microbial sample.</td></tr>
 	<tr><td>Details:</td><td>MaterialSample (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="LivingSpecimen">Term Name: LivingSpecimen</a></th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/LivingSpecimen</td></tr>
-	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>A specimen that is alive.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>LivingSpecimen (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="PreservedSpecimen">Term Name: PreservedSpecimen</a></th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/PreservedSpecimen</td></tr>
-	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>A specimen that has been preserved.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>PreservedSpecimen (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="FossilSpecimen">Term Name: FossilSpecimen</a></th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/FossilSpecimen</td></tr>
-	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>A preserved specimen that is a fossil.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>FossilSpecimen (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="Event">Term Name: Event</a></th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/Event</td></tr>
 	<tr><td>Class:</td><td></td></tr>
@@ -140,20 +108,6 @@
 	<tr><td>Definition:</td><td>An action that occurs at some location during some time.</td></tr>
 	<tr><td>Comment:</td><td>Examples: A specimen collection process. A machine observation.</td></tr>
 	<tr><td>Details:</td><td>Event (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="HumanObservation">Term Name: HumanObservation</a></th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/HumanObservation</td></tr>
-	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>An output of a human observation process.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>HumanObservation (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="MachineObservation">Term Name: MachineObservation</a></th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/MachineObservation</td></tr>
-	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>An output of a machine observation process.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>MachineObservation (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="Activity">Term Name: Activity</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Activity</td></tr>
 	<tr><td>Class:</td><td></td></tr>
@@ -476,97 +430,48 @@
 	<tr><td>Definition:</td><td>Comments or notes accompanying the measurement, fact, characterstic, or assertion.</td></tr>
 	<tr><td>Comment:</td><td>Example: "tip of tail missing"</td></tr>
 	<tr><td>Details:</td><td>measurementRemarks (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="individualID">Term Name: individualID</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/individualID</td></tr>
-	<tr><td>Class:</td><td>IndividualAnimal</td></tr>
+	<tr><th colspan="2"><a name="animalID">Term Name: animalID</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalID</td></tr>
+	<tr><td>Class:</td><td>Animal</td></tr>
 	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>An identifier for an IndividualAnimal. Meant to accommodate resampling of the same individual for monitoring purposes. May be a global unique identifier or an identifier specific to a data set.</td></tr>
+	<tr><td>Definition:</td><td>An identifier for an Animal. Meant to accommodate resampling of the same individual or group of individuals for monitoring purposes. May be a global unique identifier or an identifier specific to a data set.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>individualID (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="individualName">Term Name: individualName</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/individualName</td></tr>
-	<tr><td>Class:</td><td>IndividualAnimal</td></tr>
+	<tr><td>Details:</td><td>animalID (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="animalName">Term Name: animalName</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalName</td></tr>
+	<tr><td>Class:</td><td>Animal</td></tr>
 	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>The given name of the IndividualAnimal.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "Frodo", "Koko".</td></tr>
-	<tr><td>Details:</td><td>individualName (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="individualCode">Term Name: individualCode</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/individualCode</td></tr>
-	<tr><td>Class:</td><td>IndividualAnimal</td></tr>
+	<tr><td>Definition:</td><td>The given name of the Animal.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "Frodo", "Koko", "Pumphouse Gang".</td></tr>
+	<tr><td>Details:</td><td>animalName (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="animalCode">Term Name: animalCode</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalCode</td></tr>
+	<tr><td>Class:</td><td>Animal</td></tr>
 	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>A shorthand code for the IndividualAnimal.</td></tr>
+	<tr><td>Definition:</td><td>A shorthand code for the Animal.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "FRO", "KOK", "PG"</td></tr>
+	<tr><td>Details:</td><td>animalCode (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="animalScope">Term Name: animalScope</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalScope</td></tr>
+	<tr><td>Class:</td><td>Animal</td></tr>
+	<tr><td>Project:</td><td>Ethogrammar</td></tr>
+	<tr><td>Definition:</td><td>A description of the kind of Animal instance. Can be used to indicate whether the Animal instance represents a discrete animal or if it represents a particular type of aggregation. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "individual", "social group", "pack", "colony".</td></tr>
+	<tr><td>Details:</td><td>animalScope (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="animalSex">Term Name: animalSex</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalSex</td></tr>
+	<tr><td>Class:</td><td>Animal</td></tr>
+	<tr><td>Project:</td><td>Ethogrammar</td></tr>
+	<tr><td>Definition:</td><td>The sex or sexes of the Animal. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Comment:</td><td>Example: "male", "female", "mixed"</td></tr>
+	<tr><td>Details:</td><td>animalSex (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="animalRemarks">Term Name: animalRemarks</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalRemarks</td></tr>
+	<tr><td>Class:</td><td>Animal</td></tr>
+	<tr><td>Project:</td><td>Ethogrammar</td></tr>
+	<tr><td>Definition:</td><td>Comments or notes about the Animal. May include notes that assist in the identification of animals.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>individualCode (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="individualSex">Term Name: individualSex</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/individualSex</td></tr>
-	<tr><td>Class:</td><td>IndividualAnimal</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>The sex of the IndividualAnimal. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Example: "male", "female"</td></tr>
-	<tr><td>Details:</td><td>individualSex (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="individualDOB">Term Name: individualDOB</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/individualDOB</td></tr>
-	<tr><td>Class:</td><td>IndividualAnimal</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>The date of birth of the IndividualAnimal. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>individualDOB (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="estimatedDOB">Term Name: estimatedDOB</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/estimatedDOB</td></tr>
-	<tr><td>Class:</td><td>IndividualAnimal</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>The estimated date of birth of the IndividualAnimal. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>estimatedDOB (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="individualRemarks">Term Name: individualRemarks</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/individualRemarks</td></tr>
-	<tr><td>Class:</td><td>IndividualAnimal</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>Comments or notes about the IndividualAnimal. May include notes that assist in the identification of animals.</td></tr>
-	<tr><td>Comment:</td><td>Example: "One of a litter of six.".</td></tr>
-	<tr><td>Details:</td><td>individualRemarks (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="animalGroupID">Term Name: animalGroupID</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalGroupID</td></tr>
-	<tr><td>Class:</td><td>AnimalGroup</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>An identifier for the AnimalGroup. May be a global unique identifier or an identifier specific to the data set.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>animalGroupID (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="animalGroupName">Term Name: animalGroupName</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalGroupName</td></tr>
-	<tr><td>Class:</td><td>AnimalGroup</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>The given name for the AnimalGroup.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>animalGroupName (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="animalGroupType">Term Name: animalGroupType</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalGroupType</td></tr>
-	<tr><td>Class:</td><td>AnimalGroup</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>The type or class that best categorizes the AnimalGroup. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "colony", "social group", "foraging party", "zoo exhibit".</td></tr>
-	<tr><td>Details:</td><td>animalGroupType (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="dateOfDissolution">Term Name: dateOfDissolution</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/dateOfDissolution</td></tr>
-	<tr><td>Class:</td><td>AnimalGroup</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>The date during which an AnimalGroup dissolves, dies, or otherwise ceases to exist. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>dateOfDissolution (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="dateOfFormation">Term Name: dateOfFormation</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/dateOfFormation</td></tr>
-	<tr><td>Class:</td><td>AnimalGroup</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>The date during which an AnimalGroup is formed. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>dateOfFormation (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="animalGroupRemarks">Term Name: animalGroupRemarks</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalGroupRemarks</td></tr>
-	<tr><td>Class:</td><td>AnimalGroup</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>Comments or notes about the AnimalGroup.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>animalGroupRemarks (placeholder: link to come)</td></tr>
+	<tr><td>Details:</td><td>animalRemarks (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="resourcePatchID">Term Name: resourcePatchID</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourcePatchID</td></tr>
 	<tr><td>Class:</td><td>ResourcePatch</td></tr>
@@ -644,13 +549,13 @@
 	<tr><td>Definition:</td><td>The name of the researcher. Recommended best practice is to list the surname, given name, then middle name(s), in order and separated by commas.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "Leakey, Louis, S., B.", "White, Walter"</td></tr>
 	<tr><td>Details:</td><td>observerName (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="observerHistory">Term Name: observerHistory</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observerHistory</td></tr>
+	<tr><th colspan="2"><a name="observerScope">Term Name: observerScope</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observerScope</td></tr>
 	<tr><td>Class:</td><td>Observer</td></tr>
 	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>A list of information on the observer's affiliation and position on one or more projects over time.</td></tr>
-	<tr><td>Comment:</td><td>The recommended best practice is to use a key:value encoding schema such as JSON. Example: "{"startDate":"2009-06-05","endDate":"2010-06-21","project":"Proyecto Primates","position":"undergraduate assistant"},{"startDate":"2010-08-15","endDate":"2012-06-22","project":"Kafue Baboon Project","position":"graduate assistant"}"</td></tr>
-	<tr><td>Details:</td><td>observerHistory (placeholder: link to come)</td></tr>
+	<tr><td>Definition:</td><td>A description of the kind of Observer instance. Can be used to indicate whether the Observer instance represents a discrete observer or if it represents a particular type of aggregation. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "principal investigator", "field assistants", "research team", "university personnel".</td></tr>
+	<tr><td>Details:</td><td>observerScope (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="observerRemarks">Term Name: observerRemarks</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observerRemarks</td></tr>
 	<tr><td>Class:</td><td>Observer</td></tr>
@@ -1008,18 +913,18 @@
 	<tr><td>Definition:</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude and verbatimLongitude, or verbatimCoordinates are based. Recommended best practice is use the EPSG code as a controlled vocabulary to provide an SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value "unknown".</td></tr>
 	<tr><td>Comment:</td><td>Examples: "EPSG:4326", "WGS84", "NAD27", "Campo Inchauspe", "European 1950", "Clarke 1866"</td></tr>
 	<tr><td>Details:</td><td>verbatimSRS (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="footprintWKT">Term Name: footprintWKT</a></th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/footprintWKT</td></tr>
+	<tr><th colspan="2"><a name="footprint">Term Name: footprint</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/footprint</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
-	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the Location. A Location may have both a point-radius representation (see decimalLatitude) and a footprint representation, and they may differ from each other.</td></tr>
+	<tr><td>Project:</td><td>Ethogrammar</td></tr>
+	<tr><td>Definition:</td><td>A representation of the shape (footprint, geometry) that defines the Location. A Location may have both a point-radius representation (see decimalLatitude) and a footprint representation, and they may differ from each other.</td></tr>
 	<tr><td>Comment:</td><td>Example: the one-degree bounding box with opposite corners at (longitude=10, latitude=20) and (longitude=11, latitude=21) would be expressed in well-known text as POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20))</td></tr>
-	<tr><td>Details:</td><td>footprintWKT (placeholder: link to come)</td></tr>
+	<tr><td>Details:</td><td>footprint (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="footprintSRS">Term Name: footprintSRS</a></th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/footprintSRS</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
 	<tr><td>Project:</td><td>Darwin Core</td></tr>
-	<tr><td>Definition:</td><td>A Well-Known Text (WKT) representation of the Spatial Reference System (SRS) for the footprintWKT of the Location. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, even if it is the same as for the footprintWKT - use the geodeticDatum instead.</td></tr>
+	<tr><td>Definition:</td><td>A representation of the Spatial Reference System (SRS) for the footprint of the Location. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, even if it is the same as for the footprint - use the geodeticDatum instead.</td></tr>
 	<tr><td>Comment:</td><td>Example: The WKT for the standard WGS84 SRS (EPSG:4326) is "GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433]]" without the enclosing quotes.</td></tr>
 	<tr><td>Details:</td><td>footprintSRS (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="footprintSpatialFit">Term Name: footprintSpatialFit</a></th></tr>
@@ -1379,13 +1284,13 @@
 	<tr><td>Definition:</td><td>The date during which a LifeHistoryEvent occurred. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td>lifeHistoryEventDate (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="lifeHistoryIndividualID">Term Name: lifeHistoryIndividualID</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/lifeHistoryIndividualID</td></tr>
+	<tr><th colspan="2"><a name="lifeHistoryAnimal">Term Name: lifeHistoryAnimal</a></th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/lifeHistoryAnimal</td></tr>
 	<tr><td>Class:</td><td>LifeHistory</td></tr>
 	<tr><td>Project:</td><td>Ethogrammar</td></tr>
 	<tr><td>Definition:</td><td>A description of or reference to (URI) the IndividualAnimal whose LifeHistoryEvent is being documented.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>lifeHistoryIndividualID (placeholder: link to come)</td></tr>
+	<tr><td>Details:</td><td>lifeHistoryAnimal (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="lifeHistoryEvent">Term Name: lifeHistoryEvent</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/lifeHistoryEvent</td></tr>
 	<tr><td>Class:</td><td>LifeHistory</td></tr>
