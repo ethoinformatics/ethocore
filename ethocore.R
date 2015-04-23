@@ -2,7 +2,7 @@
 
 options(warn=-1)
 
-setwd('~/Desktop')
+setwd('~/Dropbox/ethocore/')
 
 write.filename <- 'ethocore.md'
 
@@ -15,7 +15,7 @@ rownames(ethocore) <- NULL
 auxiliary <- c('ResourceRelationship')
 
 classes <- unique(ethocore$CLASS)
-classes <- classes[!classes %in% c('CLASS','RecordLevel',auxiliary)]
+classes <- classes[!classes %in% c('','RecordLevel',auxiliary)]
 
 linkify <- function(x) paste0('[',x,'](#',x,')')
 
@@ -25,14 +25,14 @@ write(paste0('## ','Record-level Terms','\n\n',paste(apply(ethocore[ethocore$CLA
 	linkify(x['TERM'])
 }),collapse=' | '),'\n'),file=write.filename,append=TRUE)
 
-write(paste(do.call(c,lapply(classes,function(i) {
+write(paste(do.call(c,lapply(classes[!is.na(classes)],function(i) {
 	set <- ethocore[ethocore$CLASS %in% i,]
 	paste0('## ',linkify(i),'\n\n',paste(apply(set,1,function(x) {
 		linkify(x['TERM'])
 	}),collapse=' | '),'\n')
 })),collapse='\n'),file=write.filename,append=TRUE)
 
-write('# Auxiliary terms\n',file=write.filename,append=TRUE)
+# write('# Auxiliary terms\n',file=write.filename,append=TRUE)
 
 write(paste(do.call(c,lapply(auxiliary,function(i) {
 	set <- ethocore[ethocore$CLASS %in% i,]

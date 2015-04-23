@@ -10,19 +10,17 @@
 <body>
 <h1 id="etho-core-terms">Etho Core terms</h1>
 <h2 id="record-level-terms">Record-level Terms</h2>
-<p><a href="#dcterms:type">dcterms:type</a> | <a href="#dcterms:modified">dcterms:modified</a> | <a href="#dcterms:language">dcterms:language</a> | <a href="#dcterms:license">dcterms:license</a> | <a href="#dcterms:rightsHolder">dcterms:rightsHolder</a> | <a href="#dcterms:accessRights">dcterms:accessRights</a> | <a href="#dcterms:bibliographicCitation">dcterms:bibliographicCitation</a> | <a href="#dcterms:references">dcterms:references</a> | <a href="#institutionID">institutionID</a> | <a href="#collectionID">collectionID</a> | <a href="#datasetID">datasetID</a> | <a href="#institutionCode">institutionCode</a> | <a href="#collectionCode">collectionCode</a> | <a href="#datasetName">datasetName</a> | <a href="#ownerInstitutionCode">ownerInstitutionCode</a> | <a href="#basisOfRecord">basisOfRecord</a> | <a href="#informationWithheld">informationWithheld</a> | <a href="#dataGeneralizations">dataGeneralizations</a> | <a href="#dynamicProperties">dynamicProperties</a></p>
+<p><a href="#type">type</a> | <a href="#modified">modified</a> | <a href="#language">language</a> | <a href="#license">license</a> | <a href="#rightsHolder">rightsHolder</a> | <a href="#accessRights">accessRights</a> | <a href="#bibliographicCitation">bibliographicCitation</a> | <a href="#references">references</a> | <a href="#institutionID">institutionID</a> | <a href="#collectionID">collectionID</a> | <a href="#datasetID">datasetID</a> | <a href="#institutionCode">institutionCode</a> | <a href="#collectionCode">collectionCode</a> | <a href="#datasetName">datasetName</a> | <a href="#ownerInstitutionCode">ownerInstitutionCode</a> | <a href="#basisOfRecord">basisOfRecord</a> | <a href="#informationWithheld">informationWithheld</a> | <a href="#dataGeneralizations">dataGeneralizations</a> | <a href="#dynamicProperties">dynamicProperties</a></p>
 <h2 id="observation"><a href="#Observation">Observation</a></h2>
 <p><a href="#observationID">observationID</a> | <a href="#observationType">observationType</a> | <a href="#observationSubject">observationSubject</a> | <a href="#behavior">behavior</a> | <a href="#sex">sex</a> | <a href="#lifeStage">lifeStage</a> | <a href="#reproductiveCondition">reproductiveCondition</a> | <a href="#partner">partner</a> | <a href="#neighbor">neighbor</a> | <a href="#distance">distance</a> | <a href="#observedBy">observedBy</a> | <a href="#spatialConfiguration">spatialConfiguration</a> | <a href="#observationRemarks">observationRemarks</a></p>
 <h2 id="measurementorfact"><a href="#MeasurementOrFact">MeasurementOrFact</a></h2>
 <p><a href="#measurementID">measurementID</a> | <a href="#measurementType">measurementType</a> | <a href="#measurementSubject">measurementSubject</a> | <a href="#measurementValue">measurementValue</a> | <a href="#measurementAccuracy">measurementAccuracy</a> | <a href="#measurementUnit">measurementUnit</a> | <a href="#measurementDeterminedBy">measurementDeterminedBy</a> | <a href="#measurementMethod">measurementMethod</a> | <a href="#measurementInstrument">measurementInstrument</a> | <a href="#measurementRemarks">measurementRemarks</a></p>
-<h2 id="individualanimal"><a href="#IndividualAnimal">IndividualAnimal</a></h2>
-<p><a href="#individualID">individualID</a> | <a href="#individualName">individualName</a> | <a href="#individualCode">individualCode</a> | <a href="#individualSex">individualSex</a> | <a href="#individualDOB">individualDOB</a> | <a href="#estimatedDOB">estimatedDOB</a> | <a href="#individualRemarks">individualRemarks</a></p>
-<h2 id="animalgroup"><a href="#AnimalGroup">AnimalGroup</a></h2>
-<p><a href="#animalGroupID">animalGroupID</a> | <a href="#animalGroupName">animalGroupName</a> | <a href="#animalGroupType">animalGroupType</a> | <a href="#dateOfDissolution">dateOfDissolution</a> | <a href="#dateOfFormation">dateOfFormation</a> | <a href="#animalGroupRemarks">animalGroupRemarks</a></p>
+<h2 id="animal"><a href="#Animal">Animal</a></h2>
+<p><a href="#animalID">animalID</a> | <a href="#animalName">animalName</a> | <a href="#animalCode">animalCode</a> | <a href="#animalScope">animalScope</a> | <a href="#animalSex">animalSex</a> | <a href="#animalRemarks">animalRemarks</a></p>
 <h2 id="resourcepatch"><a href="#ResourcePatch">ResourcePatch</a></h2>
 <p><a href="#resourcePatchID">resourcePatchID</a> | <a href="#resourcePatchName">resourcePatchName</a> | <a href="#resourcePatchType">resourcePatchType</a> | <a href="#resourcePatchUse">resourcePatchUse</a> | <a href="#timeMarked">timeMarked</a> | <a href="#dateMarked">dateMarked</a> | <a href="#dateOfExpiration">dateOfExpiration</a> | <a href="#markedBy">markedBy</a> | <a href="#resourcePatchRemarks">resourcePatchRemarks</a></p>
 <h2 id="observer"><a href="#Observer">Observer</a></h2>
-<p><a href="#observerID">observerID</a> | <a href="#observerName">observerName</a> | <a href="#observerHistory">observerHistory</a> | <a href="#observerRemarks">observerRemarks</a></p>
+<p><a href="#observerID">observerID</a> | <a href="#observerName">observerName</a> | <a href="#observerScope">observerScope</a> | <a href="#observerRemarks">observerRemarks</a></p>
 <h2 id="materialsample"><a href="#MaterialSample">MaterialSample</a></h2>
 <p><a href="#materialSampleID">materialSampleID</a> | <a href="#materialSampleType">materialSampleType</a> | <a href="#materialSampleSubject">materialSampleSubject</a> | <a href="#relatedMedia">relatedMedia</a> | <a href="#materialSampleRemarks">materialSampleRemarks</a></p>
 <h2 id="event"><a href="#Event">Event</a></h2>
@@ -30,14 +28,13 @@
 <h2 id="activity"><a href="#Activity">Activity</a></h2>
 <p><a href="#activityID">activityID</a> | <a href="#activityType">activityType</a> | <a href="#activitySubject">activitySubject</a> | <a href="#activityBy">activityBy</a> | <a href="#activityRemarks">activityRemarks</a></p>
 <h2 id="location"><a href="#Location">Location</a></h2>
-<p><a href="#locationID">locationID</a> | <a href="#locationName">locationName</a> | <a href="#higherGeographyID">higherGeographyID</a> | <a href="#higherGeography">higherGeography</a> | <a href="#continent">continent</a> | <a href="#islandGroup">islandGroup</a> | <a href="#island">island</a> | <a href="#country">country</a> | <a href="#countryCode">countryCode</a> | <a href="#stateProvince">stateProvince</a> | <a href="#county">county</a> | <a href="#municipality">municipality</a> | <a href="#locality">locality</a> | <a href="#verbatimLocality">verbatimLocality</a> | <a href="#minimumElevationInMeters">minimumElevationInMeters</a> | <a href="#maximumElevationInMeters">maximumElevationInMeters</a> | <a href="#verbatimElevation">verbatimElevation</a> | <a href="#verbatimDepth">verbatimDepth</a> | <a href="#locationAccordingTo">locationAccordingTo</a> | <a href="#locationRemarks">locationRemarks</a> | <a href="#decimalLatitude">decimalLatitude</a> | <a href="#decimalLongitude">decimalLongitude</a> | <a href="#geodeticDatum">geodeticDatum</a> | <a href="#utmX">utmX</a> | <a href="#utmY">utmY</a> | <a href="#utmZone">utmZone</a> | <a href="#coordinateUncertaintyInMeters">coordinateUncertaintyInMeters</a> | <a href="#coordinatePrecision">coordinatePrecision</a> | <a href="#pointRadiusSpatialFit">pointRadiusSpatialFit</a> | <a href="#verbatimCoordinates">verbatimCoordinates</a> | <a href="#verbatimLatitude">verbatimLatitude</a> | <a href="#verbatimLongitude">verbatimLongitude</a> | <a href="#verbatimCoordinateSystem">verbatimCoordinateSystem</a> | <a href="#verbatimSRS">verbatimSRS</a> | <a href="#footprintWKT">footprintWKT</a> | <a href="#footprintSRS">footprintSRS</a> | <a href="#footprintSpatialFit">footprintSpatialFit</a> | <a href="#nmeaSentence">nmeaSentence</a> | <a href="#georeferencedBy">georeferencedBy</a> | <a href="#georeferencedDate">georeferencedDate</a> | <a href="#georeferenceProtocol">georeferenceProtocol</a> | <a href="#georeferenceSources">georeferenceSources</a> | <a href="#georeferenceVerificationStatus">georeferenceVerificationStatus</a> | <a href="#georeferenceRemarks">georeferenceRemarks</a></p>
+<p><a href="#locationID">locationID</a> | <a href="#locationName">locationName</a> | <a href="#higherGeographyID">higherGeographyID</a> | <a href="#higherGeography">higherGeography</a> | <a href="#continent">continent</a> | <a href="#islandGroup">islandGroup</a> | <a href="#island">island</a> | <a href="#country">country</a> | <a href="#countryCode">countryCode</a> | <a href="#stateProvince">stateProvince</a> | <a href="#county">county</a> | <a href="#municipality">municipality</a> | <a href="#locality">locality</a> | <a href="#verbatimLocality">verbatimLocality</a> | <a href="#minimumElevationInMeters">minimumElevationInMeters</a> | <a href="#maximumElevationInMeters">maximumElevationInMeters</a> | <a href="#verbatimElevation">verbatimElevation</a> | <a href="#verbatimDepth">verbatimDepth</a> | <a href="#locationAccordingTo">locationAccordingTo</a> | <a href="#locationRemarks">locationRemarks</a> | <a href="#decimalLatitude">decimalLatitude</a> | <a href="#decimalLongitude">decimalLongitude</a> | <a href="#geodeticDatum">geodeticDatum</a> | <a href="#utmX">utmX</a> | <a href="#utmY">utmY</a> | <a href="#utmZone">utmZone</a> | <a href="#coordinateUncertaintyInMeters">coordinateUncertaintyInMeters</a> | <a href="#coordinatePrecision">coordinatePrecision</a> | <a href="#pointRadiusSpatialFit">pointRadiusSpatialFit</a> | <a href="#verbatimCoordinates">verbatimCoordinates</a> | <a href="#verbatimLatitude">verbatimLatitude</a> | <a href="#verbatimLongitude">verbatimLongitude</a> | <a href="#verbatimCoordinateSystem">verbatimCoordinateSystem</a> | <a href="#verbatimSRS">verbatimSRS</a> | <a href="#footprint">footprint</a> | <a href="#footprintSRS">footprintSRS</a> | <a href="#footprintSpatialFit">footprintSpatialFit</a> | <a href="#nmeaSentence">nmeaSentence</a> | <a href="#georeferencedBy">georeferencedBy</a> | <a href="#georeferencedDate">georeferencedDate</a> | <a href="#georeferenceProtocol">georeferenceProtocol</a> | <a href="#georeferenceSources">georeferenceSources</a> | <a href="#georeferenceVerificationStatus">georeferenceVerificationStatus</a> | <a href="#georeferenceRemarks">georeferenceRemarks</a></p>
 <h2 id="identification"><a href="#Identification">Identification</a></h2>
 <p><a href="#identificationID">identificationID</a> | <a href="#identificationQualifier">identificationQualifier</a> | <a href="#typeStatus">typeStatus</a> | <a href="#identifiedBy">identifiedBy</a> | <a href="#dateIdentified">dateIdentified</a> | <a href="#identificationReferences">identificationReferences</a> | <a href="#identificationVerificationStatus">identificationVerificationStatus</a> | <a href="#identificationRemarks">identificationRemarks</a></p>
 <h2 id="taxon"><a href="#Taxon">Taxon</a></h2>
 <p><a href="#taxonID">taxonID</a> | <a href="#scientificNameID">scientificNameID</a> | <a href="#acceptedNameUsageID">acceptedNameUsageID</a> | <a href="#parentNameUsageID">parentNameUsageID</a> | <a href="#originalNameUsageID">originalNameUsageID</a> | <a href="#nameAccordingToID">nameAccordingToID</a> | <a href="#namePublishedInID">namePublishedInID</a> | <a href="#taxonConceptID">taxonConceptID</a> | <a href="#scientificName">scientificName</a> | <a href="#acceptedNameUsage">acceptedNameUsage</a> | <a href="#parentNameUsage">parentNameUsage</a> | <a href="#originalNameUsage">originalNameUsage</a> | <a href="#nameAccordingTo">nameAccordingTo</a> | <a href="#namePublishedIn">namePublishedIn</a> | <a href="#namePublishedInYear">namePublishedInYear</a> | <a href="#higherClassification">higherClassification</a> | <a href="#kingdom">kingdom</a> | <a href="#phylum">phylum</a> | <a href="#class">class</a> | <a href="#order">order</a> | <a href="#family">family</a> | <a href="#genus">genus</a> | <a href="#subgenus">subgenus</a> | <a href="#specificEpithet">specificEpithet</a> | <a href="#infraspecificEpithet">infraspecificEpithet</a> | <a href="#taxonRank">taxonRank</a> | <a href="#verbatimTaxonRank">verbatimTaxonRank</a> | <a href="#scientificNameAuthorship">scientificNameAuthorship</a> | <a href="#vernacularName">vernacularName</a> | <a href="#nomenclaturalCode">nomenclaturalCode</a> | <a href="#taxonomicStatus">taxonomicStatus</a> | <a href="#nomenclaturalStatus">nomenclaturalStatus</a> | <a href="#taxonRemarks">taxonRemarks</a></p>
 <h2 id="lifehistory"><a href="#LifeHistory">LifeHistory</a></h2>
-<p><a href="#lifeHistoryEventID">lifeHistoryEventID</a> | <a href="#lifeHistoryEventDate">lifeHistoryEventDate</a> | <a href="#lifeHistoryIndividualID">lifeHistoryIndividualID</a> | <a href="#lifeHistoryEvent">lifeHistoryEvent</a> | <a href="#lifeHistoryRemarks">lifeHistoryRemarks</a></p>
-<h1 id="auxiliary-terms">Auxiliary terms</h1>
+<p><a href="#lifeHistoryEventID">lifeHistoryEventID</a> | <a href="#lifeHistoryAnimal">lifeHistoryAnimal</a> | <a href="#lifeHistoryEvent">lifeHistoryEvent</a> | <a href="#lifeHistoryRemarks">lifeHistoryRemarks</a></p>
 <h2 id="resourcerelationship"><a href="#ResourceRelationship">ResourceRelationship</a></h2>
 <p><a href="#resourceRelationshipID">resourceRelationshipID</a> | <a href="#resourceID">resourceID</a> | <a href="#relatedResourceID">relatedResourceID</a> | <a href="#relationshipOfResource">relationshipOfResource</a> | <a href="#relationshipAccordingTo">relationshipAccordingTo</a> | <a href="#relationshipEstablishedDate">relationshipEstablishedDate</a> | <a href="#relationshipRemarks">relationshipRemarks</a></p>
 <table class="TermsDictionary">
@@ -104,12 +101,12 @@ Details:
 MeasurementOrFact (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="IndividualAnimal">Term Name: IndividualAnimal</a>
+<a name="Animal">Term Name: Animal</a>
 </th></tr>
     <tr><td>
 Identifier:
 </td><td>
-http://ethoinformatics.org/ethocore/IndividualAnimal
+http://ethoinformatics.org/ethocore/Animal
 </td></tr>
     <tr><td>
 Class:
@@ -122,46 +119,17 @@ Ethogrammar
     <tr><td>
 Definition:
 </td><td>
-A particular animal.
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-IndividualAnimal (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="AnimalGroup">Term Name: AnimalGroup</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://ethoinformatics.org/ethocore/AnimalGroup
-</td></tr>
-    <tr><td>
-Class:
-</td><td></td></tr>
-    <tr><td>
-Project:
-</td><td>
-Ethogrammar
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-A defined grouping of animals. For behavioral studies, the most common use may be for social groups, but animal groups can exist at any biological level above that of the individual. Animal groups are often but not always members of a single taxonomic unit.
+A particular animal or a defined grouping of animals.
 </td></tr>
     <tr><td>
 Comment:
 </td><td>
-Examples: A single troop of baboons. A mixed species zoo exhibit. A breeding population of rhinoceroses.
+Examples: A single loris. A troop of baboons. A mixed species zoo exhibit. A breeding population of rhinoceroses.
 </td></tr>
     <tr><td>
 Details:
 </td><td>
-AnimalGroup (placeholder: link to come)
+Animal (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
 <a name="ResourcePatch">Term Name: ResourcePatch</a>
@@ -255,93 +223,6 @@ Details:
 MaterialSample (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="LivingSpecimen">Term Name: LivingSpecimen</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://rs.tdwg.org/dwc/terms/LivingSpecimen
-</td></tr>
-    <tr><td>
-Class:
-</td><td></td></tr>
-    <tr><td>
-Project:
-</td><td>
-Darwin Core
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-A specimen that is alive.
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-LivingSpecimen (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="PreservedSpecimen">Term Name: PreservedSpecimen</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://rs.tdwg.org/dwc/terms/PreservedSpecimen
-</td></tr>
-    <tr><td>
-Class:
-</td><td></td></tr>
-    <tr><td>
-Project:
-</td><td>
-Darwin Core
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-A specimen that has been preserved.
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-PreservedSpecimen (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="FossilSpecimen">Term Name: FossilSpecimen</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://rs.tdwg.org/dwc/terms/FossilSpecimen
-</td></tr>
-    <tr><td>
-Class:
-</td><td></td></tr>
-    <tr><td>
-Project:
-</td><td>
-Darwin Core
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-A preserved specimen that is a fossil.
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-FossilSpecimen (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
 <a name="Event">Term Name: Event</a>
 </th></tr>
     <tr><td>
@@ -371,64 +252,6 @@ Examples: A specimen collection process. A machine observation.
 Details:
 </td><td>
 Event (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="HumanObservation">Term Name: HumanObservation</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://rs.tdwg.org/dwc/terms/HumanObservation
-</td></tr>
-    <tr><td>
-Class:
-</td><td></td></tr>
-    <tr><td>
-Project:
-</td><td>
-Darwin Core
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-An output of a human observation process.
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-HumanObservation (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="MachineObservation">Term Name: MachineObservation</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://rs.tdwg.org/dwc/terms/MachineObservation
-</td></tr>
-    <tr><td>
-Class:
-</td><td></td></tr>
-    <tr><td>
-Project:
-</td><td>
-Darwin Core
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-An output of a machine observation process.
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-MachineObservation (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
 <a name="Activity">Term Name: Activity</a>
@@ -489,6 +312,37 @@ Comment:
 Details:
 </td><td>
 Location (placeholder: link to come)
+</td></tr>
+    <tr><th colspan="2">
+<a name="Identification">Term Name: Identification</a>
+</th></tr>
+    <tr><td>
+Identifier:
+</td><td>
+http://rs.tdwg.org/dwc/terms/Identification
+</td></tr>
+    <tr><td>
+Class:
+</td><td></td></tr>
+    <tr><td>
+Project:
+</td><td>
+Darwin Core
+</td></tr>
+    <tr><td>
+Definition:
+</td><td>
+A taxonomic determination (e.g., the assignment to a taxon).
+</td></tr>
+    <tr><td>
+Comment:
+</td><td>
+Example: A subspecies determination of an organism.
+</td></tr>
+    <tr><td>
+Details:
+</td><td>
+Identification (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
 <a name="Taxon">Term Name: Taxon</a>
@@ -553,7 +407,38 @@ Details:
 LifeHistory (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="dcterms:type">Term Name: dcterms:type</a>
+<a name="ResourceRelationship">Term Name: ResourceRelationship</a>
+</th></tr>
+    <tr><td>
+Identifier:
+</td><td>
+http://rs.tdwg.org/dwc/terms/ResourceRelationship
+</td></tr>
+    <tr><td>
+Class:
+</td><td></td></tr>
+    <tr><td>
+Project:
+</td><td>
+Darwin Core
+</td></tr>
+    <tr><td>
+Definition:
+</td><td>
+A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another.
+</td></tr>
+    <tr><td>
+Comment:
+</td><td>
+Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to Occurrences, Organisms, MaterialSamples, Events, Locations, GeologicalContexts, Identifications, or Taxa. Example: An instance of an Organism is the mother of another instance of an Organism.
+</td></tr>
+    <tr><td>
+Details:
+</td><td>
+ResourceRelationship (placeholder: link to come)
+</td></tr>
+    <tr><th colspan="2">
+<a name="type">Term Name: type</a>
 </th></tr>
     <tr><td>
 Identifier:
@@ -583,10 +468,10 @@ Examples: “StillImage”, “MovingImage”, “Sound”, “PhysicalObject”
     <tr><td>
 Details:
 </td><td>
-dcterms:type (placeholder: link to come)
+type (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="dcterms:modified">Term Name: dcterms:modified</a>
+<a name="modified">Term Name: modified</a>
 </th></tr>
     <tr><td>
 Identifier:
@@ -616,10 +501,10 @@ Examples: “1963-03-08T14:07-0600” is 8 Mar 1963 2:07pm in the time zone six 
     <tr><td>
 Details:
 </td><td>
-dcterms:modified (placeholder: link to come)
+modified (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="dcterms:language">Term Name: dcterms:language</a>
+<a name="language">Term Name: language</a>
 </th></tr>
     <tr><td>
 Identifier:
@@ -649,10 +534,10 @@ Examples: “en” for English, “es” for Spanish.
     <tr><td>
 Details:
 </td><td>
-dcterms:language (placeholder: link to come)
+language (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="dcterms:license">Term Name: dcterms:license</a>
+<a name="license">Term Name: license</a>
 </th></tr>
     <tr><td>
 Identifier:
@@ -682,10 +567,10 @@ Examples: “http://creativecommons.org/publicdomain/zero/1.0/legalcode”, “h
     <tr><td>
 Details:
 </td><td>
-dcterms:license (placeholder: link to come)
+license (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="dcterms:rightsHolder">Term Name: dcterms:rightsHolder</a>
+<a name="rightsHolder">Term Name: rightsHolder</a>
 </th></tr>
     <tr><td>
 Identifier:
@@ -715,10 +600,10 @@ Example: “The Regents of the University of California.”.
     <tr><td>
 Details:
 </td><td>
-dcterms:rightsHolder (placeholder: link to come)
+rightsHolder (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="dcterms:accessRights">Term Name: dcterms:accessRights</a>
+<a name="accessRights">Term Name: accessRights</a>
 </th></tr>
     <tr><td>
 Identifier:
@@ -748,10 +633,10 @@ Example: “not-for-profit use only”.
     <tr><td>
 Details:
 </td><td>
-dcterms:accessRights (placeholder: link to come)
+accessRights (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="dcterms:bibliographicCitation">Term Name: dcterms:bibliographicCitation</a>
+<a name="bibliographicCitation">Term Name: bibliographicCitation</a>
 </th></tr>
     <tr><td>
 Identifier:
@@ -781,10 +666,10 @@ Examples: “Ctenomys sociabilis (MVZ 165861)” for a specimen, “Oliver P. Pe
     <tr><td>
 Details:
 </td><td>
-dcterms:bibliographicCitation (placeholder: link to come)
+bibliographicCitation (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="dcterms:references">Term Name: dcterms:references</a>
+<a name="references">Term Name: references</a>
 </th></tr>
     <tr><td>
 Identifier:
@@ -814,7 +699,7 @@ Examples: “http://mvzarctos.berkeley.edu/guid/MVZ:Mamm:165861”; “http://ww
     <tr><td>
 Details:
 </td><td>
-dcterms:references (placeholder: link to come)
+references (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
 <a name="institutionID">Term Name: institutionID</a>
@@ -1927,17 +1812,17 @@ Details:
 measurementRemarks (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="individualID">Term Name: individualID</a>
+<a name="animalID">Term Name: animalID</a>
 </th></tr>
     <tr><td>
 Identifier:
 </td><td>
-http://ethoinformatics.org/ethocore/individualID
+http://ethoinformatics.org/ethocore/animalID
 </td></tr>
     <tr><td>
 Class:
 </td><td>
-IndividualAnimal
+Animal
 </td></tr>
     <tr><td>
 Project:
@@ -1947,7 +1832,7 @@ Ethogrammar
     <tr><td>
 Definition:
 </td><td>
-An identifier for an IndividualAnimal. Meant to accommodate resampling of the same individual for monitoring purposes. May be a global unique identifier or an identifier specific to a data set.
+An identifier for an Animal. Meant to accommodate resampling of the same individual or group of individuals for monitoring purposes. May be a global unique identifier or an identifier specific to a data set.
 </td></tr>
     <tr><td>
 Comment:
@@ -1955,20 +1840,20 @@ Comment:
     <tr><td>
 Details:
 </td><td>
-individualID (placeholder: link to come)
+animalID (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="individualName">Term Name: individualName</a>
+<a name="animalName">Term Name: animalName</a>
 </th></tr>
     <tr><td>
 Identifier:
 </td><td>
-http://ethoinformatics.org/ethocore/individualName
+http://ethoinformatics.org/ethocore/animalName
 </td></tr>
     <tr><td>
 Class:
 </td><td>
-IndividualAnimal
+Animal
 </td></tr>
     <tr><td>
 Project:
@@ -1978,30 +1863,30 @@ Ethogrammar
     <tr><td>
 Definition:
 </td><td>
-The given name of the IndividualAnimal.
+The given name of the Animal.
 </td></tr>
     <tr><td>
 Comment:
 </td><td>
-Examples: “Frodo”, “Koko”.
+Examples: “Frodo”, “Koko”, “Pumphouse Gang”.
 </td></tr>
     <tr><td>
 Details:
 </td><td>
-individualName (placeholder: link to come)
+animalName (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="individualCode">Term Name: individualCode</a>
+<a name="animalCode">Term Name: animalCode</a>
 </th></tr>
     <tr><td>
 Identifier:
 </td><td>
-http://ethoinformatics.org/ethocore/individualCode
+http://ethoinformatics.org/ethocore/animalCode
 </td></tr>
     <tr><td>
 Class:
 </td><td>
-IndividualAnimal
+Animal
 </td></tr>
     <tr><td>
 Project:
@@ -2011,61 +1896,30 @@ Ethogrammar
     <tr><td>
 Definition:
 </td><td>
-A shorthand code for the IndividualAnimal.
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-individualCode (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="individualSex">Term Name: individualSex</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://ethoinformatics.org/ethocore/individualSex
-</td></tr>
-    <tr><td>
-Class:
-</td><td>
-IndividualAnimal
-</td></tr>
-    <tr><td>
-Project:
-</td><td>
-Ethogrammar
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-The sex of the IndividualAnimal. Recommended best practice is to use a controlled vocabulary.
+A shorthand code for the Animal.
 </td></tr>
     <tr><td>
 Comment:
 </td><td>
-Example: “male”, “female”
+Examples: “FRO”, “KOK”, “PG”
 </td></tr>
     <tr><td>
 Details:
 </td><td>
-individualSex (placeholder: link to come)
+animalCode (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="individualDOB">Term Name: individualDOB</a>
+<a name="animalScope">Term Name: animalScope</a>
 </th></tr>
     <tr><td>
 Identifier:
 </td><td>
-http://ethoinformatics.org/ethocore/individualDOB
+http://ethoinformatics.org/ethocore/animalScope
 </td></tr>
     <tr><td>
 Class:
 </td><td>
-IndividualAnimal
+Animal
 </td></tr>
     <tr><td>
 Project:
@@ -2075,92 +1929,30 @@ Ethogrammar
     <tr><td>
 Definition:
 </td><td>
-The date of birth of the IndividualAnimal. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-individualDOB (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="estimatedDOB">Term Name: estimatedDOB</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://ethoinformatics.org/ethocore/estimatedDOB
-</td></tr>
-    <tr><td>
-Class:
-</td><td>
-IndividualAnimal
-</td></tr>
-    <tr><td>
-Project:
-</td><td>
-Ethogrammar
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-The estimated date of birth of the IndividualAnimal. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-estimatedDOB (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="individualRemarks">Term Name: individualRemarks</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://ethoinformatics.org/ethocore/individualRemarks
-</td></tr>
-    <tr><td>
-Class:
-</td><td>
-IndividualAnimal
-</td></tr>
-    <tr><td>
-Project:
-</td><td>
-Ethogrammar
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-Comments or notes about the IndividualAnimal. May include notes that assist in the identification of animals.
+A description of the kind of Animal instance. Can be used to indicate whether the Animal instance represents a discrete animal or if it represents a particular type of aggregation. Recommended best practice is to use a controlled vocabulary.
 </td></tr>
     <tr><td>
 Comment:
 </td><td>
-Example: “One of a litter of six.”.
+Examples: “individual”, “social group”, “pack”, “colony”.
 </td></tr>
     <tr><td>
 Details:
 </td><td>
-individualRemarks (placeholder: link to come)
+animalScope (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="animalGroupID">Term Name: animalGroupID</a>
+<a name="animalSex">Term Name: animalSex</a>
 </th></tr>
     <tr><td>
 Identifier:
 </td><td>
-http://ethoinformatics.org/ethocore/animalGroupID
+http://ethoinformatics.org/ethocore/animalSex
 </td></tr>
     <tr><td>
 Class:
 </td><td>
-AnimalGroup
+Animal
 </td></tr>
     <tr><td>
 Project:
@@ -2170,7 +1962,40 @@ Ethogrammar
     <tr><td>
 Definition:
 </td><td>
-An identifier for the AnimalGroup. May be a global unique identifier or an identifier specific to the data set.
+The sex or sexes of the Animal. Recommended best practice is to use a controlled vocabulary.
+</td></tr>
+    <tr><td>
+Comment:
+</td><td>
+Example: “male”, “female”, “mixed”
+</td></tr>
+    <tr><td>
+Details:
+</td><td>
+animalSex (placeholder: link to come)
+</td></tr>
+    <tr><th colspan="2">
+<a name="animalRemarks">Term Name: animalRemarks</a>
+</th></tr>
+    <tr><td>
+Identifier:
+</td><td>
+http://ethoinformatics.org/ethocore/animalRemarks
+</td></tr>
+    <tr><td>
+Class:
+</td><td>
+Animal
+</td></tr>
+    <tr><td>
+Project:
+</td><td>
+Ethogrammar
+</td></tr>
+    <tr><td>
+Definition:
+</td><td>
+Comments or notes about the Animal. May include notes that assist in the identification of animals.
 </td></tr>
     <tr><td>
 Comment:
@@ -2178,164 +2003,7 @@ Comment:
     <tr><td>
 Details:
 </td><td>
-animalGroupID (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="animalGroupName">Term Name: animalGroupName</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://ethoinformatics.org/ethocore/animalGroupName
-</td></tr>
-    <tr><td>
-Class:
-</td><td>
-AnimalGroup
-</td></tr>
-    <tr><td>
-Project:
-</td><td>
-Ethogrammar
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-The given name for the AnimalGroup.
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-animalGroupName (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="animalGroupType">Term Name: animalGroupType</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://ethoinformatics.org/ethocore/animalGroupType
-</td></tr>
-    <tr><td>
-Class:
-</td><td>
-AnimalGroup
-</td></tr>
-    <tr><td>
-Project:
-</td><td>
-Ethogrammar
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-The type or class that best categorizes the AnimalGroup. Recommended best practice is to use a controlled vocabulary.
-</td></tr>
-    <tr><td>
-Comment:
-</td><td>
-Examples: “colony”, “social group”, “foraging party”, “zoo exhibit”.
-</td></tr>
-    <tr><td>
-Details:
-</td><td>
-animalGroupType (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="dateOfDissolution">Term Name: dateOfDissolution</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://ethoinformatics.org/ethocore/dateOfDissolution
-</td></tr>
-    <tr><td>
-Class:
-</td><td>
-AnimalGroup
-</td></tr>
-    <tr><td>
-Project:
-</td><td>
-Ethogrammar
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-The date during which an AnimalGroup dissolves, dies, or otherwise ceases to exist. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-dateOfDissolution (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="dateOfFormation">Term Name: dateOfFormation</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://ethoinformatics.org/ethocore/dateOfFormation
-</td></tr>
-    <tr><td>
-Class:
-</td><td>
-AnimalGroup
-</td></tr>
-    <tr><td>
-Project:
-</td><td>
-Ethogrammar
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-The date during which an AnimalGroup is formed. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-dateOfFormation (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="animalGroupRemarks">Term Name: animalGroupRemarks</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://ethoinformatics.org/ethocore/animalGroupRemarks
-</td></tr>
-    <tr><td>
-Class:
-</td><td>
-AnimalGroup
-</td></tr>
-    <tr><td>
-Project:
-</td><td>
-Ethogrammar
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-Comments or notes about the AnimalGroup.
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-animalGroupRemarks (placeholder: link to come)
+animalRemarks (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
 <a name="resourcePatchID">Term Name: resourcePatchID</a>
@@ -2685,12 +2353,12 @@ Details:
 observerName (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="observerHistory">Term Name: observerHistory</a>
+<a name="observerScope">Term Name: observerScope</a>
 </th></tr>
     <tr><td>
 Identifier:
 </td><td>
-http://ethoinformatics.org/ethocore/observerHistory
+http://ethoinformatics.org/ethocore/observerScope
 </td></tr>
     <tr><td>
 Class:
@@ -2705,17 +2373,17 @@ Ethogrammar
     <tr><td>
 Definition:
 </td><td>
-A list of information on the observer’s affiliation and position on one or more projects over time.
+A description of the kind of Observer instance. Can be used to indicate whether the Observer instance represents a discrete observer or if it represents a particular type of aggregation. Recommended best practice is to use a controlled vocabulary.
 </td></tr>
     <tr><td>
 Comment:
 </td><td>
-The recommended best practice is to use a key:value encoding schema such as JSON. Example: “{”startDate“:”2009-06-05“,”endDate“:”2010-06-21“,”project“:”Proyecto Primates“,”position“:”undergraduate assistant“},{”startDate“:”2010-08-15“,”endDate“:”2012-06-22“,”project“:”Kafue Baboon Project“,”position“:”graduate assistant“}”
+Examples: “principal investigator”, “field assistants”, “research team”, “university personnel”.
 </td></tr>
     <tr><td>
 Details:
 </td><td>
-observerHistory (placeholder: link to come)
+observerScope (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
 <a name="observerRemarks">Term Name: observerRemarks</a>
@@ -4373,12 +4041,12 @@ Details:
 verbatimSRS (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="footprintWKT">Term Name: footprintWKT</a>
+<a name="footprint">Term Name: footprint</a>
 </th></tr>
     <tr><td>
 Identifier:
 </td><td>
-http://rs.tdwg.org/dwc/terms/footprintWKT
+http://ethoinformatics.org/ethocore/footprint
 </td></tr>
     <tr><td>
 Class:
@@ -4388,12 +4056,12 @@ Location
     <tr><td>
 Project:
 </td><td>
-Darwin Core
+Ethogrammar
 </td></tr>
     <tr><td>
 Definition:
 </td><td>
-A Well-Known Text (WKT) representation of the shape (footprint, geometry) that defines the Location. A Location may have both a point-radius representation (see decimalLatitude) and a footprint representation, and they may differ from each other.
+A representation of the shape (footprint, geometry) that defines the Location. A Location may have both a point-radius representation (see decimalLatitude) and a footprint representation, and they may differ from each other.
 </td></tr>
     <tr><td>
 Comment:
@@ -4403,7 +4071,7 @@ Example: the one-degree bounding box with opposite corners at (longitude=10, lat
     <tr><td>
 Details:
 </td><td>
-footprintWKT (placeholder: link to come)
+footprint (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
 <a name="footprintSRS">Term Name: footprintSRS</a>
@@ -4426,7 +4094,7 @@ Darwin Core
     <tr><td>
 Definition:
 </td><td>
-A Well-Known Text (WKT) representation of the Spatial Reference System (SRS) for the footprintWKT of the Location. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, even if it is the same as for the footprintWKT - use the geodeticDatum instead.
+A representation of the Spatial Reference System (SRS) for the footprint of the Location. Do not use this term to describe the SRS of the decimalLatitude and decimalLongitude, even if it is the same as for the footprint - use the geodeticDatum instead.
 </td></tr>
     <tr><td>
 Comment:
@@ -6083,43 +5751,12 @@ Details:
 lifeHistoryEventID (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
-<a name="lifeHistoryEventDate">Term Name: lifeHistoryEventDate</a>
+<a name="lifeHistoryAnimal">Term Name: lifeHistoryAnimal</a>
 </th></tr>
     <tr><td>
 Identifier:
 </td><td>
-http://ethoinformatics.org/ethocore/lifeHistoryEventDate
-</td></tr>
-    <tr><td>
-Class:
-</td><td>
-LifeHistory
-</td></tr>
-    <tr><td>
-Project:
-</td><td>
-Ethogrammar
-</td></tr>
-    <tr><td>
-Definition:
-</td><td>
-The date during which a LifeHistoryEvent occurred. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).
-</td></tr>
-    <tr><td>
-Comment:
-</td><td></td></tr>
-    <tr><td>
-Details:
-</td><td>
-lifeHistoryEventDate (placeholder: link to come)
-</td></tr>
-    <tr><th colspan="2">
-<a name="lifeHistoryIndividualID">Term Name: lifeHistoryIndividualID</a>
-</th></tr>
-    <tr><td>
-Identifier:
-</td><td>
-http://ethoinformatics.org/ethocore/lifeHistoryIndividualID
+http://ethoinformatics.org/ethocore/lifeHistoryAnimal
 </td></tr>
     <tr><td>
 Class:
@@ -6142,7 +5779,7 @@ Comment:
     <tr><td>
 Details:
 </td><td>
-lifeHistoryIndividualID (placeholder: link to come)
+lifeHistoryAnimal (placeholder: link to come)
 </td></tr>
     <tr><th colspan="2">
 <a name="lifeHistoryEvent">Term Name: lifeHistoryEvent</a>

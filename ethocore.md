@@ -2,7 +2,7 @@
 
 ## Record-level Terms
 
-[dcterms:type](#dcterms:type) | [dcterms:modified](#dcterms:modified) | [dcterms:language](#dcterms:language) | [dcterms:license](#dcterms:license) | [dcterms:rightsHolder](#dcterms:rightsHolder) | [dcterms:accessRights](#dcterms:accessRights) | [dcterms:bibliographicCitation](#dcterms:bibliographicCitation) | [dcterms:references](#dcterms:references) | [institutionID](#institutionID) | [collectionID](#collectionID) | [datasetID](#datasetID) | [institutionCode](#institutionCode) | [collectionCode](#collectionCode) | [datasetName](#datasetName) | [ownerInstitutionCode](#ownerInstitutionCode) | [basisOfRecord](#basisOfRecord) | [informationWithheld](#informationWithheld) | [dataGeneralizations](#dataGeneralizations) | [dynamicProperties](#dynamicProperties)
+[type](#type) | [modified](#modified) | [language](#language) | [license](#license) | [rightsHolder](#rightsHolder) | [accessRights](#accessRights) | [bibliographicCitation](#bibliographicCitation) | [references](#references) | [institutionID](#institutionID) | [collectionID](#collectionID) | [datasetID](#datasetID) | [institutionCode](#institutionCode) | [collectionCode](#collectionCode) | [datasetName](#datasetName) | [ownerInstitutionCode](#ownerInstitutionCode) | [basisOfRecord](#basisOfRecord) | [informationWithheld](#informationWithheld) | [dataGeneralizations](#dataGeneralizations) | [dynamicProperties](#dynamicProperties)
 
 ## [Observation](#Observation)
 
@@ -50,9 +50,7 @@
 
 ## [LifeHistory](#LifeHistory)
 
-[lifeHistoryEventID](#lifeHistoryEventID) | [lifeHistoryEventDate](#lifeHistoryEventDate) | [lifeHistoryAnimal](#lifeHistoryAnimal) | [lifeHistoryEvent](#lifeHistoryEvent) | [lifeHistoryRemarks](#lifeHistoryRemarks)
-
-# Auxiliary terms
+[lifeHistoryEventID](#lifeHistoryEventID) | [lifeHistoryAnimal](#lifeHistoryAnimal) | [lifeHistoryEvent](#lifeHistoryEvent) | [lifeHistoryRemarks](#lifeHistoryRemarks)
 
 ## [ResourceRelationship](#ResourceRelationship)
 
@@ -122,6 +120,13 @@
 	<tr><td>Definition:</td><td>A spatial region or named place.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td>Location (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="Identification">Term Name: Identification</a></th></tr>
+	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/Identification</td></tr>
+	<tr><td>Class:</td><td></td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>A taxonomic determination (e.g., the assignment to a taxon).</td></tr>
+	<tr><td>Comment:</td><td>Example: A subspecies determination of an organism.</td></tr>
+	<tr><td>Details:</td><td>Identification (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="Taxon">Term Name: Taxon</a></th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/Taxon</td></tr>
 	<tr><td>Class:</td><td></td></tr>
@@ -136,62 +141,69 @@
 	<tr><td>Definition:</td><td>Key milestones and other events in the lifetime of an individual animal, most often relating to survival or reproduction.</td></tr>
 	<tr><td>Comment:</td><td>Examples: Birth. Weaning. Dispersal. Death.</td></tr>
 	<tr><td>Details:</td><td>LifeHistory (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="dcterms:type">Term Name: dcterms:type</a></th></tr>
+	<tr><th colspan="2"><a name="ResourceRelationship">Term Name: ResourceRelationship</a></th></tr>
+	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/ResourceRelationship</td></tr>
+	<tr><td>Class:</td><td></td></tr>
+	<tr><td>Project:</td><td>Darwin Core</td></tr>
+	<tr><td>Definition:</td><td>A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another.</td></tr>
+	<tr><td>Comment:</td><td>Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to Occurrences, Organisms, MaterialSamples, Events, Locations, GeologicalContexts, Identifications, or Taxa. Example: An instance of an Organism is the mother of another instance of an Organism.</td></tr>
+	<tr><td>Details:</td><td>ResourceRelationship (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="type">Term Name: type</a></th></tr>
 	<tr><td>Identifier:</td><td>http://purl.org/dc/terms/type</td></tr>
 	<tr><td>Class:</td><td>all</td></tr>
 	<tr><td>Project:</td><td>Darwin Core</td></tr>
 	<tr><td>Definition:</td><td>The nature or genre of the resource. For EthoCore, recommended best practice is to use the controlled vocabulary specified in Ethogrammar Document Types.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "StillImage", "MovingImage", "Sound", "PhysicalObject", "Event", "Text".</td></tr>
-	<tr><td>Details:</td><td>dcterms:type (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="dcterms:modified">Term Name: dcterms:modified</a></th></tr>
+	<tr><td>Details:</td><td>type (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="modified">Term Name: modified</a></th></tr>
 	<tr><td>Identifier:</td><td>http://purl.org/dc/terms/modified</td></tr>
 	<tr><td>Class:</td><td>all</td></tr>
 	<tr><td>Project:</td><td>Darwin Core</td></tr>
 	<tr><td>Definition:</td><td>The most recent date-time on which the resource was changed.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</td></tr>
-	<tr><td>Details:</td><td>dcterms:modified (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="dcterms:language">Term Name: dcterms:language</a></th></tr>
+	<tr><td>Details:</td><td>modified (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="language">Term Name: language</a></th></tr>
 	<tr><td>Identifier:</td><td>http://purl.org/dc/terms/language</td></tr>
 	<tr><td>Class:</td><td>all</td></tr>
 	<tr><td>Project:</td><td>Darwin Core</td></tr>
 	<tr><td>Definition:</td><td>A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646].</td></tr>
 	<tr><td>Comment:</td><td>Examples: "en" for English, "es" for Spanish.</td></tr>
-	<tr><td>Details:</td><td>dcterms:language (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="dcterms:license">Term Name: dcterms:license</a></th></tr>
+	<tr><td>Details:</td><td>language (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="license">Term Name: license</a></th></tr>
 	<tr><td>Identifier:</td><td>http://purl.org/dc/terms/license</td></tr>
 	<tr><td>Class:</td><td>all</td></tr>
 	<tr><td>Project:</td><td>Darwin Core</td></tr>
 	<tr><td>Definition:</td><td>A legal document giving official permission to do something with the resource.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "http://creativecommons.org/publicdomain/zero/1.0/legalcode", "http://creativecommons.org/licenses/by/4.0/legalcode".</td></tr>
-	<tr><td>Details:</td><td>dcterms:license (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="dcterms:rightsHolder">Term Name: dcterms:rightsHolder</a></th></tr>
+	<tr><td>Details:</td><td>license (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="rightsHolder">Term Name: rightsHolder</a></th></tr>
 	<tr><td>Identifier:</td><td>http://purl.org/dc/terms/rightsHolder</td></tr>
 	<tr><td>Class:</td><td>all</td></tr>
 	<tr><td>Project:</td><td>Darwin Core</td></tr>
 	<tr><td>Definition:</td><td>A person or organization owning or managing rights over the resource.</td></tr>
 	<tr><td>Comment:</td><td>Example: "The Regents of the University of California.".</td></tr>
-	<tr><td>Details:</td><td>dcterms:rightsHolder (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="dcterms:accessRights">Term Name: dcterms:accessRights</a></th></tr>
+	<tr><td>Details:</td><td>rightsHolder (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="accessRights">Term Name: accessRights</a></th></tr>
 	<tr><td>Identifier:</td><td>http://purl.org/dc/terms/accessRights</td></tr>
 	<tr><td>Class:</td><td>all</td></tr>
 	<tr><td>Project:</td><td>Darwin Core</td></tr>
 	<tr><td>Definition:</td><td>Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</td></tr>
 	<tr><td>Comment:</td><td>Example: "not-for-profit use only".</td></tr>
-	<tr><td>Details:</td><td>dcterms:accessRights (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="dcterms:bibliographicCitation">Term Name: dcterms:bibliographicCitation</a></th></tr>
+	<tr><td>Details:</td><td>accessRights (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="bibliographicCitation">Term Name: bibliographicCitation</a></th></tr>
 	<tr><td>Identifier:</td><td>http://purl.org/dc/terms/bibliographicCitation</td></tr>
 	<tr><td>Class:</td><td>all</td></tr>
 	<tr><td>Project:</td><td>Darwin Core</td></tr>
 	<tr><td>Definition:</td><td>A bibliographic reference for the resource as a statement indicating how this record should be cited (attributed) when used. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "Ctenomys sociabilis (MVZ 165861)" for a specimen, "Oliver P. Pearson. 1985. Los tuco-tucos (genera Ctenomys) de los Parques Nacionales Lanin y Nahuel Huapi, Argentina Historia Natural, 5(37):337-343." for a Taxon.</td></tr>
-	<tr><td>Details:</td><td>dcterms:bibliographicCitation (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="dcterms:references">Term Name: dcterms:references</a></th></tr>
+	<tr><td>Details:</td><td>bibliographicCitation (placeholder: link to come)</td></tr>
+	<tr><th colspan="2"><a name="references">Term Name: references</a></th></tr>
 	<tr><td>Identifier:</td><td>http://purl.org/dc/terms/references</td></tr>
 	<tr><td>Class:</td><td>all</td></tr>
 	<tr><td>Project:</td><td>Darwin Core</td></tr>
 	<tr><td>Definition:</td><td>A related resource that is referenced, cited, or otherwise pointed to by the described resource.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "http://mvzarctos.berkeley.edu/guid/MVZ:Mamm:165861"; "http://www.catalogueoflife.org/annual-checklist/show_species_details.php?record_id=6197868".</td></tr>
-	<tr><td>Details:</td><td>dcterms:references (placeholder: link to come)</td></tr>
+	<tr><td>Details:</td><td>references (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="institutionID">Term Name: institutionID</a></th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/institutionID</td></tr>
 	<tr><td>Class:</td><td>all</td></tr>
@@ -1277,13 +1289,6 @@
 	<tr><td>Definition:</td><td>An identifier for the LifeHistory event. May be a global unique identifier or an identifier specific to the data set.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td>lifeHistoryEventID (placeholder: link to come)</td></tr>
-	<tr><th colspan="2"><a name="lifeHistoryEventDate">Term Name: lifeHistoryEventDate</a></th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/lifeHistoryEventDate</td></tr>
-	<tr><td>Class:</td><td>LifeHistory</td></tr>
-	<tr><td>Project:</td><td>Ethogrammar</td></tr>
-	<tr><td>Definition:</td><td>The date during which a LifeHistoryEvent occurred. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td>lifeHistoryEventDate (placeholder: link to come)</td></tr>
 	<tr><th colspan="2"><a name="lifeHistoryAnimal">Term Name: lifeHistoryAnimal</a></th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/lifeHistoryAnimal</td></tr>
 	<tr><td>Class:</td><td>LifeHistory</td></tr>
