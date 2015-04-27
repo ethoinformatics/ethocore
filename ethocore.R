@@ -79,6 +79,13 @@ write(paste0('<table id="terms-table" class="terms-dictionary">\n\t<tr style="bo
 	documentation[6] <- paste0('<a href="',paste0('http://ethoinformatics.org/ethocore/',documentation[6]),'">',documentation[6],'</a>')
 	documentation[is.na(documentation)] <- ''
 	c(write.col(x['TERM'],header=TRUE),apply(cbind(write.col(paste0(fields,':')),write.col(documentation)),1,paste0,collapse=''))
+})))),collapse='\n\t'),'\n</table>'),file=paste0(write.filename,'_table.html'))
+
+write(paste0('<table id="terms-table" class="terms-dictionary">\n\t<tr style="border:none;"><td></td><td></td></tr>\n\t',paste(write.row(do.call(c,as.list(apply(ethocore,1,function(x) {
+	documentation <- x[columns]
+	documentation[6] <- paste0('<a href="',paste0('http://ethoinformatics.org/ethocore/',documentation[6]),'">',documentation[6],'</a>')
+	documentation[is.na(documentation)] <- ''
+	c(write.col(x['TERM'],header=TRUE),apply(cbind(write.col(paste0(fields,':')),write.col(documentation)),1,paste0,collapse=''))
 })))),collapse='\n\t'),'\n</table>'),file=paste0(write.filename,'.md'),append=TRUE)
 
 ethocore.wordpress <- ethocore[,do.call(c,lapply(strsplit(names(ethocore),''),function(x) all(x %in% c(letters,'_'))))]
