@@ -23,7 +23,7 @@ linkify <- function(x) paste0('[',x,'](#',x,')')
 
 write(paste0('## ','Record-level Terms','\n\n',paste(apply(ethocore[ethocore$CLASS %in% 'RecordLevel',],1,function(x) {
 	linkify(x['TERM'])
-}),collapse=' | '),'\n'),file=paste0(write.filename,'.md'),append=TRUE)
+}),collapse=' | '),'\n'),file=paste0(write.filename,'.md'))
 
 write(paste(do.call(c,lapply(classes[!is.na(classes)],function(i) {
 	set <- ethocore[ethocore$CLASS %in% i,]
