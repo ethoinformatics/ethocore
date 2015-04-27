@@ -19,7 +19,7 @@ classes <- classes[!classes %in% c('','RecordLevel',auxiliary)]
 
 linkify <- function(x) paste0('[',x,'](#',x,')')
 
-write('# Etho Core terms\n',file=paste0(write.filename,'.md'))
+# write('# Etho Core terms\n',file=paste0(write.filename,'.md'))
 
 write(paste0('## ','Record-level Terms','\n\n',paste(apply(ethocore[ethocore$CLASS %in% 'RecordLevel',],1,function(x) {
 	linkify(x['TERM'])
@@ -81,7 +81,7 @@ write(paste0('<table id="terms-table" class="terms-dictionary">\n\t<tr style="bo
 	c(write.col(x['TERM'],header=TRUE),apply(cbind(write.col(paste0(fields,':')),write.col(documentation)),1,paste0,collapse=''))
 })))),collapse='\n\t'),'\n</table>'),file=paste0(write.filename,'.md'),append=TRUE)
 
-ethocore.wordpress <- ethocore[,do.call(c,lapply(names(ethocore),function(x) all(strsplit(x,'')[[1]] %in% c(letters,'_'))))]
+ethocore.wordpress <- ethocore[,do.call(c,lapply(strsplit(names(ethocore),''),function(x) all(x %in% c(letters,'_'))))]
 rownames(ethocore.wordpress) <- NULL
 
 write.csv(ethocore.wordpress,file=paste0(write.filename,'.csv'),row.names=FALSE,na='')
