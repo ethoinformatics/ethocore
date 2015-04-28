@@ -17,38 +17,47 @@ auxiliary <- c('ResourceRelationship')
 classes <- unique(ethocore$CLASS)
 classes <- classes[!classes %in% c('','RecordLevel',auxiliary)]
 
-linkify <- function(x) paste0('[',x,'](#',x,')')
+linkify <- function(x,y='md') {
+	if (identical(y,'md')) {
+		paste0('[',x,'](#',x,')')
+	} else if (identical(y,'html')) {
+		paste0('<a href="#',x,'">',x,'</a>')
+	}
+}
 
-# write('# Etho Core terms\n',file=paste0(write.filename,'.md'))
+write('# Etho Core terms\n',file=paste0(write.filename,'.md'))
 
-write(paste0('## ','Record-level Terms','\n\n',paste(apply(ethocore[ethocore$CLASS %in% 'RecordLevel',],1,function(x) {
-	linkify(x['TERM'])
-}),collapse=' | '),'\n'),file=paste0(write.filename,'.md'))
-
-write(paste(do.call(c,lapply(classes[!is.na(classes)],function(i) {
+write(paste(do.call(c,lapply(c('RecordLevel',classes[!is.na(classes)],auxiliary),function(i) {
 	set <- ethocore[ethocore$CLASS %in% i,]
-	paste0('## ',linkify(i),'\n\n',paste(apply(set,1,function(x) {
+	paste0('## ',if (i %in% 'RecordLevel') 'Record-level Terms' else linkify(i),'\n\n',paste(apply(set,1,function(x) {
 		linkify(x['TERM'])
 	}),collapse=' | '),'\n')
 })),collapse='\n'),file=paste0(write.filename,'.md'),append=TRUE)
+
+write(paste(do.call(c,lapply(c('RecordLevel',classes[!is.na(classes)],auxiliary),function(i) {
+	set <- ethocore[ethocore$CLASS %in% i,]
+	paste0('<h2>',if (i %in% 'RecordLevel') 'Record-level Terms' else linkify(i,'html'),'</h2>\n\n',paste(apply(set,1,function(x) {
+		linkify(x['TERM'],'html')
+	}),collapse=' | '),'<br>\n')
+})),collapse='\n'),file=paste0(write.filename,'.html'))
 
 # write('# Auxiliary terms\n',file=paste0(write.filename,'.md'),append=TRUE)
 
-write(paste(do.call(c,lapply(auxiliary,function(i) {
-	set <- ethocore[ethocore$CLASS %in% i,]
-	paste0('## ',linkify(i),'\n\n',paste(apply(set,1,function(x) {
-		linkify(x['TERM'])
-	}),collapse=' | '),'\n')
-})),collapse='\n'),file=paste0(write.filename,'.md'),append=TRUE)
+# write(paste(do.call(c,lapply(auxiliary,function(i) {
+# 	set <- ethocore[ethocore$CLASS %in% i,]
+# 	paste0('## ',linkify(i),'\n\n',paste(apply(set,1,function(x) {
+# 		linkify(x['TERM'])
+# 	}),collapse=' | '),'\n')
+# })),collapse='\n'),file=paste0(write.filename,'.md'),append=TRUE)
 
 
 # CONVERT Table of Contents into HTML
-
+#
 # Check if pandoc is installed on Mac
-
-if (Sys.info()['sysname'] %in% 'Darwin' & as.logical(length(system('which pandoc',intern=TRUE)))) {
-	system(paste0('pandoc ethocore.md -o ',write.filename,'.html'))
-}
+#
+#if (Sys.info()['sysname'] %in% 'Darwin' & as.logical(length(system('which pandoc',intern=TRUE)))) {
+#	system(paste0('pandoc ethocore.md -o ',write.filename,'.html'))
+#}
 
 
 # WRITE HTML TABLE

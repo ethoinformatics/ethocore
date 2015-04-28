@@ -1,5 +1,4 @@
-# Etho Core terms
-
+# Etho Core Terms
 ## Record-level Terms
 
 [type](#type) | [modified](#modified) | [language](#language) | [license](#license) | [rightsHolder](#rightsHolder) | [accessRights](#accessRights) | [bibliographicCitation](#bibliographicCitation) | [references](#references) | [institutionID](#institutionID) | [collectionID](#collectionID) | [datasetID](#datasetID) | [institutionCode](#institutionCode) | [collectionCode](#collectionCode) | [datasetName](#datasetName) | [ownerInstitutionCode](#ownerInstitutionCode) | [basisOfRecord](#basisOfRecord) | [informationWithheld](#informationWithheld) | [dataGeneralizations](#dataGeneralizations) | [dynamicProperties](#dynamicProperties)
