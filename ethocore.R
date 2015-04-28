@@ -39,7 +39,7 @@ write(paste(do.call(c,lapply(c('RecordLevel',classes[!is.na(classes)],auxiliary)
 	paste0('<h2>',if (i %in% 'RecordLevel') 'Record-level Terms' else linkify(i,'html'),'</h2>\n\n',paste(apply(set,1,function(x) {
 		linkify(x['TERM'],'html')
 	}),collapse=' | '),'<br>\n')
-})),collapse='\n'),file=paste0(write.filename,'.html'))
+})),collapse='\n'),file=paste0(write.filename,'_toc.html'))
 
 # write('# Auxiliary terms\n',file=paste0(write.filename,'.md'),append=TRUE)
 
