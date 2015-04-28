@@ -69,8 +69,8 @@ ethocore$CLASS <- gsub('RecordLevel','all',ethocore$CLASS)
 # ethocore <- ethocore[order(ethocore$CLASS %in% auxiliary,ethocore$CLASS,ethocore$TERM),]
 # ethocore$CLASS <- gsub('A11','all',ethocore$CLASS)			# replace a11 with all
 
-fields <- c('Identifier','Class','Project','Definition','Comment','Details')
-columns <- c('URI','CLASS','NAMESPACE','DEFINITION','DESCRIPTION','TERM')
+fields <- c('Identifier','Class','Definition','Comment','Details')
+columns <- c('URI','CLASS','DEFINITION','DESCRIPTION','TERM')
 
 ## xtable method (the tables are ugly)
 # library(xtable)
