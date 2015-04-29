@@ -41,25 +41,6 @@ write(paste(do.call(c,lapply(c('RecordLevel',classes[!is.na(classes)],auxiliary)
 	}),collapse=' | '),'<br>\n')
 })),collapse='\n'),file=paste0(write.filename,'_toc.html'))
 
-# write('# Auxiliary terms\n',file=paste0(write.filename,'.md'),append=TRUE)
-
-# write(paste(do.call(c,lapply(auxiliary,function(i) {
-# 	set <- ethocore[ethocore$CLASS %in% i,]
-# 	paste0('## ',linkify(i),'\n\n',paste(apply(set,1,function(x) {
-# 		linkify(x['TERM'])
-# 	}),collapse=' | '),'\n')
-# })),collapse='\n'),file=paste0(write.filename,'.md'),append=TRUE)
-
-
-# CONVERT Table of Contents into HTML
-#
-# Check if pandoc is installed on Mac
-#
-#if (Sys.info()['sysname'] %in% 'Darwin' & as.logical(length(system('which pandoc',intern=TRUE)))) {
-#	system(paste0('pandoc ethocore.md -o ',write.filename,'.html'))
-#}
-
-
 # WRITE HTML TABLE
 
 ethocore$CLASS <- gsub('CLASS','',ethocore$CLASS)
@@ -102,4 +83,10 @@ rownames(ethocore.wordpress) <- NULL
 
 write.csv(ethocore.wordpress,file=paste0(write.filename,'.csv'),row.names=FALSE,na='')
 
+# Convert into HTML
 
+# Check if pandoc is installed on Mac
+
+if (Sys.info()['sysname'] %in% 'Darwin' & as.logical(length(system('which pandoc',intern=TRUE)))) {
+	system(paste0('pandoc ethocore.md -o ',write.filename,'.html'))
+}
