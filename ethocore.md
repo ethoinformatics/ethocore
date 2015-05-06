@@ -6,11 +6,11 @@
 
 ## [Observation](#Observation)
 
-[observationID](#observationID) | [observationType](#observationType) | [observationSubject](#observationSubject) | [behavior](#behavior) | [sex](#sex) | [lifeStage](#lifeStage) | [reproductiveCondition](#reproductiveCondition) | [partner](#partner) | [neighbor](#neighbor) | [distance](#distance) | [observedBy](#observedBy) | [spatialConfiguration](#spatialConfiguration) | [observationRemarks](#observationRemarks)
+[observationID](#observationID) | [observationType](#observationType) | [observationValue](#observationValue) | [observedBy](#observedBy) | [observationRemarks](#observationRemarks)
 
 ## [MeasurementOrFact](#MeasurementOrFact)
 
-[measurementID](#measurementID) | [measurementType](#measurementType) | [measurementSubject](#measurementSubject) | [measurementValue](#measurementValue) | [measurementAccuracy](#measurementAccuracy) | [measurementUnit](#measurementUnit) | [measurementDeterminedBy](#measurementDeterminedBy) | [measurementMethod](#measurementMethod) | [measurementInstrument](#measurementInstrument) | [measurementRemarks](#measurementRemarks)
+[measurementID](#measurementID) | [measurementType](#measurementType) | [measurementValue](#measurementValue) | [measurementAccuracy](#measurementAccuracy) | [measurementUnit](#measurementUnit) | [measurementDeterminedBy](#measurementDeterminedBy) | [measurementMethod](#measurementMethod) | [measurementInstrument](#measurementInstrument) | [measurementRemarks](#measurementRemarks)
 
 ## [Animal](#Animal)
 
@@ -20,13 +20,9 @@
 
 [resourcePatchID](#resourcePatchID) | [resourcePatchName](#resourcePatchName) | [resourcePatchType](#resourcePatchType) | [resourcePatchUse](#resourcePatchUse) | [timeMarked](#timeMarked) | [dateMarked](#dateMarked) | [dateOfExpiration](#dateOfExpiration) | [markedBy](#markedBy) | [resourcePatchRemarks](#resourcePatchRemarks)
 
-## [Observer](#Observer)
-
-[observerID](#observerID) | [observerName](#observerName) | [observerScope](#observerScope) | [observerRemarks](#observerRemarks)
-
 ## [MaterialSample](#MaterialSample)
 
-[materialSampleID](#materialSampleID) | [materialSampleType](#materialSampleType) | [materialSampleSubject](#materialSampleSubject) | [relatedMedia](#relatedMedia) | [materialSampleRemarks](#materialSampleRemarks)
+[materialSampleID](#materialSampleID) | [materialSampleType](#materialSampleType) | [relatedMedia](#relatedMedia) | [materialSampleRemarks](#materialSampleRemarks)
 
 ## [Event](#Event)
 
@@ -34,7 +30,7 @@
 
 ## [Activity](#Activity)
 
-[activityID](#activityID) | [activityType](#activityType) | [activitySubject](#activitySubject) | [activityBy](#activityBy) | [activityRemarks](#activityRemarks)
+[activityID](#activityID) | [activityType](#activityType) | [activityBy](#activityBy) | [activityRemarks](#activityRemarks)
 
 ## [Location](#Location)
 
@@ -47,10 +43,6 @@
 ## [Taxon](#Taxon)
 
 [taxonID](#taxonID) | [scientificNameID](#scientificNameID) | [acceptedNameUsageID](#acceptedNameUsageID) | [parentNameUsageID](#parentNameUsageID) | [originalNameUsageID](#originalNameUsageID) | [nameAccordingToID](#nameAccordingToID) | [namePublishedInID](#namePublishedInID) | [taxonConceptID](#taxonConceptID) | [scientificName](#scientificName) | [acceptedNameUsage](#acceptedNameUsage) | [parentNameUsage](#parentNameUsage) | [originalNameUsage](#originalNameUsage) | [nameAccordingTo](#nameAccordingTo) | [namePublishedIn](#namePublishedIn) | [namePublishedInYear](#namePublishedInYear) | [higherClassification](#higherClassification) | [kingdom](#kingdom) | [phylum](#phylum) | [class](#class) | [order](#order) | [family](#family) | [genus](#genus) | [subgenus](#subgenus) | [specificEpithet](#specificEpithet) | [infraspecificEpithet](#infraspecificEpithet) | [taxonRank](#taxonRank) | [verbatimTaxonRank](#verbatimTaxonRank) | [scientificNameAuthorship](#scientificNameAuthorship) | [vernacularName](#vernacularName) | [nomenclaturalCode](#nomenclaturalCode) | [taxonomicStatus](#taxonomicStatus) | [nomenclaturalStatus](#nomenclaturalStatus) | [taxonRemarks](#taxonRemarks)
-
-## [LifeHistory](#LifeHistory)
-
-[lifeHistoryEventID](#lifeHistoryEventID) | [lifeHistoryAnimal](#lifeHistoryAnimal) | [lifeHistoryEvent](#lifeHistoryEvent) | [lifeHistoryRemarks](#lifeHistoryRemarks)
 
 ## [ResourceRelationship](#ResourceRelationship)
 
@@ -82,12 +74,6 @@
 	<tr><td>Definition:</td><td>A feature of the environment, living or otherwise, that provides nourishment, protection, or other benefit to the survival of animals or the persistence of species.</td></tr>
 	<tr><td>Comment:</td><td>Examples: A fruiting tree. A sleeping site. A water hole. A mineral lick.</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/ResourcePatch">ResourcePatch</a></td></tr>
-	<tr><th colspan="2" id="Observer">Term Name: Observer</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Observer</td></tr>
-	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Definition:</td><td>A human contributing to the collection, management, or analysis of data.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/Observer">Observer</a></td></tr>
 	<tr><th colspan="2" id="MaterialSample">Term Name: MaterialSample</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/MaterialSample</td></tr>
 	<tr><td>Class:</td><td></td></tr>
@@ -262,66 +248,18 @@
 	<tr><td>Definition:</td><td>The type of Observation being made. Recommended best practice is to use a controlled vocabulary.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "focal observation", "group activity", "nearest neighbor", "contact", "indirect sign", "ad libitum"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationType">observationType</a></td></tr>
-	<tr><th colspan="2" id="observationSubject">Term Name: observationSubject</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationSubject</td></tr>
+	<tr><th colspan="2" id="observationValue">Term Name: observationValue</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationValue</td></tr>
 	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>A description of or reference to (URI) the Animal, ResourcePatch, or other resource on which the Observation was made.</td></tr>
-	<tr><td>Comment:</td><td>The recommended best practice is to separate multiple values with a vertical bar (' | ').</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationSubject">observationSubject</a></td></tr>
-	<tr><th colspan="2" id="behavior">Term Name: behavior</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/behavior</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>A description of the behavior shown by the subject at the time the Observation was recorded. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "roosting", "foraging", "running"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/behavior">behavior</a></td></tr>
-	<tr><th colspan="2" id="sex">Term Name: sex</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/sex</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>The biological sex of the biological individual(s) specified by the observationSubject. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>The recommended best practice is to separate multiple values with a vertical bar (' | '). Examples: "female", "hermaphrodite", "male | female | female"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/sex">sex</a></td></tr>
-	<tr><th colspan="2" id="lifeStage">Term Name: lifeStage</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/lifeStage</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>The age class or life stage of the biological individual(s) at the time the Observation was recorded. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "egg", "eft", "juvenile", "adult"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/lifeStage">lifeStage</a></td></tr>
-	<tr><th colspan="2" id="reproductiveCondition">Term Name: reproductiveCondition</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/reproductiveCondition</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>The reproductive condition of the biological individual(s) specified by the observationSubject. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>The recommended best practice is to separate multiple values with a vertical bar (' | '). Examples" "non-reproductive", "pregnant", "in bloom", "fruit-bearing", "lactating | pregnant"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/reproductiveCondition">reproductiveCondition</a></td></tr>
-	<tr><th colspan="2" id="partner">Term Name: partner</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/partner</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>A description of or reference to (URI) the Animal, ResourcePatch, or other resource which was observed to be in an interaction with the observationSubject.</td></tr>
-	<tr><td>Comment:</td><td>The recommended best practice is to separate multiple values with a vertical bar (' | ').</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/partner">partner</a></td></tr>
-	<tr><th colspan="2" id="neighbor">Term Name: neighbor</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/neighbor</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>A description of or reference to (URI) the Animal which is observed to be in proximity to the observationSubject. The nature of the proximity interaction should be given in distance and ideally also specified in the samplingProtocol for the linked observationParentEvent.</td></tr>
-	<tr><td>Comment:</td><td>The recommended best practice is to separate multiple values with a vertical bar (' | ').</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/neighbor">neighbor</a></td></tr>
-	<tr><th colspan="2" id="distance">Term Name: distance</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/distance</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>The extent or amount of space between the individual animals specified in observationSubject and neighbor. Recommended best practice is to specify units and, for categorical data, to use "<", ">", "<=", ">=", and "-" as delimiters.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "3m", "<2m", "2-6m"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/distance">distance</a></td></tr>
+	<tr><td>Definition:</td><td>The value of the observation being made.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "foraging", "pregnant", "in proximity"</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationValue">observationValue</a></td></tr>
 	<tr><th colspan="2" id="observedBy">Term Name: observedBy</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observedBy</td></tr>
 	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>A description of or reference to (URI) the Observer(s) making the Observation.</td></tr>
+	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the Observation.</td></tr>
 	<tr><td>Comment:</td><td>The recommended best practice is to separate multiple values with a vertical bar (' | ').</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observedBy">observedBy</a></td></tr>
-	<tr><th colspan="2" id="spatialConfiguration">Term Name: spatialConfiguration</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/spatialConfiguration</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>A description of or reference to (URI) the spatial relationships among a set of biological individuals.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/spatialConfiguration">spatialConfiguration</a></td></tr>
 	<tr><th colspan="2" id="observationRemarks">Term Name: observationRemarks</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationRemarks</td></tr>
 	<tr><td>Class:</td><td>Observation</td></tr>
@@ -340,12 +278,6 @@
 	<tr><td>Definition:</td><td>The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "tail length", "temperature", "trap line length", "survey area", "trap type"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementType">measurementType</a></td></tr>
-	<tr><th colspan="2" id="measurementSubject">Term Name: measurementSubject</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementSubject</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Definition:</td><td>A reference to the identifier for the MaterialSample, Animal, ResourcePatch, or other resource that is the subject of the measurement, fact, characterstic, or assertion.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementSubject">measurementSubject</a></td></tr>
 	<tr><th colspan="2" id="measurementValue">Term Name: measurementValue</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementValue</td></tr>
 	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
@@ -469,7 +401,7 @@
 	<tr><th colspan="2" id="markedBy">Term Name: markedBy</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/markedBy</td></tr>
 	<tr><td>Class:</td><td>ResourcePatch</td></tr>
-	<tr><td>Definition:</td><td>A description of or reference to (URI) the Observer marking the ResourcePatch.</td></tr>
+	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who marked the ResourcePatch.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/markedBy">markedBy</a></td></tr>
 	<tr><th colspan="2" id="resourcePatchRemarks">Term Name: resourcePatchRemarks</th></tr>
@@ -478,30 +410,6 @@
 	<tr><td>Definition:</td><td>Comments or notes about the ResourcePatch.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/resourcePatchRemarks">resourcePatchRemarks</a></td></tr>
-	<tr><th colspan="2" id="observerID">Term Name: observerID</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observerID</td></tr>
-	<tr><td>Class:</td><td>Observer</td></tr>
-	<tr><td>Definition:</td><td>An identifier for the Observer. May be a global unique identifier (e.g., ORCID or ResearcherID) or an identifier specific to the data set.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observerID">observerID</a></td></tr>
-	<tr><th colspan="2" id="observerName">Term Name: observerName</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observerName</td></tr>
-	<tr><td>Class:</td><td>Observer</td></tr>
-	<tr><td>Definition:</td><td>The name of the researcher. Recommended best practice is to list the surname, given name, then middle name(s), in order and separated by commas.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "Leakey, Louis, S., B.", "White, Walter"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observerName">observerName</a></td></tr>
-	<tr><th colspan="2" id="observerScope">Term Name: observerScope</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observerScope</td></tr>
-	<tr><td>Class:</td><td>Observer</td></tr>
-	<tr><td>Definition:</td><td>A description of the kind of Observer instance. Can be used to indicate whether the Observer instance represents a discrete observer or if it represents a particular type of aggregation. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "principal investigator", "field assistants", "research team", "university personnel".</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observerScope">observerScope</a></td></tr>
-	<tr><th colspan="2" id="observerRemarks">Term Name: observerRemarks</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observerRemarks</td></tr>
-	<tr><td>Class:</td><td>Observer</td></tr>
-	<tr><td>Definition:</td><td>Comments or notes about the observer.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observerRemarks">observerRemarks</a></td></tr>
 	<tr><th colspan="2" id="materialSampleID">Term Name: materialSampleID</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/materialSampleID</td></tr>
 	<tr><td>Class:</td><td>MaterialSample</td></tr>
@@ -514,12 +422,6 @@
 	<tr><td>Definition:</td><td>The type of physical material represented by the MaterialSample. Recommended best practice is to use a controlled vocabulary.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "feces", "buffy coat", "left upper dental cast", "carcass"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/materialSampleType">materialSampleType</a></td></tr>
-	<tr><th colspan="2" id="materialSampleSubject">Term Name: materialSampleSubject</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/materialSampleSubject</td></tr>
-	<tr><td>Class:</td><td>MaterialSample</td></tr>
-	<tr><td>Definition:</td><td>A reference to (URI) the Animal, ResourcePatch, or other resource from which the MaterialSample was collected.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/materialSampleSubject">materialSampleSubject</a></td></tr>
 	<tr><th colspan="2" id="relatedMedia">Term Name: relatedMedia</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/relatedMedia</td></tr>
 	<tr><td>Class:</td><td>MaterialSample</td></tr>
@@ -580,16 +482,10 @@
 	<tr><td>Definition:</td><td>The type of activity being scheduled or performed.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "focal sample collection", "searching for animals".</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/activityType">activityType</a></td></tr>
-	<tr><th colspan="2" id="activitySubject">Term Name: activitySubject</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/activitySubject</td></tr>
-	<tr><td>Class:</td><td>Activity</td></tr>
-	<tr><td>Definition:</td><td>A description of or reference to (URI) the resource that is the focus of an Activity.</td></tr>
-	<tr><td>Comment:</td><td>The subject of an activity may be but need not be limited to an Animal, ResourcePatch, or MaterialSample.</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/activitySubject">activitySubject</a></td></tr>
 	<tr><th colspan="2" id="activityBy">Term Name: activityBy</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/activityBy</td></tr>
 	<tr><td>Class:</td><td>Activity</td></tr>
-	<tr><td>Definition:</td><td>A description of or reference to (URI) the Observer scheduling or conducting an Activity.</td></tr>
+	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who conducted the Activity.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/activityBy">activityBy</a></td></tr>
 	<tr><th colspan="2" id="activityRemarks">Term Name: activityRemarks</th></tr>
@@ -1108,30 +1004,6 @@
 	<tr><td>Definition:</td><td>Comments or notes about the taxon or name.</td></tr>
 	<tr><td>Comment:</td><td>Example: "this name is a misspelling in common use"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/taxonRemarks">taxonRemarks</a></td></tr>
-	<tr><th colspan="2" id="lifeHistoryEventID">Term Name: lifeHistoryEventID</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/lifeHistoryEventID</td></tr>
-	<tr><td>Class:</td><td>LifeHistory</td></tr>
-	<tr><td>Definition:</td><td>An identifier for the LifeHistory event. May be a global unique identifier or an identifier specific to the data set.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/lifeHistoryEventID">lifeHistoryEventID</a></td></tr>
-	<tr><th colspan="2" id="lifeHistoryAnimal">Term Name: lifeHistoryAnimal</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/lifeHistoryAnimal</td></tr>
-	<tr><td>Class:</td><td>LifeHistory</td></tr>
-	<tr><td>Definition:</td><td>A description of or reference to (URI) the Animal whose LifeHistoryEvent is being documented.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/lifeHistoryAnimal">lifeHistoryAnimal</a></td></tr>
-	<tr><th colspan="2" id="lifeHistoryEvent">Term Name: lifeHistoryEvent</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/lifeHistoryEvent</td></tr>
-	<tr><td>Class:</td><td>LifeHistory</td></tr>
-	<tr><td>Definition:</td><td>A milestone or other major event in the life history of an animal, most often relating to survival or reproduction.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/lifeHistoryEvent">lifeHistoryEvent</a></td></tr>
-	<tr><th colspan="2" id="lifeHistoryRemarks">Term Name: lifeHistoryRemarks</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/lifeHistoryRemarks</td></tr>
-	<tr><td>Class:</td><td>LifeHistory</td></tr>
-	<tr><td>Definition:</td><td>Comments or notes about the LifeHistory record.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/lifeHistoryRemarks">lifeHistoryRemarks</a></td></tr>
 	<tr><th colspan="2" id="resourceRelationshipID">Term Name: resourceRelationshipID</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/resourceRelationshipID</td></tr>
 	<tr><td>Class:</td><td>ResourceRelationship</td></tr>
