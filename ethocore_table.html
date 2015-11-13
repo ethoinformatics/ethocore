@@ -1,33 +1,27 @@
 <table id="terms-table" class="terms-dictionary">
 	<tr style="border:none;"><td></td><td></td></tr>
-	<tr><th colspan="2" id="Observation">Term Name: Observation</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Observation</td></tr>
+	<tr><th colspan="2" id="MeasurementOrObservation">Term Name: MeasurementOrObservation</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/MeasurementOrObservation</td></tr>
 	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Definition:</td><td>Details about the nature and context of observed changes in animals and their environments.</td></tr>
-	<tr><td>Comment:</td><td>Examples: An observed foraging event. An observed proximity episode. The occupancy of a location by a species. A change in cloud cover.</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/Observation">Observation</a></td></tr>
-	<tr><th colspan="2" id="MeasurementOrFact">Term Name: MeasurementOrFact</th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/MeasurementOrFact</td></tr>
-	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Definition:</td><td>A measurement of or fact about a subject.</td></tr>
-	<tr><td>Comment:</td><td>In Darwin Core, the measurement or fact is of or about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource). In EthoCore, the subject need not be an rdfs:Resource. Examples: The weight of an organism in grams. The number of placental scars. A daily rain gauge reading in millimeters.</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/MeasurementOrFact">MeasurementOrFact</a></td></tr>
+	<tr><td>Definition:</td><td>A measurement of or observation about a subject. Can include details about the nature, context, state, or activity of animals, or of animals in relation to their environments.</td></tr>
+	<tr><td>Comment:</td><td>In Darwin Core, the measurement or fact is of or about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource). In EthoCore, the subject need not be an rdfs:Resource. Examples: The weight of an organism in grams. The number of placental scars. A daily rain gauge reading in millimeters. An observed foraging event. An observed proximity episode. The occupancy of a location by a species.</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/MeasurementOrObservation">MeasurementOrObservation</a></td></tr>
 	<tr><th colspan="2" id="Animal">Term Name: Animal</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Animal</td></tr>
 	<tr><td>Class:</td><td></td></tr>
 	<tr><td>Definition:</td><td>A particular animal or a defined grouping of animals.</td></tr>
 	<tr><td>Comment:</td><td>Examples: A single loris. A troop of baboons. A mixed species zoo exhibit. A breeding population of rhinoceroses.</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/Animal">Animal</a></td></tr>
-	<tr><th colspan="2" id="ResourcePatch">Term Name: ResourcePatch</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/ResourcePatch</td></tr>
+	<tr><th colspan="2" id="Patch">Term Name: Patch</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Patch</td></tr>
 	<tr><td>Class:</td><td></td></tr>
 	<tr><td>Definition:</td><td>A feature of the environment, living or otherwise, that provides nourishment, protection, or other benefit to the survival of animals or the persistence of species.</td></tr>
 	<tr><td>Comment:</td><td>Examples: A fruiting tree. A sleeping site. A water hole. A mineral lick.</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/ResourcePatch">ResourcePatch</a></td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/Patch">Patch</a></td></tr>
 	<tr><th colspan="2" id="MaterialSample">Term Name: MaterialSample</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/MaterialSample</td></tr>
 	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Definition:</td><td>A physical results of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.</td></tr>
+	<tr><td>Definition:</td><td>A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.</td></tr>
 	<tr><td>Comment:</td><td>Examples: A whole organism preserved in a collection. A part of an organism isolated for some purpose. A soil sample. A marine microbial sample.</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/MaterialSample">MaterialSample</a></td></tr>
 	<tr><th colspan="2" id="Event">Term Name: Event</th></tr>
@@ -39,7 +33,7 @@
 	<tr><th colspan="2" id="Activity">Term Name: Activity</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Activity</td></tr>
 	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Definition:</td><td>An activity state scheduled or performed by a user.</td></tr>
+	<tr><td>Definition:</td><td>An activity state scheduled or performed by an observer.</td></tr>
 	<tr><td>Comment:</td><td>Example: Recording behavior. Driving to camp. Conducting experiment.</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/Activity">Activity</a></td></tr>
 	<tr><th colspan="2" id="Location">Term Name: Location</th></tr>
@@ -180,88 +174,58 @@
 	<tr><td>Definition:</td><td>A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content.</td></tr>
 	<tr><td>Comment:</td><td>The recommended best practice is to use a key:value encoding schema such as JSON. Examples: "{"heightInMeters":1.5}", "{"tragusLengthInMeters":0.014, "weightInGrams":120}", "{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}", "{"relativeHumidity":28, "airTemperatureInCelcius":22, "sampleSizeInKilograms":10}", "{"aspectHeading":277, "slopeInDegrees":6}", "{"iucnStatus":"vulnerable", "taxonDistribution":"Neuquén, Argentina"}".</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/dynamicProperties">dynamicProperties</a></td></tr>
-	<tr><th colspan="2" id="observationID">Term Name: observationID</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationID</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>An identifier for the Observation. May be a global unique identifier or an identifier specific to the data set.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationID">observationID</a></td></tr>
-	<tr><th colspan="2" id="observationType">Term Name: observationType</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationType</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>The type of Observation being made. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "focal observation", "group activity", "nearest neighbor", "contact", "indirect sign", "ad libitum"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationType">observationType</a></td></tr>
-	<tr><th colspan="2" id="observationValue">Term Name: observationValue</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationValue</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>The value of the observation being made.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "foraging", "pregnant", "in proximity"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationValue">observationValue</a></td></tr>
-	<tr><th colspan="2" id="observedBy">Term Name: observedBy</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observedBy</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the Observation.</td></tr>
-	<tr><td>Comment:</td><td>The recommended best practice is to separate multiple values with a vertical bar (' | ').</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observedBy">observedBy</a></td></tr>
-	<tr><th colspan="2" id="observationRemarks">Term Name: observationRemarks</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationRemarks</td></tr>
-	<tr><td>Class:</td><td>Observation</td></tr>
-	<tr><td>Definition:</td><td>Comments or notes about the Observation.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationRemarks">observationRemarks</a></td></tr>
 	<tr><th colspan="2" id="measurementID">Term Name: measurementID</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementID</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Definition:</td><td>An identifier for the MeasurementOrFact (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
+	<tr><td>Definition:</td><td>An identifier for the MeasurementOrObservation (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementID">measurementID</a></td></tr>
 	<tr><th colspan="2" id="measurementType">Term Name: measurementType</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementType</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Definition:</td><td>The nature of the measurement, fact, characteristic, or assertion. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "tail length", "temperature", "trap line length", "survey area", "trap type"</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
+	<tr><td>Definition:</td><td>The nature of the measurement, fact, characteristic, assertion, or observation. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Comment:</td><td>Measurment examples: "tail length", "temperature", "trap line length", "survey area", "trap type"; Observation examples: "focal observation", "group activity", "nearest neighbor", "contact", "indirect sign", "ad libitum"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementType">measurementType</a></td></tr>
 	<tr><th colspan="2" id="measurementValue">Term Name: measurementValue</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementValue</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Definition:</td><td>The value of the measurement, fact, characteristic, or assertion.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "45", "20", "1", "14.5", "UV-light"</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
+	<tr><td>Definition:</td><td>The value of the measurement, fact, characteristic, assertion, or observation being made.</td></tr>
+	<tr><td>Comment:</td><td>Measurement examples: "45", "20", "1", "14.5", "UV-light". Observation examples: "foraging", "pregnant", "in proximity"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementValue">measurementValue</a></td></tr>
 	<tr><th colspan="2" id="measurementAccuracy">Term Name: measurementAccuracy</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementAccuracy</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
 	<tr><td>Definition:</td><td>The description of the potential error associated with the measurementValue.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "0.01", "normal distribution with variation of 2 m"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementAccuracy">measurementAccuracy</a></td></tr>
 	<tr><th colspan="2" id="measurementUnit">Term Name: measurementUnit</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementUnit</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
 	<tr><td>Definition:</td><td>The units associated with the measurementValue. Recommended best practice is to use the International System of Units (SI).</td></tr>
 	<tr><td>Comment:</td><td>Examples: "mm", "C", "km", "ha"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementUnit">measurementUnit</a></td></tr>
 	<tr><th colspan="2" id="measurementDeterminedBy">Term Name: measurementDeterminedBy</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementDeterminedBy</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrFact.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "Javier de la Torre", "Julie Woodruff; Eileen Lacey"</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
+	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrObservation.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "Javier de la Torre", "Julie Woodruff; Eileen Lacey". The recommended best practice is to separate multiple values with a vertical bar (' | ').</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementDeterminedBy">measurementDeterminedBy</a></td></tr>
 	<tr><th colspan="2" id="measurementMethod">Term Name: measurementMethod</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementMethod</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Definition:</td><td>A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, or assertion.</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
+	<tr><td>Definition:</td><td>A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, assertion, or observation.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "minimum convex polygon around burrow entrances" for a home range area, "barometric altimeter" for an elevation</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementMethod">measurementMethod</a></td></tr>
 	<tr><th colspan="2" id="measurementInstrument">Term Name: measurementInstrument</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementInstrument</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
 	<tr><td>Definition:</td><td>The instrument used to perform a measurement. Recommended best practice is to use a controlled vocabulary.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "measuring tape", "digital thermometer", "1000 ml graduated cylinder", "spectrophotometer"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementInstrument">measurementInstrument</a></td></tr>
 	<tr><th colspan="2" id="measurementRemarks">Term Name: measurementRemarks</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementRemarks</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrFact</td></tr>
-	<tr><td>Definition:</td><td>Comments or notes accompanying the measurement, fact, characterstic, or assertion.</td></tr>
+	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
+	<tr><td>Definition:</td><td>Comments or notes accompanying the measurement, fact, characterstic, assertion, or observation.</td></tr>
 	<tr><td>Comment:</td><td>Example: "tip of tail missing"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementRemarks">measurementRemarks</a></td></tr>
 	<tr><th colspan="2" id="animalID">Term Name: animalID</th></tr>
@@ -302,55 +266,55 @@
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/animalRemarks">animalRemarks</a></td></tr>
 	<tr><th colspan="2" id="resourcePatchID">Term Name: resourcePatchID</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourcePatchID</td></tr>
-	<tr><td>Class:</td><td>ResourcePatch</td></tr>
+	<tr><td>Class:</td><td>Patch</td></tr>
 	<tr><td>Definition:</td><td>An identifier for the ResearchPatch. May be a global unique identifier or an identifier specific to the data set.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/resourcePatchID">resourcePatchID</a></td></tr>
 	<tr><th colspan="2" id="resourcePatchName">Term Name: resourcePatchName</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourcePatchName</td></tr>
-	<tr><td>Class:</td><td>ResourcePatch</td></tr>
+	<tr><td>Class:</td><td>Patch</td></tr>
 	<tr><td>Definition:</td><td>The given name for the ResourcePatch.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/resourcePatchName">resourcePatchName</a></td></tr>
 	<tr><th colspan="2" id="resourcePatchType">Term Name: resourcePatchType</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourcePatchType</td></tr>
-	<tr><td>Class:</td><td>ResourcePatch</td></tr>
+	<tr><td>Class:</td><td>Patch</td></tr>
 	<tr><td>Definition:</td><td>The category to which the ResourcePatch belongs. Recommended best practice is to use a controlled vocabulary.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "tree", "mineral lick"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/resourcePatchType">resourcePatchType</a></td></tr>
 	<tr><th colspan="2" id="resourcePatchUse">Term Name: resourcePatchUse</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourcePatchUse</td></tr>
-	<tr><td>Class:</td><td>ResourcePatch</td></tr>
+	<tr><td>Class:</td><td>Patch</td></tr>
 	<tr><td>Definition:</td><td>The primary manner in which the ResourcePatch is used by study subjects. Recommended best practice is to use a controlled vocabulary.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "feeding", "sleeping"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/resourcePatchUse">resourcePatchUse</a></td></tr>
 	<tr><th colspan="2" id="timeMarked">Term Name: timeMarked</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/timeMarked</td></tr>
-	<tr><td>Class:</td><td>ResourcePatch</td></tr>
+	<tr><td>Class:</td><td>Patch</td></tr>
 	<tr><td>Definition:</td><td>The time during which a ResearchPatch was marked. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/timeMarked">timeMarked</a></td></tr>
 	<tr><th colspan="2" id="dateMarked">Term Name: dateMarked</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/dateMarked</td></tr>
-	<tr><td>Class:</td><td>ResourcePatch</td></tr>
+	<tr><td>Class:</td><td>Patch</td></tr>
 	<tr><td>Definition:</td><td>The date during which a ResearchPatch was marked. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/dateMarked">dateMarked</a></td></tr>
 	<tr><th colspan="2" id="dateOfExpiration">Term Name: dateOfExpiration</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/dateOfExpiration</td></tr>
-	<tr><td>Class:</td><td>ResourcePatch</td></tr>
+	<tr><td>Class:</td><td>Patch</td></tr>
 	<tr><td>Definition:</td><td>The date on which a ResearchPatch disappears, dies, or otherwise ceases to exist. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/dateOfExpiration">dateOfExpiration</a></td></tr>
 	<tr><th colspan="2" id="markedBy">Term Name: markedBy</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/markedBy</td></tr>
-	<tr><td>Class:</td><td>ResourcePatch</td></tr>
+	<tr><td>Class:</td><td>Patch</td></tr>
 	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who marked the ResourcePatch.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/markedBy">markedBy</a></td></tr>
 	<tr><th colspan="2" id="resourcePatchRemarks">Term Name: resourcePatchRemarks</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourcePatchRemarks</td></tr>
-	<tr><td>Class:</td><td>ResourcePatch</td></tr>
+	<tr><td>Class:</td><td>Patch</td></tr>
 	<tr><td>Definition:</td><td>Comments or notes about the ResourcePatch.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/resourcePatchRemarks">resourcePatchRemarks</a></td></tr>
