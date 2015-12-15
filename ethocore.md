@@ -1,4 +1,4 @@
-# Etho Core terms
+# EthoCore terms
 
 ## Record-level Terms
 
@@ -14,7 +14,7 @@
 
 ## [Patch](#Patch)
 
-[resourcePatchID](#resourcePatchID) | [resourcePatchName](#resourcePatchName) | [resourcePatchType](#resourcePatchType) | [resourcePatchUse](#resourcePatchUse) | [timeMarked](#timeMarked) | [dateMarked](#dateMarked) | [dateOfExpiration](#dateOfExpiration) | [markedBy](#markedBy) | [resourcePatchRemarks](#resourcePatchRemarks)
+[patchID](#patchID) | [patchName](#patchName) | [patchType](#patchType) | [patchUse](#patchUse) | [timeMarked](#timeMarked) | [dateMarked](#dateMarked) | [dateOfExpiration](#dateOfExpiration) | [markedBy](#markedBy) | [patchRemarks](#patchRemarks)
 
 ## [MaterialSample](#MaterialSample)
 
@@ -310,30 +310,30 @@
 	<tr><td>Definition:</td><td>Comments or notes about the Animal. May include notes that assist in the identification of animals.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/animalRemarks">animalRemarks</a></td></tr>
-	<tr><th colspan="2" id="resourcePatchID">Term Name: resourcePatchID</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourcePatchID</td></tr>
+	<tr><th colspan="2" id="patchID">Term Name: patchID</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/patchID</td></tr>
 	<tr><td>Class:</td><td>Patch</td></tr>
 	<tr><td>Definition:</td><td>An identifier for the ResearchPatch. May be a global unique identifier or an identifier specific to the data set.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/resourcePatchID">resourcePatchID</a></td></tr>
-	<tr><th colspan="2" id="resourcePatchName">Term Name: resourcePatchName</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourcePatchName</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/patchID">patchID</a></td></tr>
+	<tr><th colspan="2" id="patchName">Term Name: patchName</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/patchName</td></tr>
 	<tr><td>Class:</td><td>Patch</td></tr>
-	<tr><td>Definition:</td><td>The given name for the ResourcePatch.</td></tr>
+	<tr><td>Definition:</td><td>The given name for the Patch.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/resourcePatchName">resourcePatchName</a></td></tr>
-	<tr><th colspan="2" id="resourcePatchType">Term Name: resourcePatchType</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourcePatchType</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/patchName">patchName</a></td></tr>
+	<tr><th colspan="2" id="patchType">Term Name: patchType</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/patchType</td></tr>
 	<tr><td>Class:</td><td>Patch</td></tr>
-	<tr><td>Definition:</td><td>The category to which the ResourcePatch belongs. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Definition:</td><td>The category to which the Patch belongs. Recommended best practice is to use a controlled vocabulary.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "tree", "mineral lick"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/resourcePatchType">resourcePatchType</a></td></tr>
-	<tr><th colspan="2" id="resourcePatchUse">Term Name: resourcePatchUse</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourcePatchUse</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/patchType">patchType</a></td></tr>
+	<tr><th colspan="2" id="patchUse">Term Name: patchUse</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/patchUse</td></tr>
 	<tr><td>Class:</td><td>Patch</td></tr>
-	<tr><td>Definition:</td><td>The primary manner in which the ResourcePatch is used by study subjects. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Definition:</td><td>The primary manner in which the Patch is used by study subjects. Recommended best practice is to use a controlled vocabulary.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "feeding", "sleeping"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/resourcePatchUse">resourcePatchUse</a></td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/patchUse">patchUse</a></td></tr>
 	<tr><th colspan="2" id="timeMarked">Term Name: timeMarked</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/timeMarked</td></tr>
 	<tr><td>Class:</td><td>Patch</td></tr>
@@ -355,15 +355,15 @@
 	<tr><th colspan="2" id="markedBy">Term Name: markedBy</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/markedBy</td></tr>
 	<tr><td>Class:</td><td>Patch</td></tr>
-	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who marked the ResourcePatch.</td></tr>
+	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who marked the Patch.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/markedBy">markedBy</a></td></tr>
-	<tr><th colspan="2" id="resourcePatchRemarks">Term Name: resourcePatchRemarks</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/resourcePatchRemarks</td></tr>
+	<tr><th colspan="2" id="patchRemarks">Term Name: patchRemarks</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/patchRemarks</td></tr>
 	<tr><td>Class:</td><td>Patch</td></tr>
-	<tr><td>Definition:</td><td>Comments or notes about the ResourcePatch.</td></tr>
+	<tr><td>Definition:</td><td>Comments or notes about the Patch.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/resourcePatchRemarks">resourcePatchRemarks</a></td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/patchRemarks">patchRemarks</a></td></tr>
 	<tr><th colspan="2" id="materialSampleID">Term Name: materialSampleID</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/materialSampleID</td></tr>
 	<tr><td>Class:</td><td>MaterialSample</td></tr>

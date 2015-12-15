@@ -25,7 +25,7 @@ linkify <- function(x,y='md') {
 	}
 }
 
-write('# Etho Core terms\n',file=paste0(write.filename,'.md'))
+write('# EthoCore terms\n',file=paste0(write.filename,'.md'))
 
 write(paste(do.call(c,lapply(c('RecordLevel',classes[!is.na(classes)],auxiliary),function(i) {
 	set <- ethocore[ethocore$CLASS %in% i,]
