@@ -90,3 +90,66 @@ write.csv(ethocore.wordpress,file=paste0(write.filename,'.csv'),row.names=FALSE,
 if (Sys.info()['sysname'] %in% 'Darwin' & as.logical(length(system('which pandoc',intern=TRUE)))) {
 	system(paste0('pandoc ethocore.md -o ',write.filename,'.html'))
 }
+
+# Convert into RDF
+
+ethocore.rdf <- ethocore.wordpress
+
+ethocore.rdf$type <- as.character(sapply(ethocore.wordpress$class,function(x) if(is.na(x)) 'http://www.w3.org/2000/01/rdf-schema#Class' else 'http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'))
+
+ethocore.rdf.head <- c("<?xml version=\"1.0\" encoding=\"UTF-8\"?>", "<!--", "  To use the stylesheet to make the RDF more readable in a web browser, uncomment one of the the following stylesheet references:", 
+"  <?xml-stylesheet type=\"text/xsl\" href=\"human.xsl\"?>", 
+"  <?xml-stylesheet type=\"text/xsl\" href=\"http://rs.tdwg.org/dwc/rdf/human.xsl\"?>", 
+"-->", "<!DOCTYPE rdf:RDF [", "    <!ENTITY rdfns 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>", 
+"    <!ENTITY rdfsns 'http://www.w3.org/2000/01/rdf-schema#'>", 
+"    <!ENTITY dctermsns 'http://purl.org/dc/terms/'>", "    <!ENTITY dctypens 'http://purl.org/dc/dcmitype/'>", 
+"    <!ENTITY dwcattributesns 'http://rs.tdwg.org/dwc/terms/attributes/'>", 
+"<!--", "    <!ENTITY skosns 'http://www.w3.org/2004/02/skos/core#'>", 
+"    <!ENTITY vsns 'http://www.w3.org/2003/06/sw-vocab-status/ns#'>", 
+"-->", "]>", "<rdf:RDF", "xmlns:dwcattributes=\"http://rs.tdwg.org/dwc/terms/attributes/\"", 
+"xmlns:dcterms=\"http://purl.org/dc/terms/\" ", "xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" ", 
+"xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"", "xmlns:dwcterms=\"http://rs.tdwg.org/dwc/terms/\"", 
+"xml:base=\"http://ethoinformatics.org/ethocore/\">", "<rdf:Description rdf:about=\"http://ethoinformatics.org/ethocore/\">", 
+"<dcterms:title xml:lang=\"en-US\">EthoCore Recommended Terms</dcterms:title>", 
+"<rdfs:comment>This document contains a list of EthoCore terms that have the dwcattributes:status equal to \"recommended\".</rdfs:comment>", 
+"<dcterms:publisher xml:lang=\"en-US\">Ethoinformatics Core Team</dcterms:publisher>", 
+"<dcterms:modified>2015-12-14</dcterms:modified>", "</rdf:Description>", 
+"<!-- ", "  Each RDF description uses the following:", "    rdfs:label", 
+"    rdfs:comment", "    dcterms:description", "    rdfs:isDefinedBy", 
+"    dcterms:issued", "    dcterms:modified", "    rdf:type", 
+"    dcterms:hasVersion", "    rdfs:range", "    rdfs:subPropertyOf", 
+"    dcterms:replaces", "    dwcattributes:status", "    dwcattributes:decision", 
+"    ", "    // potentially useful", "    rdfs:domain", "    skos = http://www.w3.org/2004/02/skos/core#", 
+"    skos:example", "    vs = http://www.w3.org/2003/06/sw-vocab-status/ns#", 
+"    vs:term_status", "-->", "<!-- Mutable RDF goes here -->"
+)
+
+ethocore.rdf.body <- apply(ethocore.rdf,1,function(x) {
+	paste0(
+		'<rdf:Description rdf:about="',x['identifier'],'"> ',
+		'<rdfs:label xml:lang="en-US">',x['label'],'</rdfs:label>',
+		'<rdfs:comment xml:lang="en-US">',x['definition'],'</rdfs:comment>',
+		if (!is.na(x['description'])) {
+			paste0('<dcterms:description xml:lang="en-US">',x['description'],'</dcterms:description>')
+		} else { '' },
+		'<rdfs:isDefinedBy rdf:resource="http://ethoinformatics.org/ethocore/">',
+		'<dcterms:issued>',x['date_issued'],'</dcterms:issued>',
+		'<dcterms:modified>',x['date_modified'],'</dcterms:modified>',
+		'<rdf:type rdf:resource="',x['type'],'"/>',
+		'<dcterms:hasVersion rdf:resource="',x['version'],'"/>',
+		if (!is.na(x['refines'])) {
+			paste0('<dcterms:replaces rdf:resource="',x['refines'],'"/>')
+		} else { '' },
+		'<dwcattributes:status>recommended</dwcattributes:status>',
+		if (!is.na(x['class'])) {
+			paste0('<dwcattributes:organizedInClass rdf:resource="',if (x['class'] %in% 'RecordLevel') 'all' else paste0('http://ethoinformatics.org/ethocore/',x['class']),'"/>')
+		} else { '' },
+		' </rdf:Description>'
+	)
+})
+
+ethocore.rdf.tail <- c('<!-- end Mutable RDF -->','</rdf:RDF>')
+
+ethocore.rdf <- c(ethocore.rdf.head,'',ethocore.rdf.body,'',ethocore.rdf.tail)
+
+write(ethocore.rdf,file=paste0(write.filename,'.rdf'),sep='\n')
