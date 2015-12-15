@@ -97,6 +97,17 @@ ethocore.rdf <- ethocore.wordpress
 
 ethocore.rdf$type <- as.character(sapply(ethocore.wordpress$class,function(x) if(is.na(x)) 'http://www.w3.org/2000/01/rdf-schema#Class' else 'http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'))
 
+ethocore.rdf$definition <- gsub('"','&quot;',ethocore.rdf$definition)
+ethocore.rdf$definition <- gsub('\'','&apos;',ethocore.rdf$definition)
+ethocore.rdf$definition <- gsub('<','&lt;',ethocore.rdf$definition)
+ethocore.rdf$definition <- gsub('>','&gt;',ethocore.rdf$definition)
+ethocore.rdf$definition <- gsub('&','&amp;',ethocore.rdf$definition)
+ethocore.rdf$description <- gsub('"','&quot;',ethocore.rdf$description)
+ethocore.rdf$description <- gsub('\'','&apos;',ethocore.rdf$description)
+ethocore.rdf$description <- gsub('<','&lt;',ethocore.rdf$description)
+ethocore.rdf$description <- gsub('>','&gt;',ethocore.rdf$description)
+ethocore.rdf$description <- gsub('&','&amp;',ethocore.rdf$description)
+
 ethocore.rdf.head <- c("<?xml version=\"1.0\" encoding=\"UTF-8\"?>", "<!--", "  To use the stylesheet to make the RDF more readable in a web browser, uncomment one of the the following stylesheet references:", 
 "  <?xml-stylesheet type=\"text/xsl\" href=\"human.xsl\"?>", 
 "  <?xml-stylesheet type=\"text/xsl\" href=\"http://rs.tdwg.org/dwc/rdf/human.xsl\"?>", 
