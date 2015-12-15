@@ -143,7 +143,7 @@ ethocore.rdf.body <- apply(ethocore.rdf,1,function(x) {
 		if (!is.na(x['description'])) {
 			paste0('<dcterms:description xml:lang="en-US">',x['description'],'</dcterms:description>')
 		} else { '' },
-		'<rdfs:isDefinedBy rdf:resource="http://ethoinformatics.org/ethocore/">',
+		'<rdfs:isDefinedBy rdf:resource="http://ethoinformatics.org/ethocore/"/>',
 		'<dcterms:issued>',x['date_issued'],'</dcterms:issued>',
 		'<dcterms:modified>',x['date_modified'],'</dcterms:modified>',
 		'<rdf:type rdf:resource="',x['type'],'"/>',
