@@ -4,13 +4,17 @@
 
 [type](#type) | [modified](#modified) | [language](#language) | [license](#license) | [rightsHolder](#rightsHolder) | [accessRights](#accessRights) | [bibliographicCitation](#bibliographicCitation) | [references](#references) | [institutionID](#institutionID) | [collectionID](#collectionID) | [datasetID](#datasetID) | [institutionCode](#institutionCode) | [collectionCode](#collectionCode) | [datasetName](#datasetName) | [ownerInstitutionCode](#ownerInstitutionCode) | [basisOfRecord](#basisOfRecord) | [informationWithheld](#informationWithheld) | [dataGeneralizations](#dataGeneralizations) | [dynamicProperties](#dynamicProperties)
 
-## [MeasurementOrObservation](#MeasurementOrObservation)
+## [Observation](#Observation)
+
+[observationID](#observationID) | [observationType](#observationType) | [observationValue](#observationValue) | [observationAccuracy](#observationAccuracy) | [observationUnit](#observationUnit) | [observationDeterminedBy](#observationDeterminedBy) | [observationMethod](#observationMethod) | [observationRemarks](#observationRemarks)
+
+## [Measurement](#Measurement)
 
 [measurementID](#measurementID) | [measurementType](#measurementType) | [measurementValue](#measurementValue) | [measurementAccuracy](#measurementAccuracy) | [measurementUnit](#measurementUnit) | [measurementDeterminedBy](#measurementDeterminedBy) | [measurementMethod](#measurementMethod) | [measurementInstrument](#measurementInstrument) | [measurementRemarks](#measurementRemarks)
 
-## [Animal](#Animal)
+## [Organism](#Organism)
 
-[animalID](#animalID) | [animalName](#animalName) | [animalCode](#animalCode) | [animalScope](#animalScope) | [animalSex](#animalSex) | [animalRemarks](#animalRemarks)
+[organismID](#organismID) | [organismName](#organismName) | [organismScope](#organismScope) | [organismRemarks](#organismRemarks) | [organismCode](#organismCode)
 
 ## [Patch](#Patch)
 
@@ -30,7 +34,7 @@
 
 ## [Location](#Location)
 
-[locationID](#locationID) | [locationName](#locationName) | [higherGeographyID](#higherGeographyID) | [higherGeography](#higherGeography) | [continent](#continent) | [islandGroup](#islandGroup) | [island](#island) | [country](#country) | [countryCode](#countryCode) | [stateProvince](#stateProvince) | [county](#county) | [municipality](#municipality) | [locality](#locality) | [verbatimLocality](#verbatimLocality) | [minimumElevationInMeters](#minimumElevationInMeters) | [maximumElevationInMeters](#maximumElevationInMeters) | [verbatimElevation](#verbatimElevation) | [verbatimDepth](#verbatimDepth) | [locationAccordingTo](#locationAccordingTo) | [locationRemarks](#locationRemarks) | [decimalLatitude](#decimalLatitude) | [decimalLongitude](#decimalLongitude) | [geodeticDatum](#geodeticDatum) | [utmX](#utmX) | [utmY](#utmY) | [utmZone](#utmZone) | [coordinateUncertaintyInMeters](#coordinateUncertaintyInMeters) | [coordinatePrecision](#coordinatePrecision) | [pointRadiusSpatialFit](#pointRadiusSpatialFit) | [verbatimCoordinates](#verbatimCoordinates) | [verbatimLatitude](#verbatimLatitude) | [verbatimLongitude](#verbatimLongitude) | [verbatimCoordinateSystem](#verbatimCoordinateSystem) | [verbatimSRS](#verbatimSRS) | [footprint](#footprint) | [footprintSRS](#footprintSRS) | [footprintSpatialFit](#footprintSpatialFit) | [nmeaSentence](#nmeaSentence) | [georeferencedBy](#georeferencedBy) | [georeferencedDate](#georeferencedDate) | [georeferenceProtocol](#georeferenceProtocol) | [georeferenceSources](#georeferenceSources) | [georeferenceVerificationStatus](#georeferenceVerificationStatus) | [georeferenceRemarks](#georeferenceRemarks)
+[locationID](#locationID) | [higherGeographyID](#higherGeographyID) | [higherGeography](#higherGeography) | [continent](#continent) | [islandGroup](#islandGroup) | [island](#island) | [country](#country) | [countryCode](#countryCode) | [stateProvince](#stateProvince) | [county](#county) | [municipality](#municipality) | [locality](#locality) | [verbatimLocality](#verbatimLocality) | [minimumElevationInMeters](#minimumElevationInMeters) | [maximumElevationInMeters](#maximumElevationInMeters) | [verbatimElevation](#verbatimElevation) | [verbatimDepth](#verbatimDepth) | [locationAccordingTo](#locationAccordingTo) | [locationRemarks](#locationRemarks) | [decimalLatitude](#decimalLatitude) | [decimalLongitude](#decimalLongitude) | [geodeticDatum](#geodeticDatum) | [coordinateUncertaintyInMeters](#coordinateUncertaintyInMeters) | [coordinatePrecision](#coordinatePrecision) | [pointRadiusSpatialFit](#pointRadiusSpatialFit) | [verbatimCoordinates](#verbatimCoordinates) | [verbatimLatitude](#verbatimLatitude) | [verbatimLongitude](#verbatimLongitude) | [verbatimCoordinateSystem](#verbatimCoordinateSystem) | [verbatimSRS](#verbatimSRS) | [footprintSRS](#footprintSRS) | [footprintSpatialFit](#footprintSpatialFit) | [georeferencedBy](#georeferencedBy) | [georeferencedDate](#georeferencedDate) | [georeferenceProtocol](#georeferenceProtocol) | [georeferenceSources](#georeferenceSources) | [georeferenceVerificationStatus](#georeferenceVerificationStatus) | [georeferenceRemarks](#georeferenceRemarks) | [locationName](#locationName) | [utmX](#utmX) | [utmY](#utmY) | [utmZone](#utmZone) | [footprint](#footprint) | [nmeaSentence](#nmeaSentence)
 
 ## [Identification](#Identification)
 
@@ -46,18 +50,24 @@
 
 <table id="terms-table" class="terms-dictionary">
 	<tr style="border:none;"><td></td><td></td></tr>
-	<tr><th colspan="2" id="MeasurementOrObservation">Term Name: MeasurementOrObservation</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/MeasurementOrObservation</td></tr>
+	<tr><th colspan="2" id="Observation">Term Name: Observation</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Observation</td></tr>
 	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Definition:</td><td>A measurement of or observation about a subject. Can include details about the nature, context, state, or activity of animals, or of animals in relation to their environments.</td></tr>
-	<tr><td>Comment:</td><td>In Darwin Core, the measurement or fact is of or about an rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource). In EthoCore, the subject need not be an rdfs:Resource. Examples: The weight of an organism in grams. The number of placental scars. A daily rain gauge reading in millimeters. An observed foraging event. An observed proximity episode. The occupancy of a location by a species.</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/MeasurementOrObservation">MeasurementOrObservation</a></td></tr>
-	<tr><th colspan="2" id="Animal">Term Name: Animal</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Animal</td></tr>
+	<tr><td>Definition:</td><td>Details about the nature, context, state, or activity of a subject.</td></tr>
+	<tr><td>Comment:</td><td>The observation closely resembles the Darwin Core class MeasurementOrFact. In EthoCore, observations are restricted to observations about resources. Examples: An observed foraging event. An observed proximity episode. The occupancy of a location by a species.</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/Observation">Observation</a></td></tr>
+	<tr><th colspan="2" id="Measurement">Term Name: Measurement</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Measurement</td></tr>
 	<tr><td>Class:</td><td></td></tr>
-	<tr><td>Definition:</td><td>A particular animal or a defined grouping of animals.</td></tr>
-	<tr><td>Comment:</td><td>Examples: A single loris. A troop of baboons. A mixed species zoo exhibit. A breeding population of rhinoceroses.</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/Animal">Animal</a></td></tr>
+	<tr><td>Definition:</td><td>A metric measurement of a subject.</td></tr>
+	<tr><td>Comment:</td><td>The measurement closely resembles the Darwin Core class MeasurementOrFact. In EthoCore, measurements are restricted to metric measurements, whether other assertions are consider observations.</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/Measurement">Measurement</a></td></tr>
+	<tr><th colspan="2" id="Organism">Term Name: Organism</th></tr>
+	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/Organism</td></tr>
+	<tr><td>Class:</td><td></td></tr>
+	<tr><td>Definition:</td><td>A particular organism or defined group of organisms considered to be taxonomically homogeneous.</td></tr>
+	<tr><td>Comment:</td><td>Instances of the Organism class are intended to facilitate linking of one or more Identification instances to one or more Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class.</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/Organism">Organism</a></td></tr>
 	<tr><th colspan="2" id="Patch">Term Name: Patch</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/Patch</td></tr>
 	<tr><td>Class:</td><td></td></tr>
@@ -220,96 +230,138 @@
 	<tr><td>Definition:</td><td>A list of additional measurements, facts, characteristics, or assertions about the record. Meant to provide a mechanism for structured content.</td></tr>
 	<tr><td>Comment:</td><td>The recommended best practice is to use a key:value encoding schema such as JSON. Examples: "{"heightInMeters":1.5}", "{"tragusLengthInMeters":0.014, "weightInGrams":120}", "{"natureOfID":"expert identification", "identificationEvidence":"cytochrome B sequence"}", "{"relativeHumidity":28, "airTemperatureInCelcius":22, "sampleSizeInKilograms":10}", "{"aspectHeading":277, "slopeInDegrees":6}", "{"iucnStatus":"vulnerable", "taxonDistribution":"Neuquén, Argentina"}".</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/dynamicProperties">dynamicProperties</a></td></tr>
+	<tr><th colspan="2" id="observationID">Term Name: observationID</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationID</td></tr>
+	<tr><td>Class:</td><td>Observation</td></tr>
+	<tr><td>Definition:</td><td>An identifier for the Observation. May be a global unique identifier or an identifier specific to the data set.</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationID">observationID</a></td></tr>
+	<tr><th colspan="2" id="observationType">Term Name: observationType</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationType</td></tr>
+	<tr><td>Class:</td><td>Observation</td></tr>
+	<tr><td>Definition:</td><td>The nature of the observation. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "focal observation", "group activity", "nearest neighbor", "contact", "indirect sign", "ad libitum"</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationType">observationType</a></td></tr>
+	<tr><th colspan="2" id="observationValue">Term Name: observationValue</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationValue</td></tr>
+	<tr><td>Class:</td><td>Observation</td></tr>
+	<tr><td>Definition:</td><td>The value of the observation being made.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "foraging", "pregnant", "in proximity"</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationValue">observationValue</a></td></tr>
+	<tr><th colspan="2" id="observationAccuracy">Term Name: observationAccuracy</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationAccuracy</td></tr>
+	<tr><td>Class:</td><td>Observation</td></tr>
+	<tr><td>Definition:</td><td>The description of the potential error associated with the observationValue.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "observation taken from 100m distance"</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationAccuracy">observationAccuracy</a></td></tr>
+	<tr><th colspan="2" id="observationUnit">Term Name: observationUnit</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationUnit</td></tr>
+	<tr><td>Class:</td><td>Observation</td></tr>
+	<tr><td>Definition:</td><td>The units associated with the observationValue. Recommended best practice is to use the International System of Units (SI).</td></tr>
+	<tr><td>Comment:</td><td>Examples: "mm", "C", "km", "ha"</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationUnit">observationUnit</a></td></tr>
+	<tr><th colspan="2" id="observationDeterminedBy">Term Name: observationDeterminedBy</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationDeterminedBy</td></tr>
+	<tr><td>Class:</td><td>Observation</td></tr>
+	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the Observation.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "Javier de la Torre", "Julie Woodruff; Eileen Lacey". The recommended best practice is to separate multiple values with a vertical bar (' | ').</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationDeterminedBy">observationDeterminedBy</a></td></tr>
+	<tr><th colspan="2" id="observationMethod">Term Name: observationMethod</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationMethod</td></tr>
+	<tr><td>Class:</td><td>Observation</td></tr>
+	<tr><td>Definition:</td><td>A description of or reference to (publication, URI) the method or protocol used to determine the observation.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "Altmann 1974" for a behavioral observation.</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationMethod">observationMethod</a></td></tr>
+	<tr><th colspan="2" id="observationRemarks">Term Name: observationRemarks</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/observationRemarks</td></tr>
+	<tr><td>Class:</td><td>Observation</td></tr>
+	<tr><td>Definition:</td><td>Comments or notes accompanying the observation.</td></tr>
+	<tr><td>Comment:</td><td>Example: "unsure if the subject was identified correctly"</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/observationRemarks">observationRemarks</a></td></tr>
 	<tr><th colspan="2" id="measurementID">Term Name: measurementID</th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementID</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
-	<tr><td>Definition:</td><td>An identifier for the MeasurementOrObservation (information pertaining to measurements, facts, characteristics, or assertions). May be a global unique identifier or an identifier specific to the data set.</td></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementID</td></tr>
+	<tr><td>Class:</td><td>Measurement</td></tr>
+	<tr><td>Definition:</td><td>An identifier for the Measurement (information pertaining to metric measurements). May be a global unique identifier or an identifier specific to the data set.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementID">measurementID</a></td></tr>
 	<tr><th colspan="2" id="measurementType">Term Name: measurementType</th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementType</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
-	<tr><td>Definition:</td><td>The nature of the measurement, fact, characteristic, assertion, or observation. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Measurment examples: "tail length", "temperature", "trap line length", "survey area", "trap type"; Observation examples: "focal observation", "group activity", "nearest neighbor", "contact", "indirect sign", "ad libitum"</td></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementType</td></tr>
+	<tr><td>Class:</td><td>Measurement</td></tr>
+	<tr><td>Definition:</td><td>The nature of the measurement. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "tail length", "temperature", "trap line length", "survey area"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementType">measurementType</a></td></tr>
 	<tr><th colspan="2" id="measurementValue">Term Name: measurementValue</th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementValue</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
-	<tr><td>Definition:</td><td>The value of the measurement, fact, characteristic, assertion, or observation being made.</td></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementValue</td></tr>
+	<tr><td>Class:</td><td>Measurement</td></tr>
+	<tr><td>Definition:</td><td>The value of the measurement.</td></tr>
 	<tr><td>Comment:</td><td>Measurement examples: "45", "20", "1", "14.5", "UV-light". Observation examples: "foraging", "pregnant", "in proximity"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementValue">measurementValue</a></td></tr>
 	<tr><th colspan="2" id="measurementAccuracy">Term Name: measurementAccuracy</th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementAccuracy</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementAccuracy</td></tr>
+	<tr><td>Class:</td><td>Measurement</td></tr>
 	<tr><td>Definition:</td><td>The description of the potential error associated with the measurementValue.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "0.01", "normal distribution with variation of 2 m"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementAccuracy">measurementAccuracy</a></td></tr>
 	<tr><th colspan="2" id="measurementUnit">Term Name: measurementUnit</th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementUnit</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementUnit</td></tr>
+	<tr><td>Class:</td><td>Measurement</td></tr>
 	<tr><td>Definition:</td><td>The units associated with the measurementValue. Recommended best practice is to use the International System of Units (SI).</td></tr>
 	<tr><td>Comment:</td><td>Examples: "mm", "C", "km", "ha"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementUnit">measurementUnit</a></td></tr>
 	<tr><th colspan="2" id="measurementDeterminedBy">Term Name: measurementDeterminedBy</th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementDeterminedBy</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
-	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the MeasurementOrObservation.</td></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementDeterminedBy</td></tr>
+	<tr><td>Class:</td><td>Measurement</td></tr>
+	<tr><td>Definition:</td><td>A list (concatenated and separated) of names of people, groups, or organizations who determined the value of the Measurement.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "Javier de la Torre", "Julie Woodruff; Eileen Lacey". The recommended best practice is to separate multiple values with a vertical bar (' | ').</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementDeterminedBy">measurementDeterminedBy</a></td></tr>
 	<tr><th colspan="2" id="measurementMethod">Term Name: measurementMethod</th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementMethod</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementMethod</td></tr>
+	<tr><td>Class:</td><td>Measurement</td></tr>
 	<tr><td>Definition:</td><td>A description of or reference to (publication, URI) the method or protocol used to determine the measurement, fact, characteristic, assertion, or observation.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "minimum convex polygon around burrow entrances" for a home range area, "barometric altimeter" for an elevation</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementMethod">measurementMethod</a></td></tr>
 	<tr><th colspan="2" id="measurementInstrument">Term Name: measurementInstrument</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementInstrument</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
+	<tr><td>Class:</td><td>Measurement</td></tr>
 	<tr><td>Definition:</td><td>The instrument used to perform a measurement. Recommended best practice is to use a controlled vocabulary.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "measuring tape", "digital thermometer", "1000 ml graduated cylinder", "spectrophotometer"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementInstrument">measurementInstrument</a></td></tr>
 	<tr><th colspan="2" id="measurementRemarks">Term Name: measurementRemarks</th></tr>
-	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/measurementRemarks</td></tr>
-	<tr><td>Class:</td><td>MeasurementOrObservation</td></tr>
-	<tr><td>Definition:</td><td>Comments or notes accompanying the measurement, fact, characterstic, assertion, or observation.</td></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/measurementRemarks</td></tr>
+	<tr><td>Class:</td><td>Measurement</td></tr>
+	<tr><td>Definition:</td><td>Comments or notes accompanying the metric measurement.</td></tr>
 	<tr><td>Comment:</td><td>Example: "tip of tail missing"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/measurementRemarks">measurementRemarks</a></td></tr>
-	<tr><th colspan="2" id="animalID">Term Name: animalID</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalID</td></tr>
-	<tr><td>Class:</td><td>Animal</td></tr>
-	<tr><td>Definition:</td><td>An identifier for an Animal. Meant to accommodate resampling of the same individual or group of individuals for monitoring purposes. May be a global unique identifier or an identifier specific to a data set.</td></tr>
+	<tr><th colspan="2" id="organismID">Term Name: organismID</th></tr>
+	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/organismID</td></tr>
+	<tr><td>Class:</td><td>Organism</td></tr>
+	<tr><td>Definition:</td><td>An identifier for the Organism instance (as opposed to a particular digital record of the Organism). May be a globally unique identifier or an identifier specific to the data set.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/animalID">animalID</a></td></tr>
-	<tr><th colspan="2" id="animalName">Term Name: animalName</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalName</td></tr>
-	<tr><td>Class:</td><td>Animal</td></tr>
-	<tr><td>Definition:</td><td>The given name of the Animal.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "Frodo", "Koko", "Pumphouse Gang".</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/animalName">animalName</a></td></tr>
-	<tr><th colspan="2" id="animalCode">Term Name: animalCode</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalCode</td></tr>
-	<tr><td>Class:</td><td>Animal</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/organismID">organismID</a></td></tr>
+	<tr><th colspan="2" id="organismName">Term Name: organismName</th></tr>
+	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/organismName</td></tr>
+	<tr><td>Class:</td><td>Organism</td></tr>
+	<tr><td>Definition:</td><td>A textual name or label assigned to an Organism instance.</td></tr>
+	<tr><td>Comment:</td><td>Examples: "Huberta", "Boab Prison Tree", "J pod".</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/organismName">organismName</a></td></tr>
+	<tr><th colspan="2" id="organismScope">Term Name: organismScope</th></tr>
+	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/organismScope</td></tr>
+	<tr><td>Class:</td><td>Organism</td></tr>
+	<tr><td>Definition:</td><td>A description of the kind of Organism instance. Can be used to indicate whether the Organism instance represents a discrete organism or if it represents a particular type of aggregation. Recommended best practice is to use a controlled vocabulary.</td></tr>
+	<tr><td>Comment:</td><td>This term is not intended to be used to specify a type of taxon. To describe the kind of Organism using a URI object in RDF, use rdf:type (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) instead. Examples: "multicellular organism", "virus", "clone" "pack", "colony).</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/organismScope">organismScope</a></td></tr>
+	<tr><th colspan="2" id="organismRemarks">Term Name: organismRemarks</th></tr>
+	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/organismRemarks</td></tr>
+	<tr><td>Class:</td><td>Organism</td></tr>
+	<tr><td>Definition:</td><td>Comments or notes about the Organism instance.</td></tr>
+	<tr><td>Comment:</td><td>Example: "One of a litter of six.".</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/organismRemarks">organismRemarks</a></td></tr>
+	<tr><th colspan="2" id="organismCode">Term Name: organismCode</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/organismCode</td></tr>
+	<tr><td>Class:</td><td>Organism</td></tr>
 	<tr><td>Definition:</td><td>A shorthand code for the Animal.</td></tr>
 	<tr><td>Comment:</td><td>Examples: "FRO", "KOK", "PG"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/animalCode">animalCode</a></td></tr>
-	<tr><th colspan="2" id="animalScope">Term Name: animalScope</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalScope</td></tr>
-	<tr><td>Class:</td><td>Animal</td></tr>
-	<tr><td>Definition:</td><td>A description of the kind of Animal instance. Can be used to indicate whether the Animal instance represents a discrete animal or if it represents a particular type of aggregation. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Examples: "individual", "social group", "pack", "colony".</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/animalScope">animalScope</a></td></tr>
-	<tr><th colspan="2" id="animalSex">Term Name: animalSex</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalSex</td></tr>
-	<tr><td>Class:</td><td>Animal</td></tr>
-	<tr><td>Definition:</td><td>The sex or sexes of the Animal. Recommended best practice is to use a controlled vocabulary.</td></tr>
-	<tr><td>Comment:</td><td>Example: "male", "female", "mixed"</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/animalSex">animalSex</a></td></tr>
-	<tr><th colspan="2" id="animalRemarks">Term Name: animalRemarks</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/animalRemarks</td></tr>
-	<tr><td>Class:</td><td>Animal</td></tr>
-	<tr><td>Definition:</td><td>Comments or notes about the Animal. May include notes that assist in the identification of animals.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/animalRemarks">animalRemarks</a></td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/organismCode">organismCode</a></td></tr>
 	<tr><th colspan="2" id="patchID">Term Name: patchID</th></tr>
 	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/patchID</td></tr>
 	<tr><td>Class:</td><td>Patch</td></tr>
@@ -448,12 +500,6 @@
 	<tr><td>Definition:</td><td>An identifier for the set of location information (data associated with dcterms:Location). May be a global unique identifier or an identifier specific to the data set.</td></tr>
 	<tr><td>Comment:</td><td></td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/locationID">locationID</a></td></tr>
-	<tr><th colspan="2" id="locationName">Term Name: locationName</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/locationName</td></tr>
-	<tr><td>Class:</td><td>Location</td></tr>
-	<tr><td>Definition:</td><td>The alias, colloquial, or shorthand name for the Location.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/locationName">locationName</a></td></tr>
 	<tr><th colspan="2" id="higherGeographyID">Term Name: higherGeographyID</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/higherGeographyID</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
@@ -580,24 +626,6 @@
 	<tr><td>Definition:</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based. Recommended best practice is use the EPSG code as a controlled vocabulary to provide an SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value "unknown".</td></tr>
 	<tr><td>Comment:</td><td>Examples: "EPSG:4326", "WGS84", "NAD27", "Campo Inchauspe", "European 1950", "Clarke 1866"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/geodeticDatum">geodeticDatum</a></td></tr>
-	<tr><th colspan="2" id="utmX">Term Name: utmX</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/utmX</td></tr>
-	<tr><td>Class:</td><td>Location</td></tr>
-	<tr><td>Definition:</td><td>The geographic easting (in meters) of the geographic center of a Location. Should be accompanied by the spatial reference system "UTM" given by the geodeticDatum).</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/utmX">utmX</a></td></tr>
-	<tr><th colspan="2" id="utmY">Term Name: utmY</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/utmY</td></tr>
-	<tr><td>Class:</td><td>Location</td></tr>
-	<tr><td>Definition:</td><td>The geographic northing (in meters) of the geographic center of a Location. Should be accompanied by the spatial reference system "UTM" given by the geodeticDatum).</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/utmY">utmY</a></td></tr>
-	<tr><th colspan="2" id="utmZone">Term Name: utmZone</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/utmZone</td></tr>
-	<tr><td>Class:</td><td>Location</td></tr>
-	<tr><td>Definition:</td><td>The UTM zone upon which the geographic coordinates given in utmX and utmY are based. Recommended best practice is to specify the hemisphere by appending "North" for the northern hemisphere or "South" for the southern hemisphere, or to specify the latitude band.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/utmZone">utmZone</a></td></tr>
 	<tr><th colspan="2" id="coordinateUncertaintyInMeters">Term Name: coordinateUncertaintyInMeters</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
@@ -646,12 +674,6 @@
 	<tr><td>Definition:</td><td>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude and verbatimLongitude, or verbatimCoordinates are based. Recommended best practice is use the EPSG code as a controlled vocabulary to provide an SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value "unknown".</td></tr>
 	<tr><td>Comment:</td><td>Examples: "EPSG:4326", "WGS84", "NAD27", "Campo Inchauspe", "European 1950", "Clarke 1866"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/verbatimSRS">verbatimSRS</a></td></tr>
-	<tr><th colspan="2" id="footprint">Term Name: footprint</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/footprint</td></tr>
-	<tr><td>Class:</td><td>Location</td></tr>
-	<tr><td>Definition:</td><td>A representation of the shape (footprint, geometry) that defines the Location. A Location may have both a point-radius representation (see decimalLatitude) and a footprint representation, and they may differ from each other.</td></tr>
-	<tr><td>Comment:</td><td>Example: the one-degree bounding box with opposite corners at (longitude=10, latitude=20) and (longitude=11, latitude=21) would be expressed in well-known text as POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20))</td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/footprint">footprint</a></td></tr>
 	<tr><th colspan="2" id="footprintSRS">Term Name: footprintSRS</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/footprintSRS</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
@@ -664,12 +686,6 @@
 	<tr><td>Definition:</td><td>The ratio of the area of the footprint (footprintWKT) to the area of the true (original, or most specific) spatial representation of the Location. Legal values are 0, greater than or equal to 1, or undefined. A value of 1 is an exact match or 100% overlap. A value of 0 should be used if the given footprint does not completely contain the original representation. The footprintSpatialFit is undefined (and should be left blank) if the original representation is a point and the given georeference is not that same point. If both the original and the given georeference are the same point, the footprintSpatialFit is 1.</td></tr>
 	<tr><td>Comment:</td><td>Detailed explanations with graphical examples can be found in the "Guide to Best Practices for Georeferencing", Chapman and Wieczorek, eds. 2006 (http://www.gbif.org/prog/digit/Georeferencing).</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/footprintSpatialFit">footprintSpatialFit</a></td></tr>
-	<tr><th colspan="2" id="nmeaSentence">Term Name: nmeaSentence</th></tr>
-	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/nmeaSentence</td></tr>
-	<tr><td>Class:</td><td>Location</td></tr>
-	<tr><td>Definition:</td><td>The NMEA sentence associated with the Location. The value should be expressed as a full NMEA sentence with the encoding (e.g., NMEA 0183) specified.</td></tr>
-	<tr><td>Comment:</td><td></td></tr>
-	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/nmeaSentence">nmeaSentence</a></td></tr>
 	<tr><th colspan="2" id="georeferencedBy">Term Name: georeferencedBy</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/georeferencedBy</td></tr>
 	<tr><td>Class:</td><td>Location</td></tr>
@@ -706,6 +722,42 @@
 	<tr><td>Definition:</td><td>Notes or comments about the spatial description determination, explaining assumptions made in addition or opposition to the those formalized in the method referred to in georeferenceProtocol.</td></tr>
 	<tr><td>Comment:</td><td>Example: "assumed distance by road (Hwy. 101)"</td></tr>
 	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/georeferenceRemarks">georeferenceRemarks</a></td></tr>
+	<tr><th colspan="2" id="locationName">Term Name: locationName</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/locationName</td></tr>
+	<tr><td>Class:</td><td>Location</td></tr>
+	<tr><td>Definition:</td><td>The alias, colloquial, or shorthand name for the Location.</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/locationName">locationName</a></td></tr>
+	<tr><th colspan="2" id="utmX">Term Name: utmX</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/utmX</td></tr>
+	<tr><td>Class:</td><td>Location</td></tr>
+	<tr><td>Definition:</td><td>The geographic easting (in meters) of the geographic center of a Location. Should be accompanied by the spatial reference system "UTM" given by the geodeticDatum).</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/utmX">utmX</a></td></tr>
+	<tr><th colspan="2" id="utmY">Term Name: utmY</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/utmY</td></tr>
+	<tr><td>Class:</td><td>Location</td></tr>
+	<tr><td>Definition:</td><td>The geographic northing (in meters) of the geographic center of a Location. Should be accompanied by the spatial reference system "UTM" given by the geodeticDatum).</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/utmY">utmY</a></td></tr>
+	<tr><th colspan="2" id="utmZone">Term Name: utmZone</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/utmZone</td></tr>
+	<tr><td>Class:</td><td>Location</td></tr>
+	<tr><td>Definition:</td><td>The UTM zone upon which the geographic coordinates given in utmX and utmY are based. Recommended best practice is to specify the hemisphere by appending "North" for the northern hemisphere or "South" for the southern hemisphere, or to specify the latitude band.</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/utmZone">utmZone</a></td></tr>
+	<tr><th colspan="2" id="footprint">Term Name: footprint</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/footprint</td></tr>
+	<tr><td>Class:</td><td>Location</td></tr>
+	<tr><td>Definition:</td><td>A representation of the shape (footprint, geometry) that defines the Location. A Location may have both a point-radius representation (see decimalLatitude) and a footprint representation, and they may differ from each other.</td></tr>
+	<tr><td>Comment:</td><td>Example: the one-degree bounding box with opposite corners at (longitude=10, latitude=20) and (longitude=11, latitude=21) would be expressed in well-known text as POLYGON ((10 20, 11 20, 11 21, 10 21, 10 20))</td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/footprint">footprint</a></td></tr>
+	<tr><th colspan="2" id="nmeaSentence">Term Name: nmeaSentence</th></tr>
+	<tr><td>Identifier:</td><td>http://ethoinformatics.org/ethocore/nmeaSentence</td></tr>
+	<tr><td>Class:</td><td>Location</td></tr>
+	<tr><td>Definition:</td><td>The NMEA sentence associated with the Location. The value should be expressed as a full NMEA sentence with the encoding (e.g., NMEA 0183) specified.</td></tr>
+	<tr><td>Comment:</td><td></td></tr>
+	<tr><td>Details:</td><td><a href="http://ethoinformatics.org/ethocore/nmeaSentence">nmeaSentence</a></td></tr>
 	<tr><th colspan="2" id="identificationID">Term Name: identificationID</th></tr>
 	<tr><td>Identifier:</td><td>http://rs.tdwg.org/dwc/terms/identificationID</td></tr>
 	<tr><td>Class:</td><td>Identification</td></tr>
