@@ -1,52 +1,52 @@
 # EthoCore terms
 
-## Record-level Terms
+<h2 id="ClassRecordLevel">Record-level Terms
 
-[type](#type) | [modified](#modified) | [language](#language) | [license](#license) | [rightsHolder](#rightsHolder) | [accessRights](#accessRights) | [bibliographicCitation](#bibliographicCitation) | [references](#references) | [institutionID](#institutionID) | [collectionID](#collectionID) | [datasetID](#datasetID) | [institutionCode](#institutionCode) | [collectionCode](#collectionCode) | [datasetName](#datasetName) | [ownerInstitutionCode](#ownerInstitutionCode) | [basisOfRecord](#basisOfRecord) | [informationWithheld](#informationWithheld) | [dataGeneralizations](#dataGeneralizations) | [dynamicProperties](#dynamicProperties)
+[type](#type) | [modified](#modified) | [language](#language) | [license](#license) | [rightsHolder](#rightsHolder) | [accessRights](#accessRights) | [bibliographicCitation](#bibliographicCitation) | [references](#references) | [institutionID](#institutionID) | [collectionID](#collectionID) | [datasetID](#datasetID) | [institutionCode](#institutionCode) | [collectionCode](#collectionCode) | [datasetName](#datasetName) | [ownerInstitutionCode](#ownerInstitutionCode) | [basisOfRecord](#basisOfRecord) | [informationWithheld](#informationWithheld) | [dataGeneralizations](#dataGeneralizations) | [dynamicProperties](#dynamicProperties)<br>
 
-## [Observation](#Observation)
+<h2 id="ClassRecordLevel">[Observation](#Observation)
 
-[observationID](#observationID) | [observationType](#observationType) | [observationValue](#observationValue) | [observationAccuracy](#observationAccuracy) | [observationUnit](#observationUnit) | [observationDeterminedBy](#observationDeterminedBy) | [observationMethod](#observationMethod) | [observationRemarks](#observationRemarks)
+[observationID](#observationID) | [observationType](#observationType) | [observationValue](#observationValue) | [observationAccuracy](#observationAccuracy) | [observationUnit](#observationUnit) | [observationDeterminedBy](#observationDeterminedBy) | [observationMethod](#observationMethod) | [observationRemarks](#observationRemarks)<br>
 
-## [Measurement](#Measurement)
+<h2 id="ClassRecordLevel">[Measurement](#Measurement)
 
-[measurementID](#measurementID) | [measurementType](#measurementType) | [measurementValue](#measurementValue) | [measurementAccuracy](#measurementAccuracy) | [measurementUnit](#measurementUnit) | [measurementDeterminedBy](#measurementDeterminedBy) | [measurementMethod](#measurementMethod) | [measurementInstrument](#measurementInstrument) | [measurementRemarks](#measurementRemarks)
+[measurementID](#measurementID) | [measurementType](#measurementType) | [measurementValue](#measurementValue) | [measurementAccuracy](#measurementAccuracy) | [measurementUnit](#measurementUnit) | [measurementDeterminedBy](#measurementDeterminedBy) | [measurementMethod](#measurementMethod) | [measurementInstrument](#measurementInstrument) | [measurementRemarks](#measurementRemarks)<br>
 
-## [Organism](#Organism)
+<h2 id="ClassRecordLevel">[Organism](#Organism)
 
-[organismID](#organismID) | [organismName](#organismName) | [organismScope](#organismScope) | [organismRemarks](#organismRemarks) | [organismCode](#organismCode)
+[organismID](#organismID) | [organismName](#organismName) | [organismScope](#organismScope) | [organismRemarks](#organismRemarks) | [organismCode](#organismCode)<br>
 
-## [Patch](#Patch)
+<h2 id="ClassRecordLevel">[Patch](#Patch)
 
-[patchID](#patchID) | [patchName](#patchName) | [patchType](#patchType) | [patchUse](#patchUse) | [timeMarked](#timeMarked) | [dateMarked](#dateMarked) | [dateOfExpiration](#dateOfExpiration) | [markedBy](#markedBy) | [patchRemarks](#patchRemarks)
+[patchID](#patchID) | [patchName](#patchName) | [patchType](#patchType) | [patchUse](#patchUse) | [timeMarked](#timeMarked) | [dateMarked](#dateMarked) | [dateOfExpiration](#dateOfExpiration) | [markedBy](#markedBy) | [patchRemarks](#patchRemarks)<br>
 
-## [MaterialSample](#MaterialSample)
+<h2 id="ClassRecordLevel">[MaterialSample](#MaterialSample)
 
-[materialSampleID](#materialSampleID) | [materialSampleType](#materialSampleType) | [materialSampleRemarks](#materialSampleRemarks)
+[materialSampleID](#materialSampleID) | [materialSampleType](#materialSampleType) | [materialSampleRemarks](#materialSampleRemarks)<br>
 
-## [Event](#Event)
+<h2 id="ClassRecordLevel">[Event](#Event)
 
-[eventID](#eventID) | [eventDate](#eventDate) | [eventTime](#eventTime) | [samplingProtocol](#samplingProtocol) | [samplingEffort](#samplingEffort) | [eventRemarks](#eventRemarks)
+[eventID](#eventID) | [eventDate](#eventDate) | [eventTime](#eventTime) | [samplingProtocol](#samplingProtocol) | [samplingEffort](#samplingEffort) | [eventRemarks](#eventRemarks)<br>
 
-## [Activity](#Activity)
+<h2 id="ClassRecordLevel">[Activity](#Activity)
 
-[activityID](#activityID) | [activityType](#activityType) | [activityBy](#activityBy) | [activityRemarks](#activityRemarks)
+[activityID](#activityID) | [activityType](#activityType) | [activityBy](#activityBy) | [activityRemarks](#activityRemarks)<br>
 
-## [Location](#Location)
+<h2 id="ClassRecordLevel">[Location](#Location)
 
-[locationID](#locationID) | [higherGeographyID](#higherGeographyID) | [higherGeography](#higherGeography) | [continent](#continent) | [islandGroup](#islandGroup) | [island](#island) | [country](#country) | [countryCode](#countryCode) | [stateProvince](#stateProvince) | [county](#county) | [municipality](#municipality) | [locality](#locality) | [verbatimLocality](#verbatimLocality) | [minimumElevationInMeters](#minimumElevationInMeters) | [maximumElevationInMeters](#maximumElevationInMeters) | [verbatimElevation](#verbatimElevation) | [verbatimDepth](#verbatimDepth) | [locationAccordingTo](#locationAccordingTo) | [locationRemarks](#locationRemarks) | [decimalLatitude](#decimalLatitude) | [decimalLongitude](#decimalLongitude) | [geodeticDatum](#geodeticDatum) | [coordinateUncertaintyInMeters](#coordinateUncertaintyInMeters) | [coordinatePrecision](#coordinatePrecision) | [pointRadiusSpatialFit](#pointRadiusSpatialFit) | [verbatimCoordinates](#verbatimCoordinates) | [verbatimLatitude](#verbatimLatitude) | [verbatimLongitude](#verbatimLongitude) | [verbatimCoordinateSystem](#verbatimCoordinateSystem) | [verbatimSRS](#verbatimSRS) | [footprintSRS](#footprintSRS) | [footprintSpatialFit](#footprintSpatialFit) | [georeferencedBy](#georeferencedBy) | [georeferencedDate](#georeferencedDate) | [georeferenceProtocol](#georeferenceProtocol) | [georeferenceSources](#georeferenceSources) | [georeferenceVerificationStatus](#georeferenceVerificationStatus) | [georeferenceRemarks](#georeferenceRemarks) | [locationName](#locationName) | [utmX](#utmX) | [utmY](#utmY) | [utmZone](#utmZone) | [footprint](#footprint) | [nmeaSentence](#nmeaSentence)
+[locationID](#locationID) | [higherGeographyID](#higherGeographyID) | [higherGeography](#higherGeography) | [continent](#continent) | [islandGroup](#islandGroup) | [island](#island) | [country](#country) | [countryCode](#countryCode) | [stateProvince](#stateProvince) | [county](#county) | [municipality](#municipality) | [locality](#locality) | [verbatimLocality](#verbatimLocality) | [minimumElevationInMeters](#minimumElevationInMeters) | [maximumElevationInMeters](#maximumElevationInMeters) | [verbatimElevation](#verbatimElevation) | [verbatimDepth](#verbatimDepth) | [locationAccordingTo](#locationAccordingTo) | [locationRemarks](#locationRemarks) | [decimalLatitude](#decimalLatitude) | [decimalLongitude](#decimalLongitude) | [geodeticDatum](#geodeticDatum) | [coordinateUncertaintyInMeters](#coordinateUncertaintyInMeters) | [coordinatePrecision](#coordinatePrecision) | [pointRadiusSpatialFit](#pointRadiusSpatialFit) | [verbatimCoordinates](#verbatimCoordinates) | [verbatimLatitude](#verbatimLatitude) | [verbatimLongitude](#verbatimLongitude) | [verbatimCoordinateSystem](#verbatimCoordinateSystem) | [verbatimSRS](#verbatimSRS) | [footprintSRS](#footprintSRS) | [footprintSpatialFit](#footprintSpatialFit) | [georeferencedBy](#georeferencedBy) | [georeferencedDate](#georeferencedDate) | [georeferenceProtocol](#georeferenceProtocol) | [georeferenceSources](#georeferenceSources) | [georeferenceVerificationStatus](#georeferenceVerificationStatus) | [georeferenceRemarks](#georeferenceRemarks) | [locationName](#locationName) | [utmX](#utmX) | [utmY](#utmY) | [utmZone](#utmZone) | [footprint](#footprint) | [nmeaSentence](#nmeaSentence)<br>
 
-## [Identification](#Identification)
+<h2 id="ClassRecordLevel">[Identification](#Identification)
 
-[identificationID](#identificationID) | [identificationQualifier](#identificationQualifier) | [typeStatus](#typeStatus) | [identifiedBy](#identifiedBy) | [dateIdentified](#dateIdentified) | [identificationReferences](#identificationReferences) | [identificationVerificationStatus](#identificationVerificationStatus) | [identificationRemarks](#identificationRemarks)
+[identificationID](#identificationID) | [identificationQualifier](#identificationQualifier) | [typeStatus](#typeStatus) | [identifiedBy](#identifiedBy) | [dateIdentified](#dateIdentified) | [identificationReferences](#identificationReferences) | [identificationVerificationStatus](#identificationVerificationStatus) | [identificationRemarks](#identificationRemarks)<br>
 
-## [Taxon](#Taxon)
+<h2 id="ClassRecordLevel">[Taxon](#Taxon)
 
-[taxonID](#taxonID) | [scientificNameID](#scientificNameID) | [acceptedNameUsageID](#acceptedNameUsageID) | [parentNameUsageID](#parentNameUsageID) | [originalNameUsageID](#originalNameUsageID) | [nameAccordingToID](#nameAccordingToID) | [namePublishedInID](#namePublishedInID) | [taxonConceptID](#taxonConceptID) | [scientificName](#scientificName) | [acceptedNameUsage](#acceptedNameUsage) | [parentNameUsage](#parentNameUsage) | [originalNameUsage](#originalNameUsage) | [nameAccordingTo](#nameAccordingTo) | [namePublishedIn](#namePublishedIn) | [namePublishedInYear](#namePublishedInYear) | [higherClassification](#higherClassification) | [kingdom](#kingdom) | [phylum](#phylum) | [class](#class) | [order](#order) | [family](#family) | [genus](#genus) | [subgenus](#subgenus) | [specificEpithet](#specificEpithet) | [infraspecificEpithet](#infraspecificEpithet) | [taxonRank](#taxonRank) | [verbatimTaxonRank](#verbatimTaxonRank) | [scientificNameAuthorship](#scientificNameAuthorship) | [vernacularName](#vernacularName) | [nomenclaturalCode](#nomenclaturalCode) | [taxonomicStatus](#taxonomicStatus) | [nomenclaturalStatus](#nomenclaturalStatus) | [taxonRemarks](#taxonRemarks)
+[taxonID](#taxonID) | [scientificNameID](#scientificNameID) | [acceptedNameUsageID](#acceptedNameUsageID) | [parentNameUsageID](#parentNameUsageID) | [originalNameUsageID](#originalNameUsageID) | [nameAccordingToID](#nameAccordingToID) | [namePublishedInID](#namePublishedInID) | [taxonConceptID](#taxonConceptID) | [scientificName](#scientificName) | [acceptedNameUsage](#acceptedNameUsage) | [parentNameUsage](#parentNameUsage) | [originalNameUsage](#originalNameUsage) | [nameAccordingTo](#nameAccordingTo) | [namePublishedIn](#namePublishedIn) | [namePublishedInYear](#namePublishedInYear) | [higherClassification](#higherClassification) | [kingdom](#kingdom) | [phylum](#phylum) | [class](#class) | [order](#order) | [family](#family) | [genus](#genus) | [subgenus](#subgenus) | [specificEpithet](#specificEpithet) | [infraspecificEpithet](#infraspecificEpithet) | [taxonRank](#taxonRank) | [verbatimTaxonRank](#verbatimTaxonRank) | [scientificNameAuthorship](#scientificNameAuthorship) | [vernacularName](#vernacularName) | [nomenclaturalCode](#nomenclaturalCode) | [taxonomicStatus](#taxonomicStatus) | [nomenclaturalStatus](#nomenclaturalStatus) | [taxonRemarks](#taxonRemarks)<br>
 
-## [ResourceRelationship](#ResourceRelationship)
+<h2 id="ClassRecordLevel">[ResourceRelationship](#ResourceRelationship)
 
-[resourceRelationshipID](#resourceRelationshipID) | [resourceID](#resourceID) | [relatedResourceID](#relatedResourceID) | [relationshipOfResource](#relationshipOfResource) | [relationshipAccordingTo](#relationshipAccordingTo) | [relationshipEstablishedDate](#relationshipEstablishedDate) | [relationshipRemarks](#relationshipRemarks)
+[resourceRelationshipID](#resourceRelationshipID) | [resourceID](#resourceID) | [relatedResourceID](#relatedResourceID) | [relationshipOfResource](#relationshipOfResource) | [relationshipAccordingTo](#relationshipAccordingTo) | [relationshipEstablishedDate](#relationshipEstablishedDate) | [relationshipRemarks](#relationshipRemarks)<br>
 
 <table id="terms-table" class="terms-dictionary">
 	<tr style="border:none;"><td></td><td></td></tr>

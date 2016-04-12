@@ -2,7 +2,7 @@
 
 options(warn=-1)
 
-setwd('~/Dropbox/ethocore/')
+setwd('~/github/ethoinformatics/ethocore/')
 
 write.filename <- 'ethocore'
 
@@ -29,14 +29,14 @@ write('# EthoCore terms\n',file=paste0(write.filename,'.md'))
 
 write(paste(do.call(c,lapply(c('RecordLevel',classes[!is.na(classes)],auxiliary),function(i) {
 	set <- ethocore[ethocore$CLASS %in% i,]
-	paste0('## ',if (i %in% 'RecordLevel') 'Record-level Terms' else linkify(i),'\n\n',paste(apply(set,1,function(x) {
+	paste0('<h2 id="ClassRecordLevel">',if (i %in% 'RecordLevel') 'Record-level Terms' else linkify(i),'\n\n',paste(apply(set,1,function(x) {
 		linkify(x['TERM'])
-	}),collapse=' | '),'\n')
+	}),collapse=' | '),'<br>\n')
 })),collapse='\n'),file=paste0(write.filename,'.md'),append=TRUE)
 
 write(paste(do.call(c,lapply(c('RecordLevel',classes[!is.na(classes)],auxiliary),function(i) {
 	set <- ethocore[ethocore$CLASS %in% i,]
-	paste0('<h2>',if (i %in% 'RecordLevel') 'Record-level Terms' else linkify(i,'html'),'</h2>\n\n',paste(apply(set,1,function(x) {
+	paste0('<h2 id="Class',i,'">',if (i %in% 'RecordLevel') 'Record-level Terms' else linkify(i,'html'),'</h2>\n\n',paste(apply(set,1,function(x) {
 		linkify(x['TERM'],'html')
 	}),collapse=' | '),'<br>\n')
 })),collapse='\n'),file=paste0(write.filename,'_toc.html'))
